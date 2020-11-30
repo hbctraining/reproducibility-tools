@@ -49,7 +49,7 @@ The syntax to format the text portion of the report is relatively easy. You can 
 
 Let's take a look at the syntax of how to do this in RMarkdown before we move on to formatting and adding code chunks:
 
-<img src="img/rmd-syntax.png" width="650">
+<img src="../img/rmd-syntax.png" width="650">
 
 You can also get more information about text formatting [here](http://rmarkdown.rstudio.com/lesson-1.html) and [here](http://rmarkdown.rstudio.com/authoring_basics.html).
 

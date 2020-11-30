@@ -16,7 +16,9 @@ For any experimental analysis, it is critical to keep detailed notes for the fut
 <p align="center">
 <img src="../img/reproducibility.jpg" width="800">
  </p>
- 
+
+*Image source: Peng 2011 https://doi.org/10.1126/science.1213847*
+
 For analyses within R, RStudio helps facilitate reproducible research with the use of R scripts, which can be used to save all code used to perform a particular analysis. However, we often don't save the version of the tools we use in a script, nor do we include or interpret the results of the analyses within the script.
 
 Wouldn't it be nice to be able to save/share the code with collaborators along with tables, figures, and text describing the interpretation in a single, cleaned up report file? 

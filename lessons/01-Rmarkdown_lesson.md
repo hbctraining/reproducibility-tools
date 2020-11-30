@@ -59,11 +59,11 @@ The basic idea is that you can write your analysis workflow in plain text and in
 
 Each individual code chunk should be given a **unique** name. [knitr](https://yihui.name/knitr/) isn't very picky how you name the code chunks, but we recommend using `snake_case` for the names whenever possible. 
 
-<img src="img/code_chunk_example.png" width = "200">
+<img src="../img/code_chunk_example.png" width = "200">
 
 There is a handy `Insert` button within RStudio that allows for the insertion of an empty R chunk if desired.
 
-<img src="img/rmd_chunk_insert_button.png" width = "400">
+<img src="../img/rmd_chunk_insert_button.png" width = "400">
 
 Additionally, you can write inline R code enclosed by single backticks (\`) containing a lowercase `r` (like \`\`\` code chunks). This allows for variable returns outside of code chunks, and is extremely useful for making report text more dynamic. For example, you can print the current date inline within the report with this syntax: `` `r Sys.Date()` `` (no spaces).
 
@@ -86,7 +86,7 @@ ___
 
 The knitr package provides a lot of customization options for code chunks, which are written in the form of `tag=value`.
 
-<img src="img/r-chunkoptions.png">
+<img src="../img/r-chunkoptions.png">
 
 There is a [comprehensive list](https://yihui.org/knitr/options/) of all the options available, however when starting out this can be overwhelming. Here, we provide a short list of some options commonly use in chunks:
 
@@ -101,7 +101,7 @@ There is a [comprehensive list](https://yihui.org/knitr/options/) of all the opt
 
 The `setup` chunk is a special knitr chunk that should be placed at the start of the document. We recommend storing all `library()` loads required for the script and other `load()` requests for external files here. In our RMarkdown templates, such as the bcbioRnaseq [differential expression template](DE_template.Rmd), we store all the user-defined parameters in the `setup` chunk that are required for successful knitting.
 
-<img src="img/r-setup.png">
+<img src="../img/r-setup.png">
 
 ### Global options
 
@@ -147,7 +147,7 @@ A neat feature of knitr is how much simpler it makes generating figures. You can
 
 There are also a few options commonly used for plots to easily resize the figures in the final report. You can specify the height and width of the figure when setting up the code chunk.
 
-<img src="img/r-figure.png">
+<img src="../img/r-figure.png">
 
 ### Tables
 
@@ -178,7 +178,7 @@ Once we've finished creating an RMarkdown file containing code chunks, we finall
 
 When executing `knit()` on a document, by default this will generate an HTML report. If you would prefer a different document format, this can be specified in the YAML header with the `output:` parameter. You can also click on the button in the panel above the script and click on "Knit" to get the various options as shown below:
 
-<img src="img/r-knit-button.png">
+<img src="../img/r-knit-button.png">
 
 > **Note**: *PDF rendering is sometimes problematic, especially when running R remotely, like on the cluster (Odyssey or O2). If you run into problems, it's likely an issue related to [pandoc](http://pandoc.org).*
 

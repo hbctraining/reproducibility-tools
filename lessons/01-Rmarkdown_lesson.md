@@ -1,18 +1,21 @@
 ---
-title: Creating reports in R
+title: Making your research reproducible
 subtitle: knitr and RMarkdown
 author: Michael J. Steinbaugh, Meeta Mistry, Radhika Khetani
 ---
 
 ## Learning Objectives
 
-* What is RMarkdown?
-* What are the uses of RMarkdown 
-* Creating html reports using knitr
+* Understanding the need for reproducible research 
+* Exploring the benefits of RMarkdown reports in the context of reproducibility
 
-# Generating research analysis reports with RMarkdown
+## Making your research reproducible
  
 For any experimental analysis, it is critical to keep detailed notes for the future reproduction of the experiment and for the interpretation of results. For laboratory work, lab notebooks allow us to organize our methods, results, and conclusions to allow for future retrieval and reproduction. Computational analysis requires the same diligence, but it is often easy to forget to completely document the analysis and/or interpret the results in a transparent fashion. 
+
+<p align="center">
+<img src="../img/reproducibility.jpg" width="800">
+ </p>
  
 For analyses within R, RStudio helps facilitate reproducible research with the use of R scripts, which can be used to save all code used to perform a particular analysis. However, we often don't save the version of the tools we use in a script, nor do we include or interpret the results of the analyses within the script.
 

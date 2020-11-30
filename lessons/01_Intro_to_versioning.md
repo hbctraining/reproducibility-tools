@@ -33,15 +33,15 @@ Some tools let us deal with this a bit better without creating a new file for ev
 
 Version control systems start with a base version of the document and then save just the changes you made at each step of the way by taking a so-called "snapshot". A snapshot records information about when a doc was saved, and all the changes between the current document and the previous version. The user (you) decides when these snapshots are collected, and this allows one to ‘rewind’ your file to an older version. 
 
-<img src="img/play-changes.png" width="600" align="center">
+<img src="../img/play-changes.png" width="600" align="center">
 
 For example, two users can make independent sets of changes based on the same document and have 2 separate snapshots documenting the changes.
 
-<img src="img/versions.png" width="400" align="center">
+<img src="../img/versions.png" width="400" align="center">
 
 If there aren't conflicts (i.e updates to the same line), the two sets of changes can be "merged" back into the same base document.
 
-<img src="img/merged_example.png" width="400" align="center">
+<img src="../img/merged_example.png" width="400" align="center">
 
 ### Version Control Systems and Hosts
 

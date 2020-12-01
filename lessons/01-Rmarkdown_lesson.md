@@ -34,21 +34,22 @@ RMarkdown is a file format which allows you to save/share your R code with colla
 
 R Markdown documents provide quick, reproducible reporting from R. You write your document using the **Markdown language** and within it **embed executable R code chunks**. The code chunks are paired with **knitr syntax**, so that once your document is complete you can easily convert it into one of several common formats (i.e. HTML, PDF, PPT).
 
-Wait, what? Did most of that last paragraph seem like a foreign language to you? Don't worry, the goal of this lesson is to cover each of those concepts in much more detail! By the end of the lesson, you can come back to that paragraph and the workflow image below and know exactly what it means.
-
 <p align="center">
-<img src="../img/rmarkdown_workflow.png" width="600">
+<img src="../img/rmarkdown_workflow.png" width="500">
  </p>
+ 
+Wait, what? 
+
+Did most of that last paragraph seem like a foreign language to you? Don't worry, **the goal of this lesson is to cover each of those concepts in much more detail**! By the end of the lesson, you can come back to that paragraph and the workflow image below and know exactly what it means.
 
 Ready to get started?
 
+---
 
+### Exercise #1
 
-In this workshop we will become familiar with both `knitr` and the RMarkdown language. Before we delve into the details we will start with an activity to show you what an RMarkdown file looks like and the HTML report once you have used the `knit()` function.
+Before we delve into the details we will start with an activity to show you what an RMarkdown file (.Rmd extension) looks like and the resulting HTML report that can be generated from it by using the `knit()` function (which is part of the R [knitr package]((https://yihui.name/knitr/).
 
-___
-
-#### Activity 1
 
 1. **Create a new project** in a new directory called `rmd_workshop`
 2. **Download [this RMarkdown file](https://raw.githubusercontent.com/hbctraining/Training-modules/master/Rmarkdown/data/workshop-example.Rmd)** and save within the `rmd_workshop` project directory
@@ -59,7 +60,7 @@ ___
 > - The `data` folder is in the same directory as `workshop-example.rmd` file
 > - Two files (`counts.rpkm.csv` and `mouse_exp_design.csv`) are located inside the `data` folder
 
-___
+---
 
 ## RMarkdown basics
 

@@ -54,12 +54,18 @@ Before we delve into the details we will start with an activity to show you what
 
 1. Open up RStudio and **create a new project** in a new directory called `rmd_workshop`.
 2. **Download [this RMarkdown file](https://raw.githubusercontent.com/hbctraining/Training-modules/master/Rmarkdown/data/workshop-example.Rmd)** by right-clicking on it and saving it within the `rmd_workshop` project directory.
-3. **Download and uncompress [this data folder](../data/data.zip?raw=true)** within the project directory
-4. **Open the .rmd file** in RStudio
-5. **knit the markdown**
-> Note: If you run into error when kniting the markdown, make sure your data structure is set properly as below:
-> - The `data` folder is in the same directory as `workshop-example.rmd` file
+3. **Download and uncompress [this data folder](../data/data.zip?raw=true)** within the `rmd_workshop` project directory.
+4. **Open the .rmd file** in RStudio.
+5. **knit the markdown** by clicking on the `Knit` button located at the top of your script editor pane.
+
+In the console you will see a flurry of text scroll by. This is each code chunk being executed. Once the document is finished knitting, a new window will open up presenting you with the HTML report that was generated. Scroll through it and take note of what you see.
+
+> **NOTE**: If you run into an error when knitting the markdown, make sure your data structure is set properly as shown below:
+> - The `data` folder should be in the same directory as `workshop-example.rmd` file
 > - Two files (`counts.rpkm.csv` and `mouse_exp_design.csv`) are located inside the `data` folder
+> <p align="center">
+> <img src="../img/workingDir_screenshot.png" width="300">
+> </p>
 
 ---
 

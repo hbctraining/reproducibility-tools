@@ -11,11 +11,11 @@ author: Michael J. Steinbaugh, Meeta Mistry, Radhika Khetani, Jihe Liu
 
 ## Making your research reproducible
  
-For any scientific experiment, it is critical to have it be reproducible. That is, if one were to use the same materials and methods of the original researcher they would reach the same end results. Having your work be reproducible validates the correctness and the quality of your findings.
+For any scientific experiment, it is critical to have it be reproducible. That is, if one were to use the same materials and methods of the original researcher, they would reach the same end results. Having your work be reproducible validates the correctness and the quality of your findings.
 
-For laboratory work, lab notebooks allow us to organize our methods, results, and conclusions to allow for future retrieval and reproduction. These notebooks are then converted into a more concise experimental description outlined in the Methods sections of journals. Computational analysis requires the same diligence. In theory the equivalent of a lab notebook would be a detailed log of every action taken by the computer, with a note of the versions of the software being used.
+For laboratory work, lab notebooks allow us to organize our methods, results, and conclusions for future retrieval and reproduction. These notebooks are then converted into a more concise experimental description outlined in the Methods sections of journals. Computational analysis requires the same diligence. In theory, the equivalent of a lab notebook for computational work would be a detailed log of every action taken by the computer, with a note of the versions of the software being used.
 
-In a [*Science Perspective* article from 2011](https://doi.org/10.1126/science.1213847), Roger Peng describes a reproducibility spectrum. He states that "a study may be more or less reproducible than another depending on what data and code are made available." On the one end of the spectrum you have the publication describing your work; on its own it is not deemed reproducible. Making code and data available, help make the shift towards reproducibility. But the big leap towards full reproduction is achieved with complete documentation of the analysis in a transparent fashion, and by providing code that is executable.
+In a [*Science Perspective* article from 2011](https://doi.org/10.1126/science.1213847), Roger Peng describes a reproducibility spectrum. He states that "a study may be more or less reproducible than another depending on what data and code are made available." On the one end of the spectrum you have the publication describing your work; on its own it is not deemed reproducible. Making code and data available enhances the reproducibility. But the big leap towards full reproduction is achieved with complete documentation of the analysis in a transparent fashion, and by providing code that is executable.
 
 <p align="center">
 <img src="../img/reproducibility.jpg" width="800">
@@ -26,13 +26,11 @@ In a [*Science Perspective* article from 2011](https://doi.org/10.1126/science.1
 
 ## RMarkdown
 
-Creating the "gold standard" code is not always easy depending on what programming language you are using. For analyses within R, RStudio helps facilitate reproducible research with the use of R scripts, which can be used to save all code used to perform a particular analysis. However, we often don't save the version of the tools we use in a script, nor do we include or interpret the results of the analyses within the script.
+Creating the "gold standard" code is not always easy depending on what programming language you are using. For analyses within R, RStudio helps facilitate reproducible research with the use of R scripts, which document all code used to perform a particular analysis. However, we often don't save the version of the tools we use in a script, nor do we include or interpret the results of the analyses within the script.
 
-Enter RMarkdown.
+RMarkdown is a file format that allows you to save/share your R code with collaborators along with tables, figures, and text describing results and interpretation all in a single document!
 
-RMarkdown is a file format which allows you to save/share your R code with collaborators along with tables, figures, and text describing the interpretation all in a single document!
-
-RMarkdown documents provide quick, reproducible reporting from R. You write your document using the **Markdown language** and within it **embed executable R code chunks**. The code chunks are paired with **knitr syntax**, so that once your document is complete you can easily convert it into one of several common formats (i.e. HTML, PDF, PPT).
+RMarkdown documents provide quick, reproducible reporting from R. You write your document using the **Markdown language** and within it **embed executable R code chunks**. The code chunks are paired with **knitr syntax**, so that once your document is complete, you can easily convert it into one of several common formats (i.e. HTML, PDF, PPT).
 
 <p align="center">
 <img src="../img/rmarkdown_workflow.png" width="500">
@@ -42,7 +40,7 @@ RMarkdown documents provide quick, reproducible reporting from R. You write your
 
 Wait, what? 
 
-Did most of that last paragraph seem like a foreign language to you? Don't worry, **the goal of this lesson is to cover each of those concepts in much more detail**! By the end of the lesson, you can come back to that paragraph and the workflow image below and know exactly what it means.
+Did most of that last paragraph seem like a foreign language to you? Don't worry, **the goal of this lesson is to cover each of those concepts in much more detail**! By the end of the lesson, you can come back to that paragraph and the workflow image above and will know exactly what it means.
 
 Ready to get started?
 

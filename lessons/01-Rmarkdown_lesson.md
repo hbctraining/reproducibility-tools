@@ -32,7 +32,7 @@ Enter RMarkdown.
 
 RMarkdown is a file format which allows you to save/share your R code with collaborators along with tables, figures, and text describing the interpretation all in a single document!
 
-R Markdown documents provide quick, reproducible reporting from R. You write your document using the **Markdown language** and within it **embed executable R code chunks**. The code chunks are paired with **knitr syntax**, so that once your document is complete you can easily convert it into one of several common formats (i.e. HTML, PDF, PPT).
+RMarkdown documents provide quick, reproducible reporting from R. You write your document using the **Markdown language** and within it **embed executable R code chunks**. The code chunks are paired with **knitr syntax**, so that once your document is complete you can easily convert it into one of several common formats (i.e. HTML, PDF, PPT).
 
 <p align="center">
 <img src="../img/rmarkdown_workflow.png" width="500">
@@ -58,7 +58,7 @@ Before we delve into the details we will start with an activity to show you what
 4. **Open the .rmd file** in RStudio.
 5. **knit the markdown** by clicking on the `Knit` button located at the top of your script editor pane.
 
-In the console you will see a flurry of text scroll by. This is each code chunk being executed. Once the document is finished knitting, a new window will open up presenting you with the HTML report that was generated. Scroll through it and take note of what you see.
+In the console you will see a flurry of text scroll by. This is each code chunk being executed. Once the document is finished 'knitting', a new window will open up presenting you with the HTML report that was generated. Scroll through it and take note of what you see.
 
 > **NOTE**: If you run into an error when knitting the markdown, make sure your data structure is set properly as shown below:
 > - The `data` folder should be in the same directory as `workshop-example.rmd` file
@@ -89,17 +89,18 @@ You can also get more information about text formatting [here](http://rmarkdown.
 
 The basic idea behind RMarkdown is that you can describe your analysis workflow and provide interpretation of results in plain text, and intersperse chunks of R code within that document to tell a complete story using a single document. Code chunks in RMarkdown are delimited with a special marker (\`\`\`). Backticks (\`) commonly indicate a chunk of code. This syntax is also used for formatting text on [GitHub](https://github.com). 
 
-Each individual code chunk should be given a **unique** name. [knitr](https://yihui.name/knitr/) isn't very picky how you name the code chunks, but we recommend using `snake_case` for the names whenever possible. 
+Each individual code chunk should be given a **unique** name. The name should be something meaningful, and we recommend using `snake_case` for the names whenever possible. 
 
 <img src="../img/code_chunk_example.png" width = "200">
 
-There is a handy `Insert` button within RStudio that allows for the insertion of an empty R chunk if desired. 
+There is a handy `Insert` button within RStudio that allows for the insertion of an empty R chunk in your document. 
 
 <img src="../img/rmd_chunk_insert_button.png" width = "400">
 
-> Alternatively, a keyboard shortcut is:
-> * <kbd>Ctrl</kbd><kbd>Alt</kbd><kbd>i</kbd> for PC users
-> * <kbd>Command</kbd><kbd>Option</kbd><kbd>i</kbd> for Mac users.
+Alternatively, a keyboard shortcut is:
+
+* <kbd>Ctrl</kbd> + <kbd>Alt</kbd><kbd> + i</kbd> **for PC users**
+* <kbd>Command</kbd> + <kbd>option</kbd> + <kbd>i</kbd> **for Mac users**
 
 Additionally, you can write inline R code enclosed by single backticks (\`) containing a lowercase `r` (like \`\`\` code chunks). This allows for variable returns outside of code chunks, and is extremely useful for making report text more dynamic. For example, you can print the current date inline within the report with this syntax: `` `r Sys.Date()` `` (no spaces).
 
@@ -120,10 +121,11 @@ ___
 
 ### Options for code chunks
 
-The knitr package provides a lot of customization options for code chunks, which are written in the form of `tag=value`.
+By this point we have mentioned knitr quite a few times, but have not yet fully defined what it is. [knitr](https://yihui.name/knitr/) is an R package, developed by [Yihui Xie](https://yihui.name), designed to generate reports within RStudio. As you have seen, it takes an [RMarkdown](http://rmarkdown.rstudio.com/) file as input and dynamically generates a report as output in the user selected file format (i.e HTML,PDF). 
+
+The knitr package provides a lot of customization options for code chunks, which determine what information is written to the output file. These options are written in the form of `tag=value`.
 
 <img src="../img/r-chunkoptions.png">
-
 
 There is a [comprehensive list](https://yihui.org/knitr/options/) of all the options available, however when starting out this can be overwhelming. Here, we provide a short list of some options commonly used in code chunks:
 
@@ -162,7 +164,11 @@ ___
 
 ### Figures
 
-A neat feature of knitr is how much simpler it makes generating figures. You can simply return a plot in a chunk, and knitr will automatically write the files to disk, in an organized subfolder. By specifying options in the `setup` chunk, you can have R automatically save your plots in multiple file formats at once, including PNG, PDF, and SVG. A single chunk can support multiple plots, and they will be arranged in squares below the chunk in RStudio.
+A neat feature of knitr is how much simpler it makes generating figures.
+
+For the most part, you don’t need to do anything. If a code chunk produces a figure, it will automatically be produced and inserted into the final document.
+
+You can simply return a plot in a chunk, and knitr will automatically write the files to disk, in an organized subfolder. By specifying options in the `setup` chunk, you can have R automatically save your plots in multiple file formats at once, including PNG, PDF, and SVG. A single chunk can support multiple plots, and they will be arranged in squares below the chunk in RStudio.
 
 There are also a few options commonly used for plots to easily resize the figures in the final report. You can specify the height and width of the figure when setting up the code chunk.
 

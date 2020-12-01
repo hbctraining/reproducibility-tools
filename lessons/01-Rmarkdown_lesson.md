@@ -11,7 +11,11 @@ author: Michael J. Steinbaugh, Meeta Mistry, Radhika Khetani
 
 ## Making your research reproducible
  
-For any experimental analysis, it is critical to keep detailed notes for the future reproduction of the experiment and for the interpretation of results. For laboratory work, lab notebooks allow us to organize our methods, results, and conclusions to allow for future retrieval and reproduction. Computational analysis requires the same diligence, but it is often easy to forget to completely document the analysis and/or interpret the results in a transparent fashion. 
+For any scientific experiment, it is critical to have it be reproducible. You want to have set youreslf up in way that if one were to use the same materials and methods of the original researcher they would reach the same end results. Having your work be reproducible validates the correctness and the quality of your findings.
+
+For laboratory work, lab notebooks allow us to organize our methods, results, and conclusions to allow for future retrieval and reproduction. These notebooks are then converted into a more concise experimental description outlined in the Methods sections of journals. Computational analysis requires the same diligence. In theory the equivalent of a lab notebook would be a detailed log of every action taken by the computer, with a note of the versions of the software being used.
+
+In a *Science Perspective* article from 2011, Roger Peng describes a reproduciblity spectrum. He states that "a study may be more or less reproducible than another depending on what data and code are made available." On the one end of the spectrum you have the publication of your work; on its own it is not deemed reproducible. Making code and data available, help make the shift towards reproducibility. But the big leap towards full reproduction is achieved with complete documentation of the analysis in a transparent fashion, and by providing code that is executable.
 
 <p align="center">
 <img src="../img/reproducibility.jpg" width="800">
@@ -19,9 +23,14 @@ For any experimental analysis, it is critical to keep detailed notes for the fut
 
 *Image source: Peng 2011 https://doi.org/10.1126/science.1213847*
 
-For analyses within R, RStudio helps facilitate reproducible research with the use of R scripts, which can be used to save all code used to perform a particular analysis. However, we often don't save the version of the tools we use in a script, nor do we include or interpret the results of the analyses within the script.
 
-Wouldn't it be nice to be able to save/share the code with collaborators along with tables, figures, and text describing the interpretation in a single, cleaned up report file? 
+## RMarkdown
+
+Creating the "gold standard" code is not always easy depending on what programming language you are using. For analyses within R, RStudio helps facilitate reproducible research with the use of R scripts, which can be used to save all code used to perform a particular analysis. However, we often don't save the version of the tools we use in a script, nor do we include or interpret the results of the analyses within the script.
+
+Enter RMarkdown.
+
+RMarkdown is a file format which allows you to save/share the code with collaborators along with tables, figures, and text describing the interpretation all in a single document!
 
 The [knitr](https://yihui.name/knitr/) package, developed by [Yihui Xie](https://yihui.name), is designed to generate reports within RStudio. It enables dynamic generation of multiple file formats from an [RMarkdown](http://rmarkdown.rstudio.com/) file, including HTML and PDF documents. Knit report generation is now integrated into RStudio, and can be accessed using the GUI or console.
 

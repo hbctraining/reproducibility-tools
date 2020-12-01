@@ -37,7 +37,9 @@ R Markdown documents provide quick, reproducible reporting from R. You write you
 <p align="center">
 <img src="../img/rmarkdown_workflow.png" width="500">
  </p>
- 
+
+*Image source: [Applied R code](http://applied-r.com/project-reporting-template/)*
+
 Wait, what? 
 
 Did most of that last paragraph seem like a foreign language to you? Don't worry, **the goal of this lesson is to cover each of those concepts in much more detail**! By the end of the lesson, you can come back to that paragraph and the workflow image below and know exactly what it means.
@@ -46,14 +48,13 @@ Ready to get started?
 
 ---
 
-### Exercise #1
+#### Exercise #1
 
 Before we delve into the details we will start with an activity to show you what an RMarkdown file (.Rmd extension) looks like and the resulting HTML report that can be generated from it by using the `knit()` function (which is part of the R [knitr package]((https://yihui.name/knitr/).
 
-
-1. **Create a new project** in a new directory called `rmd_workshop`
-2. **Download [this RMarkdown file](https://raw.githubusercontent.com/hbctraining/Training-modules/master/Rmarkdown/data/workshop-example.Rmd)** and save within the `rmd_workshop` project directory
-3. **Download and uncompress [this data folder](data/data.zip?raw=true)** within the project directory
+1. Open up RStudio and **create a new project** in a new directory called `rmd_workshop`.
+2. **Download [this RMarkdown file](https://raw.githubusercontent.com/hbctraining/Training-modules/master/Rmarkdown/data/workshop-example.Rmd)** by right-clicking on it and saving it within the `rmd_workshop` project directory.
+3. **Download and uncompress [this data folder](../data/data.zip?raw=true)** within the project directory
 4. **Open the .rmd file** in RStudio
 5. **knit the markdown**
 > Note: If you run into error when kniting the markdown, make sure your data structure is set properly as below:

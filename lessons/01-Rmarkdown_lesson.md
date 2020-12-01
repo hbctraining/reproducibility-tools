@@ -50,7 +50,7 @@ Ready to get started?
 
 #### Exercise #1
 
-Before we delve into the details we will start with an activity to show you what an RMarkdown file (.Rmd extension) looks like and the resulting HTML report that can be generated from it by using the `knit()` function (which is part of the R [knitr package]((https://yihui.name/knitr/).
+Before we delve into the details we will start with an activity to show you what an RMarkdown file (.Rmd extension) looks like and the resulting HTML report that can be generated from it by using the `knit()` function (which is part of the R [knitr package](https://yihui.name/knitr/)).
 
 1. Open up RStudio and **create a new project** in a new directory called `rmd_workshop`.
 2. **Download [this RMarkdown file](https://raw.githubusercontent.com/hbctraining/Training-modules/master/Rmarkdown/data/workshop-example.Rmd)** by right-clicking on it and saving it within the `rmd_workshop` project directory.
@@ -95,11 +95,14 @@ Each individual code chunk should be given a **unique** name. The name should be
 
 There is a handy `Insert` button within RStudio that allows for the insertion of an empty R chunk in your document. 
 
+
+<p align="center">
 <img src="../img/rmd_chunk_insert_button.png" width = "400">
+</p>
 
 Alternatively, a keyboard shortcut is:
 
-* <kbd>Ctrl</kbd> + <kbd>Alt</kbd><kbd> + i</kbd> **for PC users**
+* <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>i</kbd> **for PC users**
 * <kbd>Command</kbd> + <kbd>option</kbd> + <kbd>i</kbd> **for Mac users**
 
 Additionally, you can write inline R code enclosed by single backticks (\`) containing a lowercase `r` (like \`\`\` code chunks). This allows for variable returns outside of code chunks, and is extremely useful for making report text more dynamic. For example, you can print the current date inline within the report with this syntax: `` `r Sys.Date()` `` (no spaces).
@@ -164,15 +167,11 @@ ___
 
 ### Figures
 
-A neat feature of knitr is how much simpler it makes generating figures.
-
-For the most part, you don’t need to do anything. If a code chunk produces a figure, it will automatically be produced and inserted into the final document.
-
-You can simply return a plot in a chunk, and knitr will automatically write the files to disk, in an organized subfolder. By specifying options in the `setup` chunk, you can have R automatically save your plots in multiple file formats at once, including PNG, PDF, and SVG. A single chunk can support multiple plots, and they will be arranged in squares below the chunk in RStudio.
-
-There are also a few options commonly used for plots to easily resize the figures in the final report. You can specify the height and width of the figure when setting up the code chunk.
+A neat feature of knitr is how much simpler it is to generate figures. For the most part, you don’t need to do anything. If a code chunk produces a figure, it will automatically be produced and inserted into the final document. A single chunk can support multiple plots, and they will be arranged in squares below the chunk in RStudio. There are a few code chunk options commonly used for plots. For example, to easily resize the figures in the final report you can specify the `fig.height` and `fig.width` of the figure when setting up the code chunk.
 
 <img src="../img/r-figure.png">
+
+You can simply return a plot in a chunk, and also have knitr automatically write the files to disk, in an organized subfolder. Using the `dev` option you are able to specify the desired filetype for your image file, including PNG, PDF, and SVG. 
 
 ### Tables
 
@@ -199,17 +198,15 @@ There are some other functions that allow for more powerful customization of tab
 
 ### Generating the report
 
-As RMarkdown grows as an acceptable [reproducible manuscript](https://elifesciences.org/labs/cad57bcf/composing-reproducible-manuscripts-using-r-markdown) format, using `knitr` to generate a report summary is becoming common practice. 
+Once we have finished creating an RMarkdown file, we finally need to knit the report. You can knit it by using the `knit()` function, or by just clicking on "knit" in the panel above the script as we had done in our first activity in this lesson. 
 
-The [knitr](https://yihui.name/knitr/) package, developed by [Yihui Xie](https://yihui.name), is designed to generate reports within RStudio. It enables dynamic generation of multiple file formats from an [RMarkdown](http://rmarkdown.rstudio.com/) file, including HTML and PDF documents. Knit report generation is now integrated into RStudio, and can be accessed using the GUI or console.
-
-Once we've finished creating an RMarkdown file containing code chunks, we finally need to knit the report. You can knit it by using the `knit()` function, or by just clicking on "knit" in the panel above the script as we had done in our first activity in this lesson.
+> Note that when creating your own reports you might find yourself knitting the report periodically as you work through it, rather than just once at the end. 
 
 When executing `knit()` on a document, by default this will generate an HTML report. If you would prefer a different document format, this can be specified in the YAML header with the `output:` parameter. You can also click on the button in the panel above the script and click on "Knit" to get the various options as shown below:
 
 <img src="../img/r-knit-button.png">
 
-> **Note**: *PDF rendering is sometimes problematic, especially when running R remotely, like on the cluster (Odyssey or O2). If you run into problems, it's likely an issue related to [pandoc](http://pandoc.org).*
+> **Note**: *PDF rendering is sometimes problematic, especially when running R remotely, like on the cluster (Cannon or O2). If you run into problems, it's likely an issue related to [pandoc](http://pandoc.org).*
 
 The [RStudio cheatsheet for Rmarkdown](https://github.com/rstudio/cheatsheets/blob/master/rmarkdown-2.0.pdf) is quite daunting, but includes more advanced Rmarkdown options that may be helpful as you become familiar with report generation, including options for adding interactive plots RShiny.
 

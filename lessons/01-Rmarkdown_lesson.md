@@ -71,9 +71,7 @@ In the console you will see a flurry of text scroll by. This is each code chunk 
 
 ## RMarkdown basics
 
-The [Markdown language](https://en.wikipedia.org/wiki/Markdown) for formatting plain text format has been adopted by many different coding groups, and some have added their own "flavours". RStudio implements something called **"R-flavoured markdown" or "RMarkdown"** which has really nice features for text and code formatting as described below.
-
-As RMarkdown grows as an acceptable [reproducible manuscript](https://elifesciences.org/labs/cad57bcf/composing-reproducible-manuscripts-using-r-markdown) format, using `knitr` to generate a report summary is becoming common practice. 
+[Markdown](https://en.wikipedia.org/wiki/Markdown) is a lightweight markup language with plain-text-formatting syntax. It is often used for formatting readme files, for writing messages in online discussion forums, and to create rich text using a plain text editor. The Markdown language has been adopted by many different coding groups, and some have added their own "flavours". RStudio implements something called **"R-flavoured markdown" or "RMarkdown"** which has really nice features for text and code formatting as described below.
 
 ### Text
 
@@ -81,34 +79,40 @@ The syntax to format the text portion of the report is relatively easy. You can 
 
 Let's take a look at the syntax of how to do this in RMarkdown before we move on to formatting and adding code chunks:
 
+<p align="center">
 <img src="../img/rmd-syntax.png" width="650">
+</p>
 
 You can also get more information about text formatting [here](http://rmarkdown.rstudio.com/lesson-1.html) and [here](http://rmarkdown.rstudio.com/authoring_basics.html).
 
 ### Code chunks
 
-The basic idea is that you can write your analysis workflow in plain text and intersperse chunks of R code delimited with a special marker (\`\`\`). Backticks (\`) commonly indicate code and are also used for formatting on [GitHub](https://github.com). 
+The basic idea behind RMarkdown is that you can describe your analysis workflow and provide interpretation of results in plain text, and intersperse chunks of R code within that document to tell a complete story using a single document. Code chunks in RMarkdown are delimited with a special marker (\`\`\`). Backticks (\`) commonly indicate a chunk of code. This syntax is also used for formatting text on [GitHub](https://github.com). 
 
 Each individual code chunk should be given a **unique** name. [knitr](https://yihui.name/knitr/) isn't very picky how you name the code chunks, but we recommend using `snake_case` for the names whenever possible. 
 
+<p align="center">
 <img src="../img/code_chunk_example.png" width = "200">
+</p>
 
-There is a handy `Insert` button within RStudio that allows for the insertion of an empty R chunk if desired.
+There is a handy `Insert` button within RStudio that allows for the insertion of an empty R chunk if desired. Alternatively, a keyboard shortcut is  <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>i</kbd> for PC users and <kbd>Command</kbd>+<kbd>Option</kbd>+<kbd>i</kbd> for Mac users.
 
+<p align="center">
 <img src="../img/rmd_chunk_insert_button.png" width = "400">
+</p>
 
 Additionally, you can write inline R code enclosed by single backticks (\`) containing a lowercase `r` (like \`\`\` code chunks). This allows for variable returns outside of code chunks, and is extremely useful for making report text more dynamic. For example, you can print the current date inline within the report with this syntax: `` `r Sys.Date()` `` (no spaces).
 
-As the **final chunk in your analysis, it is recommended to run the `sessionInfo()`** function. This function will output the R version and the versions of all libraries loaded in the R environment. The versions of the tools used is important information for reproduction of your analysis in the future.
+For the **final chunk in your analysis, it is recommended to run the `sessionInfo()`** function. This function will output the R version and the versions of all libraries loaded in the R environment. The versions of the tools used is important information for reproduction of your analysis in the future.
 
 ___
 
-#### Activity 2
+#### Exercise #2 
 
-1. **Add a new section header** in the same size as the "Project details" header at the end
-2. Next, **add a new code chunk** below it to display the output of `sessionInfo()`
-3. **Modify the `Author` and `Title`** parameters at the top of the script
-4. **knit the markdown** 
+1. Scroll down to the end of the `.rmd` document. **Add a new code chunk.** Within the code chunk place the code `sessionInfo()`.
+2. **Add a new section header** above the newly created code chunk. Use a title that best describes the output. Have this header be the same size as the "Project details" header.
+3. **Modify the `Author` and `Title`** parameters at the top of the script.
+4. **knit the markdown**. 
 
 [Answer Key](https://raw.githubusercontent.com/hbctraining/Training-modules/master/Rmarkdown/data/workshop-answer-activity3.Rmd)
 
@@ -118,22 +122,26 @@ ___
 
 The knitr package provides a lot of customization options for code chunks, which are written in the form of `tag=value`.
 
+<p align="center">
 <img src="../img/r-chunkoptions.png">
+</p>
 
-There is a [comprehensive list](https://yihui.org/knitr/options/) of all the options available, however when starting out this can be overwhelming. Here, we provide a short list of some options commonly use in chunks:
+There is a [comprehensive list](https://yihui.org/knitr/options/) of all the options available, however when starting out this can be overwhelming. Here, we provide a short list of some options commonly used in code chunks:
 
-* `echo = TRUE`: whether to include R source code in the final document. If echo = FALSE, R source code will not be written into the final document. But the code is still evaluated and its output will be included in the final document
-* `eval = TRUE`: whether to evaluate/execute the code 
+* `echo = TRUE`: whether to include R source code in the final knitted document. If echo = FALSE, R source code will not be written. But the code is still evaluated and its output will be included in the final document.
+* `eval = TRUE`: whether to evaluate/execute the code .
 * `include = TRUE`: whether to include R source code and its output in the final document. If include = FALSE, nothing (R source code and its output) will be written into the final document. But the code is still evaluated and plot files are generated if there are any plots in the chunk
 * `warning = TRUE`: whether to preserve warnings in the output like we run R code in a terminal (if FALSE, all warnings will be printed in the console instead of the output document)
-* `message = TRUE`: whether to preserve messages emitted by message() (similar to warning)
+* `message = TRUE`: whether to preserve messages emitted by message() in the final output document (similar to warning)
 * `results = "asis"`: output as-is, i.e., write raw results from R into the output document instead of LaTeX-formatted output. Another useful option for this option is "hide", which will hide the results, or all normal R output
 
 ### The setup chunk
 
 The `setup` chunk is a special knitr chunk that should be placed at the start of the document. We recommend storing all `library()` loads required for the script and other `load()` requests for external files here. In our RMarkdown templates, such as the bcbioRnaseq [differential expression template](DE_template.Rmd), we store all the user-defined parameters in the `setup` chunk that are required for successful knitting.
 
+<p align="center">
 <img src="../img/r-setup.png">
+</p>
 
 ### Global options
 
@@ -205,6 +213,8 @@ There are some other functions that allow for more powerful customization of tab
 
 
 ### Generating the report
+
+As RMarkdown grows as an acceptable [reproducible manuscript](https://elifesciences.org/labs/cad57bcf/composing-reproducible-manuscripts-using-r-markdown) format, using `knitr` to generate a report summary is becoming common practice. 
 
 The [knitr](https://yihui.name/knitr/) package, developed by [Yihui Xie](https://yihui.name), is designed to generate reports within RStudio. It enables dynamic generation of multiple file formats from an [RMarkdown](http://rmarkdown.rstudio.com/) file, including HTML and PDF documents. Knit report generation is now integrated into RStudio, and can be accessed using the GUI or console.
 

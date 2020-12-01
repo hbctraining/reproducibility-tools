@@ -11,7 +11,7 @@ author: Michael J. Steinbaugh, Meeta Mistry, Radhika Khetani
 
 ## Making your research reproducible
  
-For any scientific experiment, it is critical to have it be reproducible. You want to have set youreslf up in way that if one were to use the same materials and methods of the original researcher they would reach the same end results. Having your work be reproducible validates the correctness and the quality of your findings.
+For any scientific experiment, it is critical to have it be reproducible. That is, if one were to use the same materials and methods of the original researcher they would reach the same end results. Having your work be reproducible validates the correctness and the quality of your findings.
 
 For laboratory work, lab notebooks allow us to organize our methods, results, and conclusions to allow for future retrieval and reproduction. These notebooks are then converted into a more concise experimental description outlined in the Methods sections of journals. Computational analysis requires the same diligence. In theory the equivalent of a lab notebook would be a detailed log of every action taken by the computer, with a note of the versions of the software being used.
 

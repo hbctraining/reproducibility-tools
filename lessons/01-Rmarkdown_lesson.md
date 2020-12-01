@@ -91,15 +91,15 @@ The basic idea behind RMarkdown is that you can describe your analysis workflow 
 
 Each individual code chunk should be given a **unique** name. [knitr](https://yihui.name/knitr/) isn't very picky how you name the code chunks, but we recommend using `snake_case` for the names whenever possible. 
 
-<p align="center">
 <img src="../img/code_chunk_example.png" width = "200">
-</p>
 
-There is a handy `Insert` button within RStudio that allows for the insertion of an empty R chunk if desired. Alternatively, a keyboard shortcut is  <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>i</kbd> for PC users and <kbd>Command</kbd>+<kbd>Option</kbd>+<kbd>i</kbd> for Mac users.
+There is a handy `Insert` button within RStudio that allows for the insertion of an empty R chunk if desired. 
 
-<p align="center">
 <img src="../img/rmd_chunk_insert_button.png" width = "400">
-</p>
+
+> Alternatively, a keyboard shortcut is:
+> * <kbd>Ctrl</kbd><kbd>Alt</kbd><kbd>i</kbd> for PC users
+> * <kbd>Command</kbd><kbd>Option</kbd><kbd>i</kbd> for Mac users.
 
 Additionally, you can write inline R code enclosed by single backticks (\`) containing a lowercase `r` (like \`\`\` code chunks). This allows for variable returns outside of code chunks, and is extremely useful for making report text more dynamic. For example, you can print the current date inline within the report with this syntax: `` `r Sys.Date()` `` (no spaces).
 
@@ -122,9 +122,8 @@ ___
 
 The knitr package provides a lot of customization options for code chunks, which are written in the form of `tag=value`.
 
-<p align="center">
 <img src="../img/r-chunkoptions.png">
-</p>
+
 
 There is a [comprehensive list](https://yihui.org/knitr/options/) of all the options available, however when starting out this can be overwhelming. Here, we provide a short list of some options commonly used in code chunks:
 
@@ -133,44 +132,24 @@ There is a [comprehensive list](https://yihui.org/knitr/options/) of all the opt
 * `include = TRUE`: whether to include R source code and its output in the final document. If include = FALSE, nothing (R source code and its output) will be written into the final document. But the code is still evaluated and plot files are generated if there are any plots in the chunk
 * `warning = TRUE`: whether to preserve warnings in the output like we run R code in a terminal (if FALSE, all warnings will be printed in the console instead of the output document)
 * `message = TRUE`: whether to preserve messages emitted by message() in the final output document (similar to warning)
-* `results = "asis"`: output as-is, i.e., write raw results from R into the output document instead of LaTeX-formatted output. Another useful option for this option is "hide", which will hide the results, or all normal R output
+* `results = "asis"`: output as-is, i.e., write raw results from R into the output document instead of LaTeX-formatted output. Another useful option for this option is "hide", which will hide the results, or all normal R output.
 
-### The setup chunk
-
-The `setup` chunk is a special knitr chunk that should be placed at the start of the document. We recommend storing all `library()` loads required for the script and other `load()` requests for external files here. In our RMarkdown templates, such as the bcbioRnaseq [differential expression template](DE_template.Rmd), we store all the user-defined parameters in the `setup` chunk that are required for successful knitting.
-
-<p align="center">
-<img src="../img/r-setup.png">
-</p>
 
 ### Global options
 
-knitr allows for global options to be set on all chunks in an RMarkdown file. These are options that should be placed inside your `setup` chunk at the top of your RMarkdown document. These will be the default options used for all the code chunks in the document, however they can be modified for each code chunk.
+knitr allows for global options, which means choosing **options that apply to all code chunks in an RMarkdown file**. These will be the default options used for all the code chunks in the document, however they can also be modified for each individual code chunk if required.
 
-```r
-opts_chunk$set(
-    autodep = TRUE,
-    cache = TRUE,
-    cache.lazy = TRUE,
-    dev = c("png", "pdf", "svg"),
-    error = TRUE,
-    fig.height = 6,
-    fig.retina = 2,
-    fig.width = 6,
-    highlight = TRUE,
-    message = FALSE,
-    prompt = TRUE,
-    tidy = TRUE,
-    warning = FALSE)
-```
+Global options should be placed inside your `setup` code chunk. The **`setup` chunk is a special knitr chunk that should be placed at the start of the document**. We recommend storing all `library()` loads required for the script and other `load()` requests for external files here. 
 
-An additional cool trick is that you can save `opts_chunk$set` settings in `~/.Rprofile` and these knitr options will apply to all of your RMarkdown documents, and not just the one.
+<img src="../img/setup_chunk2.png" width="500">
+
+> **NOTE:** An additional cool trick is that you can save `opts_chunk$set` settings in a hidden file called `.Rprofile`. This file is located in your home directory and accessed by RStudio everytime your open up a new session. By setting this up, these knitr options will apply to all of your RMarkdown documents that you create.
 
 ___
 
-#### Activity 3
+#### Exercise #3
 
-1. Only some of the code chunks have names; go through and **add names to the unnamed code chunks**.
+1. Only some of the code chunks in the `.rmd` file have names; go through and **add names to the unnamed code chunks**.
 2. For the code chunk named `data-ordering` do the following:
     - First, **add a new line of code** that displays a small part of the newly created `data_ordered` data frame using `head()`
     - Next, **modify the options for (`{r data-ordering}`)** such that the output from the new line of code shows up in the report, but not the code

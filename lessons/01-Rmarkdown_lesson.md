@@ -121,25 +121,25 @@ ___
 
 ### Options for code chunks
 
-By this point we have mentioned knitr quite a few times, but have not yet fully defined what it is. [knitr](https://yihui.name/knitr/) is an R package, developed by [Yihui Xie](https://yihui.name), designed to generate reports within RStudio. As you have seen, it takes an [RMarkdown](http://rmarkdown.rstudio.com/) file as input and dynamically generates a report as output in the user selected file format (i.e HTML,PDF). 
+By this point, we have mentioned knitr quite a few times, but have not yet fully defined what it is. [knitr](https://yihui.name/knitr/) is an R package, developed by [Yihui Xie](https://yihui.name), designed to generate reports within RStudio. As you have seen, it takes an [RMarkdown](http://rmarkdown.rstudio.com/) file as input, and dynamically generates a report as output in the user selected file format (i.e HTML,PDF). 
 
 The knitr package provides a lot of customization options for code chunks, which determine what information is written to the output file. These options are written in the form of `tag=value`.
 
 <img src="../img/r-chunkoptions.png">
 
-There is a [comprehensive list](https://yihui.org/knitr/options/) of all the options available, however when starting out this can be overwhelming. Here, we provide a short list of some options commonly used in code chunks:
+There is a [comprehensive list](https://yihui.org/knitr/options/) of all the available options, however when starting out this can be overwhelming. Here, we provide a short list of some options commonly used in code chunks:
 
 * `echo = TRUE`: whether to include R source code in the final knitted document. If echo = FALSE, R source code will not be written. But the code is still evaluated and its output will be included in the final document.
-* `eval = TRUE`: whether to evaluate/execute the code .
-* `include = TRUE`: whether to include R source code and its output in the final document. If include = FALSE, nothing (R source code and its output) will be written into the final document. But the code is still evaluated and plot files are generated if there are any plots in the chunk
-* `warning = TRUE`: whether to preserve warnings in the output like we run R code in a terminal (if FALSE, all warnings will be printed in the console instead of the output document)
-* `message = TRUE`: whether to preserve messages emitted by message() in the final output document (similar to warning)
+* `eval = TRUE`: whether to evaluate/execute the code.
+* `include = TRUE`: whether to include R source code and its output in the final document. If include = FALSE, nothing (R source code and its output) will be written into the final document. But the code is still evaluated and plot files are generated if there are any plots in the chunk.
+* `warning = TRUE`: whether to preserve warnings in the output like we run R code in a terminal (if FALSE, all warnings will be printed in the console instead of the output document).
+* `message = TRUE`: whether to preserve messages emitted by message() in the final output document (similar to warning).
 * `results = "asis"`: output as-is, i.e., write raw results from R into the output document instead of LaTeX-formatted output. Another useful option for this option is "hide", which will hide the results, or all normal R output.
 
 
 ### Global options
 
-knitr allows for global options, which means choosing **options that apply to all code chunks in an RMarkdown file**. These will be the default options used for all the code chunks in the document, however they can also be modified for each individual code chunk if required.
+knitr allows for global options, which means choosing **options that apply to all code chunks in an RMarkdown file**. These will be the default options used for all the code chunks in the document, unless a modification is specified in an individual code chunk.
 
 Global options should be placed inside your `setup` code chunk. The **`setup` chunk is a special knitr chunk that should be placed at the start of the document**. We recommend storing all `library()` loads required for the script and other `load()` requests for external files here. 
 
@@ -153,9 +153,9 @@ ___
 
 1. Only some of the code chunks in the `.rmd` file have names; go through and **add names to the unnamed code chunks**.
 2. For the code chunk named `data-ordering` do the following:
-    - First, **add a new line of code** that displays a small part of the newly created `data_ordered` data frame using `head()`
-    - Next, **modify the options for (`{r data-ordering}`)** such that the output from the new line of code shows up in the report, but not the code
-3. Without removing the last code chunk (for boxplot) from the Rmd file, **modify its options** such that neither the code nor its output appear in the report
+    - First, **add a new line of code** to display first few rows of the newly created `data_ordered` data frame. You may use `head()` function here.
+    - Next, **modify the options for (`{r data-ordering}`)** such that in the knitted report, the output from the new line of code will show up, but the code is hidden.
+3. Without removing the last code chunk (`{r boxplot}`) from the Rmd file, **modify its options** such that neither the code nor its output appear in the report
 4. **knit the markdown** 
 
 [Answer Key](https://raw.githubusercontent.com/hbctraining/Training-modules/master/Rmarkdown/data/workshop-answer-activity2.Rmd)

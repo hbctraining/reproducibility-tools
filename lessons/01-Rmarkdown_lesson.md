@@ -154,7 +154,7 @@ ___
 1. Only some of the code chunks in the `.rmd` file have names; go through and **add names to the unnamed code chunks**.
 2. For the code chunk named `data-ordering` do the following:
     - First, **add a new line of code** to display first few rows of the newly created `data_ordered` data frame. You may use `head()` function here.
-    - Next, **modify the options for (`{r data-ordering}`)** such that in the knitted report, the output from the new line of code will show up, but the code is hidden.
+    - Next, **modify the options** for (`{r data-ordering}`) such that in the knitted report, the output from the new line of code will show up, but the code is hidden.
 3. Without removing the last code chunk (`{r boxplot}`) from the Rmd file, **modify its options** such that neither the code nor its output appear in the report
 4. **knit the markdown** 
 
@@ -164,7 +164,7 @@ ___
 
 ### Figures
 
-A neat feature of knitr is how much simpler it is to generate figures. For the most part, you don’t need to do anything. If a code chunk produces a figure, it will automatically be produced and inserted into the final document. A single chunk can support multiple plots, and they will be arranged in squares below the chunk in RStudio. There are a few code chunk options commonly used for plots. For example, to easily resize the figures in the final report you can specify the `fig.height` and `fig.width` of the figure when setting up the code chunk.
+A neat feature of knitr is how much simpler it is to generate figures. For the most part, you don’t need to do anything. If a code chunk produces a figure, it will automatically be produced and inserted into the final document. A single chunk can support multiple plots, and they will be arranged in squares below the chunk in RStudio. There are a few code chunk options commonly used for plots. For example, to easily resize the figures in the final report, you can specify the `fig.height` and `fig.width` of the figure when setting up the code chunk.
 
 <img src="../img/r-figure.png">
 
@@ -197,7 +197,7 @@ There are some other functions that allow for more powerful customization of tab
 
 Once we have finished creating an RMarkdown file, we finally need to knit the report. You can knit it by using the `knit()` function, or by just clicking on "knit" in the panel above the script as we had done in our first activity in this lesson. 
 
-> Note that when creating your own reports you might find yourself knitting the report periodically as you work through it, rather than just once at the end. 
+> Note that when creating your own reports, you might find yourself knitting the report periodically as you work through it, rather than just once at the end. 
 
 When executing `knit()` on a document, by default this will generate an HTML report. If you would prefer a different document format, this can be specified in the YAML header with the `output:` parameter. You can also click on the button in the panel above the script and click on "Knit" to get the various options as shown below:
 
@@ -211,12 +211,13 @@ ___
 
 #### Activity 4
 
-1. **Download the linked [R script](https://github.com/hbctraining/Training-modules/raw/master/Rmarkdown/Rscript.R)**
-2. **Download the linked [RData object](https://github.com/hbctraining/Training-modules/raw/master/Rmarkdown/data/Rmarkdown_data.Rdata)** by right-clicking and save to `data` folder.
-3. **Transform the R script into a new RMarkdown file** with the following specifications:
+1. **Download the linked [R script](https://github.com/hbctraining/Training-modules/raw/master/Rmarkdown/Rscript.R)** and save it within the `rmd_workshop` project directory.
+2. **Download the linked [RData object](https://github.com/hbctraining/Training-modules/raw/master/Rmarkdown/data/Rmarkdown_data.Rdata)** by right-clicking and save it to the `data` folder within the `rmd_workshop` project directory.
+3. Open the Rscript file, **transform the R script into a RMarkdown file** by clicking `File` -> `Rename`, and rename it as `Rscript.Rmd`. It is now a RMarkdown file.
+4. **Make modifications** with the following specifications:
     - Create an R chunk for all code underneath each `#` comment in the original R script
     - Comment on the plots (you may have to run the code from the R script to see the plots first)
-    - Add a floating table of contents
+    - Add a floating table of contents at the beginning (refer to this [instruction](https://bookdown.org/yihui/rmarkdown/html-document.html#floating-toc), and make sure indentation is properly used)
 4. **knit the markdown** 
 
 [Answer Key](https://raw.githubusercontent.com/hbctraining/Training-modules/master/Rmarkdown/data/workshop-answer-activity4.Rmd)
@@ -225,7 +226,7 @@ ___
 
 > **Note1: output formats**
 > 
-> RStudio supports a [number of formats](http://rmarkdown.rstudio.com/formats.html), each with their own customization options. Consult their website for more details.
+> RStudio supports a [number of formats](http://rmarkdown.rstudio.com/formats.html), each with their own customization options. Refer to their website for more details.
 > 
 > The `knit()` command works great if you only need to generate a single document format. RMarkdown also supports a more advanced function named `rmarkdown::render()`, allows for output of multiple document formats. To accomplish this, we recommend saving a special file named `_output.yaml` in your project root. Here's an example from our [bcbioRnaseq](https://github.com/hbc/bcbioRnaseq) package:
 >

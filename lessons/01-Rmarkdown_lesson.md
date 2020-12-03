@@ -69,11 +69,11 @@ In the console, you will see a flurry of text scrolling by. The text indicates p
 
 ## RMarkdown basics
 
-[Markdown](https://en.wikipedia.org/wiki/Markdown) is a lightweight markup language with plain-text-formatting syntax. It is often used for formatting readme files, for writing messages in online discussion forums, and to create rich text using a plain text editor. The Markdown language has been adopted by many different coding groups, and some have added their own "flavours". RStudio implements something called **"R-flavoured markdown" or "RMarkdown"** which has really nice features for text and code formatting as described below.
+[Markdown](https://en.wikipedia.org/wiki/Markdown) is a lightweight markup language with plain-text-formatting syntax. It is often used for formatting readme files, writing messages in online discussion forums, and creating rich text using a plain text editor. The Markdown language has been adopted by many different coding groups, and some have added their own "flavours". RStudio implements something called **"R-flavoured markdown"**, or **"RMarkdown"**, which has really nice features for text and code formatting as described below.
 
 ### Text
 
-The syntax to format the text portion of the report is relatively easy. You can easily get text that is **bolded**, *italicized*, ***bolded & italicized***. You can create "headers" and "sub-headers" by placing an "#" or "##" and so on in front of a line of text, generate numbered and bulleted lists, add hyperlinks to words or phrases, and so on.
+The syntax for formatting the text portion of the report is relatively easy. You can easily get text that is **bolded**, *italicized*, ***bolded & italicized***. You can create "headers" and "sub-headers" by placing an "#" or "##" and so on in front of a line of text, generate numbered and bulleted lists, add hyperlinks to words or phrases, and so on.
 
 Let's take a look at the syntax of how to do this in RMarkdown before we move on to formatting and adding code chunks:
 
@@ -87,12 +87,11 @@ You can also get more information about text formatting [here](http://rmarkdown.
 
 The basic idea behind RMarkdown is that you can describe your analysis workflow and provide interpretation of results in plain text, and intersperse chunks of R code within that document to tell a complete story using a single document. Code chunks in RMarkdown are delimited with a special marker (\`\`\`). Backticks (\`) commonly indicate a chunk of code. This syntax is also used for formatting text on [GitHub](https://github.com). 
 
-Each individual code chunk should be given a **unique** name. The name should be something meaningful, and we recommend using `snake_case` for the names whenever possible. 
+Each individual code chunk should be given a **unique** name. The name should be something meaningful, and we recommend using [snake_case](https://en.wikipedia.org/wiki/Snake_case) for the names whenever possible. 
 
 <img src="../img/code_chunk_example.png" width = "200">
 
-There is a handy `Insert` button within RStudio that allows for the insertion of an empty R chunk in your document. 
-
+There is a handy `Insert` button within RStudio that allows you to insert an empty R chunk in your document without having to type it yourself. 
 
 <p align="center">
 <img src="../img/rmd_chunk_insert_button.png" width = "400">
@@ -103,9 +102,9 @@ Alternatively, a keyboard shortcut is:
 * <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>i</kbd> **for PC users**
 * <kbd>Command</kbd> + <kbd>option</kbd> + <kbd>i</kbd> **for Mac users**
 
-Additionally, you can write inline R code enclosed by single backticks (\`) containing a lowercase `r` (like \`\`\` code chunks). This allows for variable returns outside of code chunks, and is extremely useful for making report text more dynamic. For example, you can print the current date inline within the report with this syntax: `` `r Sys.Date()` `` (no spaces).
+Additionally, you can write inline R code enclosed by single backticks (\`) containing a lowercase `r`. This allows for variable returns outside of code chunks, and is extremely useful for making report text more dynamic. For example, you can print the current date inline within the report with this syntax: `` `r Sys.Date()` ``. See how we implement this at the 4th line of code in `workshop-example.rmd` file.
 
-For the **final chunk in your analysis, it is recommended to run the `sessionInfo()`** function. This function will output the R version and the versions of all libraries loaded in the R environment. The versions of the tools used is important information for reproduction of your analysis in the future.
+For the **final chunk in your analysis, it is recommended to run the `sessionInfo()`** function. This function will output the R version and the versions of all libraries loaded in the R environment. Documenting the versions of the tools you used is important for reproduction of your analysis in the future.
 
 ___
 
@@ -113,7 +112,7 @@ ___
 
 1. Scroll down to the end of the `.rmd` document. **Add a new code chunk.** Within the code chunk place the code `sessionInfo()`.
 2. **Add a new section header** above the newly created code chunk. Use a title that best describes the output. Have this header be the same size as the "Project details" header.
-3. **Modify the `Author` and `Title`** parameters at the top of the script.
+3. **Modify the `author` and `title`** parameters at the top of the script.
 4. **knit the markdown**. 
 
 [Answer Key](https://raw.githubusercontent.com/hbctraining/Training-modules/master/Rmarkdown/data/workshop-answer-activity3.Rmd)

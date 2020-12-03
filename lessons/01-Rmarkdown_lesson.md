@@ -253,6 +253,11 @@ ___
 
 ***
 
+## Summary
+In this lesson, we learnt what is basic RMarkdown syntax, how to create code chunks, figures and tables, as well as how to generate report using `knitr` package. We also listed out some additional resources below for further study. Next time you work with R, start thinking about how RMarkdown could enhance your reproducibility research!
+
+***
+
 **Additional resources**
 ================
 

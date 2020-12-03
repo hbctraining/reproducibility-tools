@@ -48,15 +48,15 @@ Ready to get started?
 
 #### Exercise #1
 
-Before we delve into the details we will start with an activity to show you what an RMarkdown file (.Rmd extension) looks like and the resulting HTML report that can be generated from it by using the `knit()` function (which is part of the R [knitr package](https://yihui.name/knitr/)).
+Before we delve into the details, we will start with an activity to show you what an RMarkdown file (.Rmd extension) looks like, and how to generate the resulting HTML report using the `knit()` function (which is part of the R [knitr package](https://yihui.name/knitr/)).
 
-1. Open up RStudio and **create a new project** in a new directory called `rmd_workshop`.
-2. **Download [this RMarkdown file](https://raw.githubusercontent.com/hbctraining/Training-modules/master/Rmarkdown/data/workshop-example.Rmd)** by right-clicking on it and saving it within the `rmd_workshop` project directory.
+1. Open up RStudio and **create a new project** in a new directory called `rmd_workshop`. Remember the location in computer where you create this project.
+2. **Right click [this RMarkdown file](https://raw.githubusercontent.com/hbctraining/Training-modules/master/Rmarkdown/data/workshop-example.Rmd)**. Download it (using **Save Link As**) and place it within the `rmd_workshop` project directory.
 3. **Download and uncompress [this data folder](../data/data.zip?raw=true)** within the `rmd_workshop` project directory.
 4. **Open the .rmd file** in RStudio.
 5. **knit the markdown** by clicking on the `Knit` button located at the top of your script editor pane.
 
-In the console you will see a flurry of text scroll by. This is each code chunk being executed. Once the document is finished 'knitting', a new window will open up presenting you with the HTML report that was generated. Scroll through it and take note of what you see.
+In the console, you will see a flurry of text scrolling by. The text indicates progress while each code chunk is being executed. Once the document is finished 'knitting', a new window will be automatically opening up with the HTML report that was just generated. Scroll through it and take note of what you see.
 
 > **NOTE**: If you run into an error when knitting the markdown, make sure your data structure is set properly as shown below:
 > - The `data` folder should be in the same directory as `workshop-example.rmd` file

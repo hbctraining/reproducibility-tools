@@ -26,7 +26,7 @@ When you do lab work, you use lab notebooks to organize your methods, results, a
 
 Creating the "gold standard" code is not always easy depending on what programming language you are using. For analyses within R, RStudio helps facilitate reproducible research with the use of R scripts, which document all code used to perform a particular analysis. However, we often don't save the version of the tools we use in a script, nor do we include or interpret the results of the analyses within the script.
 
-In the first part of this workshop we will be learning about **[R Markdown](https://rmarkdown.rstudio.com/)**. R Markdown is a file format in its most basic form, that can eventually be converted into a shareable document, e.g HTML, PDF and many others. It allows you to document not just your R (Python and SQL) code, but also enables the inclusion of tables, figures, along with descriptive text. **Thus resulting in a final document that has the methods, the code and interpretation of results all in a single document!** 
+In the first part of this workshop we will be learning about **[RMarkdown](https://rmarkdown.rstudio.com/)**. RMarkdown is a file format in its most basic form, that can eventually be converted into a shareable document, e.g HTML, PDF and many others. It allows you to document not just your R (Python and SQL) code, but also enables the inclusion of tables, figures, along with descriptive text. **Thus resulting in a final document that has the methods, the code and interpretation of results all in a single document!** 
 
 To elaborate, you write a file using the **Markdown language** and within it **embed executable R code chunks**. The code chunks are paired with **knitr syntax**, so that once your document is complete, you can easily convert it into one of several common formats (i.e. HTML, PDF, PPT) for sharing or documentation.
 
@@ -57,11 +57,11 @@ Before we delve into the details, we will start with an activity to show you wha
 
 In the console, you will see a flurry of text scrolling by. The text indicates progress while each code chunk is being executed. Once the document is finished 'knitting', a new window will be automatically opening up with the HTML report that was just generated. Scroll through it and take note of what you see.
 
-> **NOTE**: If you run into an error when knitting the markdown, make sure your data structure is set properly as shown below:
+> **NOTE**: If you run into an error when knitting the markdown, make sure the directory structure of the `rmd_workshop` project is set properly as shown below:
 > - The `data` folder should be in the same directory as `workshop-example.rmd` file
 > - Two files (`counts.rpkm.csv` and `mouse_exp_design.csv`) are located inside the `data` folder
 > <p align="center">
-> <img src="../img/workingDir_screenshot.png" width="300">
+> <img src="../img/workingDir_screenshot.png" width="450">
 > </p>
 
 ---

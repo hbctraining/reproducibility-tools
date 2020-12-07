@@ -19,10 +19,8 @@ Reproducibility is an integral part of high-quality research, and it is the case
 **[Click here](schedule) for links to lessons and the suggested schedule**
 
 ### Preparation Requirements
-
 #### GitKraken
 Please [download and install GitKraken](https://gitkraken.com/download)
-
 #### Github account
 Create an account for yourself on [GitHub](https://github.com/). Please be sure to select the free/academic account, as this option has more long-term flexibility.
 

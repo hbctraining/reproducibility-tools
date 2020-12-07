@@ -2,29 +2,29 @@
 
 | Audience | Computational skills required | Duration |
 :----------|:-------------|:----------|
-| Biologists | Basic R | 1.5-day workshop (~9 hours of trainer-led time)|
+| Biologists | Basic R | 1.5-day workshop (~ 9 hours of trainer-led time)|
 
 ### Description
 
-
+Reproducibility is an integral part of high-quality research, and it is the case for computational work as well. In bioinformatics, good reproducible work is critical for result interpretation, code sharing and project collaboration. This online hands-on workshop will instruct participants on several best practices for reproducible research in Bioinformatics, and introduce the use of RMarkdown, Git version control and Github. To attend this workshop, working knowledge of R or completion of the [Introduction to R workshop](https://hbctraining.github.io/Intro-to-R/) is required.
 > These materials were developed for a trainer-led workshop, but are also amenable to self-guided learning.
 
 ### Learning Objectives
 
-1.	
+- How to generate reports for your analyses using RMarkdown 
+- How to track changes as you work on files using a version control system called Git (GitKraken tool)
+- How to collaborate effectively, and disseminate code & other documents using Github
 
 ### Lessons
 **[Click here](schedule) for links to lessons and the suggested schedule**
 
-### Installation Requirements
+### Preparation Requirements
 
+#### GitKraken
+Please [download and install GitKraken](https://gitkraken.com/download)
 
-### Dataset
-
-
-### Citation
-
-Adapted from ...
+#### Github account
+Create an account for yourself on [GitHub](https://github.com/). Please be sure to select the free/academic account, as this option has more long-term flexibility.
 
 ***
 *These materials have been developed by members of the teaching team at the [Harvard Chan Bioinformatics Core (HBC)](http://bioinformatics.sph.harvard.edu/). These are open access materials distributed under the terms of the [Creative Commons Attribution license](https://creativecommons.org/licenses/by/4.0/) (CC BY 4.0), which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.*

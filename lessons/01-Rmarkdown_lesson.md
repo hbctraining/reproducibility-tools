@@ -45,7 +45,7 @@ Ready to get started?
 
 ---
 
-#### Exercise #1
+#### Exercise #1: Knit an RMarkdown file to generate an HTML document
 
 Before we delve into the details, we will start with an activity to show you what an RMarkdown file (.Rmd extension) looks like, and how to generate the resulting HTML report using the `knit()` function (which is part of the R [knitr package](https://yihui.name/knitr/)).
 
@@ -68,7 +68,9 @@ In the console, you will see a flurry of text scrolling by. The text indicates p
 
 ## RMarkdown basics
 
-[Markdown](https://en.wikipedia.org/wiki/Markdown) is a lightweight markup language with plain-text-formatting syntax. It is often used for formatting readme files, writing messages in online discussion forums, and creating rich text using a plain text editor. The Markdown language has been adopted by many different coding groups, and some have added their own "flavours". RStudio implements something called **"R-flavoured markdown"**, or **"RMarkdown"**, which has really nice features for text and code formatting as described below.
+[Markdown](https://en.wikipedia.org/wiki/Markdown) is a lightweight markup language with **plain-text-formatting syntax**. It is often used for formatting README files, writing messages in online discussion forums, and creating *rich text* documents using a plain text editor. The Markdown language has been adopted by many different coding groups, and some have added their own "flavours". RStudio implements an **"R-flavoured markdown"**, or **"RMarkdown"**, which has really nice features for text and code formatting.
+
+> As we learn about Markdown and RMarkdown, it is important to distinguish between *plain text* and *rich text*. Simply put, plain text is the most basic representation of characters, with no attached stylings like font type, font size, color etc.
 
 ### Text
 
@@ -80,7 +82,13 @@ Let's take a look at the syntax of how to do this in RMarkdown before we move on
 <img src="../img/rmd-syntax.png" width="650">
 </p>
 
-You can also get more information about text formatting [here](http://rmarkdown.rstudio.com/lesson-1.html) and [here](http://rmarkdown.rstudio.com/authoring_basics.html).
+You can also get more information about Markdown formatting [here](http://rmarkdown.rstudio.com/lesson-1.html) and [here](http://rmarkdown.rstudio.com/authoring_basics.html).
+
+> Fun fact! These lessons, and the schedule page were created using basic Markdown format (not R Markdown).
+> Here's an example:
+> <p align="center">
+> <img src="../img/markdown_example.png" width="600">
+> </p>
 
 ### Code chunks
 
@@ -107,9 +115,9 @@ For the **final chunk in your analysis, it is recommended to run the `sessionInf
 
 ___
 
-#### Exercise #2 
+#### Exercise #2: Make additions to the Rmd file for a more complete report!
 
-1. Scroll down to the end of the `.rmd` document. **Add a new code chunk.** Within the code chunk place the code `sessionInfo()`.
+1. Scroll down to the end of the `workshop-example.Rmd` document. **Add a new code chunk.** Within the code chunk place the code `sessionInfo()`.
 2. **Add a new section header** above the newly created code chunk. Use a title that best describes the output. Have this header be the same size as the "Project details" header.
 3. **Modify the `author` and `title`** parameters at the top of the script.
 4. **knit the markdown**. 

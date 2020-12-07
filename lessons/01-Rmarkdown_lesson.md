@@ -6,20 +6,20 @@ author: Michael J. Steinbaugh, Meeta Mistry, Radhika Khetani, Jihe Liu
 
 ## Learning Objectives
 
-* Understanding the need for reproducible research 
-* Exploring the benefits of RMarkdown reports in the context of reproducibility
+* Describe the need for reproducible research 
+* Create RMarkdown reports for sharing analysis methods, code and results
 
 ## Making your research reproducible
  
-For any scientific experiment, it is critical to have it be reproducible. That is, if one were to use the same materials and methods of the original researcher, they would reach the same end results. Having your work be reproducible validates the correctness and the quality of your findings.
+We have already made a case about reproducibility in the introduction to this workshop. In this lesson we will focus on one of the tools to enable and empower you to perform analysis reproducibly. 
 
-For laboratory work, lab notebooks allow us to organize our methods, results, and conclusions for future retrieval and reproduction. These notebooks are then converted into a more concise experimental description outlined in the Methods sections of journals. Computational analysis requires the same diligence. In theory, the equivalent of a lab notebook for computational work would be a detailed log of every action taken by the computer, with a note of the versions of the software being used.
+When you do lab work, you use lab notebooks to organize your methods, results, and conclusions for future retrieval and reproduction. The information in these notebooks is converted into a more concise experimental description for the Methods section when publishing the results. Computational analysis requires the same diligence! The equivalent of a lab notebook for computational work is a detailed log of the workflow used, the tools at each step, the parameters for those tools and last, but not least, the versions of the tools. 
 
-In a [*Science Perspective* article from 2011](https://doi.org/10.1126/science.1213847), Roger Peng describes a reproducibility spectrum. He states that "a study may be more or less reproducible than another depending on what data and code are made available." On the one end of the spectrum you have the publication describing your work; on its own it is not deemed reproducible. Making code and data available enhances the reproducibility. But the big leap towards full reproduction is achieved with complete documentation of the analysis in a transparent fashion, and by providing code that is executable.
+**Reproducibility spectrum for any computational work**
 
 <p align="center">
 <img src="../img/reproducibility.jpg" width="800">
- </p>
+</p>
 
 *Image source: Peng 2011 https://doi.org/10.1126/science.1213847*
 
@@ -28,19 +28,20 @@ In a [*Science Perspective* article from 2011](https://doi.org/10.1126/science.1
 
 Creating the "gold standard" code is not always easy depending on what programming language you are using. For analyses within R, RStudio helps facilitate reproducible research with the use of R scripts, which document all code used to perform a particular analysis. However, we often don't save the version of the tools we use in a script, nor do we include or interpret the results of the analyses within the script.
 
-RMarkdown is a file format that allows you to save/share your R code with collaborators along with tables, figures, and text describing results and interpretation all in a single document!
+In the first part of this workshop we will be learning about **[R Markdown](https://rmarkdown.rstudio.com/)**. R Markdown is a file format in its most basic form, that can eventually be converted into a shareable document, e.g HTML, PDF and many others. It allows you to document not just your R (Python and SQL) code, but also enables the inclusion of tables, figures, along with descriptive text. **Thus resulting in a final document that has the methods,the code and interpretation of results all in a single document!** 
 
-RMarkdown documents provide quick, reproducible reporting from R. You write your document using the **Markdown language** and within it **embed executable R code chunks**. The code chunks are paired with **knitr syntax**, so that once your document is complete, you can easily convert it into one of several common formats (i.e. HTML, PDF, PPT).
+To elaborate, you write a file using the **Markdown language** and within it **embed executable R code chunks**. The code chunks are paired with **knitr syntax**, so that once your document is complete, you can easily convert it into one of several common formats (i.e. HTML, PDF, PPT) for sharing or documentation.
+
 
 <p align="center">
 <img src="../img/rmarkdown_workflow.png" width="500">
- </p>
+</p>
 
 *Image source: [Applied R code](http://applied-r.com/project-reporting-template/)*
 
-Wait, what? 
+***Wait, what?*** 
 
-Did most of that last paragraph seem like a foreign language to you? Don't worry, **the goal of this lesson is to cover each of those concepts in much more detail**! By the end of the lesson, you can come back to that paragraph and the workflow image above and will know exactly what it means.
+Did most of that last paragraph and the workflow image seem like they were written in a foreign language? Don't worry, **the goal of this lesson is to cover each of those concepts in much more detail**! By the end of the lesson, you can come back to that paragraph and the workflow image above and will know exactly what it means.
 
 Ready to get started?
 

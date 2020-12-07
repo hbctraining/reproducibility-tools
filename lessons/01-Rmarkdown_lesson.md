@@ -15,8 +15,6 @@ We have already made a case about reproducibility in the introduction to this wo
 
 When you do lab work, you use lab notebooks to organize your methods, results, and conclusions for future retrieval and reproduction. The information in these notebooks is converted into a more concise experimental description for the Methods section when publishing the results. Computational analysis requires the same diligence! The equivalent of a lab notebook for computational work is a detailed log of the workflow used, the tools at each step, the parameters for those tools and last, but not least, the versions of the tools. 
 
-**Reproducibility spectrum for any computational work**
-
 <p align="center">
 <img src="../img/reproducibility.jpg" width="800">
 </p>

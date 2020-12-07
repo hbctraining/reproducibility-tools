@@ -55,7 +55,7 @@ Before we delve into the details, we will start with an activity to show you wha
 4. **Open the .rmd file** in RStudio.
 5. **knit the markdown** by clicking on the `Knit` button located at the top of your script editor pane.
 
-In the console, you will see a flurry of text scrolling by. The text indicates progress while each code chunk is being executed. Once the document is finished 'knitting', a new window will be automatically opening up with the HTML report that was just generated. Scroll through it and take note of what you see.
+In the console, you will see a flurry of text scrolling by. The text indicates progress while each code chunk is being executed. Once the document is finished 'knitting', a new window will be automatically opening up with the HTML report that was just generated. Take a look at the HTML file that is output and compare it to the "raw" `workshop-example.Rmd` file that you *knit*.
 
 > **NOTE**: If you run into an error when knitting the markdown, make sure the directory structure of the `rmd_workshop` project is set properly as shown below:
 > - The `data` folder should be in the same directory as `workshop-example.rmd` file

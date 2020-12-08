@@ -86,7 +86,7 @@ output: html_document
 ---
 ```
 
-This section has information listed in [YAML format](https://yaml.org/), and is usually used to specify title, author and other basic **configuration** information associated with the file, including the required output. In this case we have a date specified using the R `Sys.Date()` function, and we want the output to be in html format. You can find detailed information about specifications that can be made in this section on [this webpage](https://bookdown.org/yihui/rmarkdown/html-document.html).
+This section has information listed in [YAML format](https://yaml.org/), and is usually used to specify metadata (title, author) and basic **configuration** information (output format) associated with the file. You can find detailed information about specifications that can be made in this section on [this webpage](https://bookdown.org/yihui/rmarkdown/html-document.html).
 
 **2. Descriptive text**
 
@@ -117,7 +117,7 @@ You can also get more information about Markdown formatting [here](http://rmarkd
 
 **3. Code chunks**
 
-<img src="../img/code_chunk_example2.png" width = "300">
+<img src="../img/code_chunk_example2.png" width = "350">
 
 The basic idea behind RMarkdown is that you can describe your analysis workflow and provide interpretation of results in plain text, and intersperse chunks of R code within that document to tell a complete story using a single document. Code chunks in RMarkdown are delimited with a special marker (\`\`\`). Backticks (\`) commonly indicate a chunk of code. This syntax is also used for formatting text on [GitHub](https://github.com). 
 
@@ -145,7 +145,7 @@ ___
 1. Scroll down to the end of the `workshop-example.Rmd` document. **Add a new code chunk.** Within the code chunk place the code `sessionInfo()`.
 2. **Add a new section header** above the newly created code chunk. Use a title that best describes the output. Have this header be the same size as the "Project details" header.
 3. **Modify the `author` and `title`** parameters at the top of the script.
-4. **knit the markdown**. 
+4. **Knit the markdown**. 
 
 [Answer Key](https://raw.githubusercontent.com/hbctraining/Training-modules/master/Rmarkdown/data/workshop-answer-activity3.Rmd)
 

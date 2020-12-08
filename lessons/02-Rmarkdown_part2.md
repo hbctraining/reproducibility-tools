@@ -53,7 +53,7 @@ ___
 
 ___
 
-### Adding figures
+## Adding figures
 
 A neat feature of knitr is how much simpler it is to generate and add figures to a report! For the most part, you don’t need to do anything special, just add a code chunk that generates a figure. When the file is knit, the figure will automatically be produced and inserted into the final document. A single chunk can support multiple plots, and they will be appear one after the other below the chunk. 
 
@@ -63,7 +63,7 @@ There are a few code chunk options commonly used for plots. For example, to easi
 
 In addition to displaying it in the report, you can also have `knitr` automatically write the files to a subfolder by using the code chunk option `dev`.
 
-### Adding tables
+## Adding tables
 
 `knitr` includes a simple but powerful function for generating stylish tables in a knit report named `kable()`. Here's an example using R's built-in `mtcars` dataset:
 
@@ -84,6 +84,12 @@ mtcars %>%
 | Valiant           |  18.1|    6|   225|  105|  2.76|  3.460|  20.22|    1|    0|     3|     1|
 
 There are some other functions that allow for more powerful customization of tables, including `pander::pander()` and `xtable::xtable()`, but the simplicity and cross-platform reliability of `knitr::kable()` makes it an easy pick.
+
+## Working directory behavior
+
+`knitr` redefines the working directory of an RMarkdown file in a manner that can be confusing. Make sure that any paths to files specified in the RMarkdown document is relative to its location, and not relative to your current working directory.
+
+A simple way to make sure that the paths are not an issue is by creating an R project for the analysis, and saving all RMarkdown files at the top level and referring to the data and output files within the project directory. This will prevent unexpected problems related to this behavior.
 
 ***
 

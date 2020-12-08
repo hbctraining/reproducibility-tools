@@ -45,7 +45,7 @@ Ready to get started?
 
 ---
 
-#### Exercise #1: Knit an RMarkdown file to generate an HTML document
+### Exercise #1: Knit an RMarkdown file to generate an HTML document
 
 Before we delve into the details, we will start with an activity to show you what an RMarkdown file (.Rmd extension) looks like, and how to generate the resulting HTML report using the `knit()` function (which is part of the R [knitr package](https://yihui.name/knitr/)).
 
@@ -55,7 +55,9 @@ Before we delve into the details, we will start with an activity to show you wha
 4. **Open the .rmd file** in RStudio.
 5. **knit the markdown** by clicking on the `Knit` button located at the top of your script editor pane.
 
-In the console, you will see a flurry of text scrolling by. The text indicates progress while each code chunk is being executed. Once the document is finished 'knitting', a new window will be automatically opening up with the HTML report that was just generated. Take a look at the HTML file that is output and compare it to the "raw" `workshop-example.Rmd` file that you *knit*.
+<img src="../img/r-knit-button.png">
+
+In the console, you will see a flurry of text scrolling by. The text indicates progress while each code chunk is being executed. Once the document is finished 'knitting', a new window will be automatically opening up with the HTML report that was just generated. 
 
 > **NOTE**: If you run into an error when knitting the markdown, make sure the directory structure of the `rmd_workshop` project is set properly as shown below:
 > - The `data` folder should be in the same directory as `workshop-example.rmd` file
@@ -70,13 +72,36 @@ In the console, you will see a flurry of text scrolling by. The text indicates p
 
 [Markdown](https://en.wikipedia.org/wiki/Markdown) is a lightweight markup language with **plain-text-formatting syntax**. It is often used for formatting README files, writing messages in online discussion forums, and creating *rich text* documents using a plain text editor. The Markdown language has been adopted by many different coding groups, and some have added their own "flavours". RStudio implements an **"R-flavoured markdown"**, or **"RMarkdown"**, which has really nice features for text and code formatting.
 
-> As we learn about Markdown and RMarkdown, it is important to distinguish between *plain text* and *rich text*. Simply put, plain text is the most basic representation of characters, with no attached stylings like font type, font size, color etc.
+### Components of a `.Rmd` file
 
-### Text
+Let's take a closer look at the "raw" `workshop-example.Rmd` file and understand the components therein.
+
+**1. A file header in YAML format**
+```
+---
+title: "Workshop Rmd example"
+author: "HBC Training Team"
+date: "`r Sys.Date()`"
+output: html_document
+---
+```
+
+This section has information listed in [YAML format](https://yaml.org/), and is usually used to specify title, author and other basic **configuration** information associated with the file, including the required output. In this case we have a date specified using the R `Sys.Date()` function, and we want the output to be in html format. You can find detailed information about specifications that can be made in this section on [this webpage](https://bookdown.org/yihui/rmarkdown/html-document.html).
+
+**2. Descriptive text**
+
+```
+## Project details
+In this example report we are using a *toy dataset* to determine the impact of age, genotype and cell type on the average gene expression in mice. This toy study has 12 mice from **2 genotypes** (KO and Wt) and **2 cell types** (typeA and typeB). 
+
+## Setup
+
+### Load Libraries
+```
 
 The syntax for formatting the text portion of the report is relatively easy. You can easily get text that is **bolded**, *italicized*, ***bolded & italicized***. You can create "headers" and "sub-headers" by placing an "#" or "##" and so on in front of a line of text, generate numbered and bulleted lists, add hyperlinks to words or phrases, and so on.
 
-Let's take a look at the syntax of how to do this in RMarkdown before we move on to formatting and adding code chunks:
+Let's take a look at the syntax of how to do this in RMarkdown:
 
 <p align="center">
 <img src="../img/rmd-syntax.png" width="650">
@@ -90,28 +115,28 @@ You can also get more information about Markdown formatting [here](http://rmarkd
 > <img src="../img/markdown_example.png" width="600">
 > </p>
 
-### Code chunks
+**3. Code chunks**
+
+<img src="../img/code_chunk_example2.png" width = "300">
 
 The basic idea behind RMarkdown is that you can describe your analysis workflow and provide interpretation of results in plain text, and intersperse chunks of R code within that document to tell a complete story using a single document. Code chunks in RMarkdown are delimited with a special marker (\`\`\`). Backticks (\`) commonly indicate a chunk of code. This syntax is also used for formatting text on [GitHub](https://github.com). 
 
 Each individual code chunk should be given a **unique** name. The name should be something meaningful, and we recommend using [snake_case](https://en.wikipedia.org/wiki/Snake_case) for the names whenever possible. 
 
-<img src="../img/code_chunk_example.png" width = "200">
-
-There is a handy `Insert` button within RStudio that allows you to insert an empty R chunk in your document without having to type it yourself. 
+There is a handy `Insert` button within RStudio that allows you to insert an empty R chunk in your document without having to type the backticks etc. yourself. 
 
 <p align="center">
 <img src="../img/rmd_chunk_insert_button.png" width = "400">
 </p>
 
-Alternatively, a keyboard shortcut is:
+Alternatively, there are keyboard shortcuts available as well.
 
 * <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>i</kbd> **for PC users**
 * <kbd>Command</kbd> + <kbd>option</kbd> + <kbd>i</kbd> **for Mac users**
 
-Additionally, you can write inline R code enclosed by single backticks (\`) containing a lowercase `r`. This allows for variable returns outside of code chunks, and is extremely useful for making report text more dynamic. For example, you can print the current date inline within the report with this syntax: `` `r Sys.Date()` ``. See how we implement this at the 4th line of code in `workshop-example.rmd` file.
+Finally, you can write inline R code enclosed by single backticks (\`) containing a lowercase `r`. This allows for variable returns outside of code chunks, and is extremely useful for making report text more dynamic. For example, you can print the current date inline within the report with this syntax: `` `r Sys.Date()` ``. See how we implement this in the YAML header.
 
-For the **final chunk in your analysis, it is recommended to run the `sessionInfo()`** function. This function will output the R version and the versions of all libraries loaded in the R environment. Documenting the versions of the tools you used is important for reproduction of your analysis in the future.
+For the **final code chunk in your analysis, it is recommended to run the `sessionInfo()`** function. This function will output the R version and the versions of all libraries loaded in the R environment. Documenting the versions of the tools you used is important for reproduction of your analysis in the future.
 
 ___
 
@@ -123,20 +148,6 @@ ___
 4. **knit the markdown**. 
 
 [Answer Key](https://raw.githubusercontent.com/hbctraining/Training-modules/master/Rmarkdown/data/workshop-answer-activity3.Rmd)
-
-
-## Summary
-In this lesson, we learnt what is basic RMarkdown syntax, how to create code chunks, figures and tables, as well as how to generate report using `knitr` package. We also listed out some additional resources below for further study. Next time you work with R, start thinking about how RMarkdown could enhance your reproducibility research!
-
-***
-
-**Additional resources**
-================
-
--   [knitr in a knutshell](http://kbroman.org/knitr_knutshell/)
--   [knitr book](https://www.amazon.com/gp/product/1498716962)
--   [knitr examples](https://yihui.name/knitr/demos)
--   [knitr vignettes](https://github.com/yihui/knitr/tree/master/vignettes)
 
 ***
 

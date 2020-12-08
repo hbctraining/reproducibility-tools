@@ -12,9 +12,9 @@ author: Michael J. Steinbaugh, Meeta Mistry, Radhika Khetani, Jihe Liu
 
 ## So many options for code chunks!
 
-By this point, we have mentioned the word "knit" quite a few times, and you have installed the `knitr` package too. But, we have not yet fully defined what it is. [knitr](https://yihui.name/knitr/) is an R package, developed by [Yihui Xie](https://yihui.name), designed to generate reports within RStudio. 
+There are By this point, we have mentioned the word "knit" quite a few times, and you have installed the `knitr` package too. But, we have not yet fully defined what it is. [knitr](https://yihui.name/knitr/) is an R package, developed by [Yihui Xie](https://yihui.name), designed to convert RMArkdown and a couple of other formats into a final report in HTML or PDF or other formats. 
 
-The knitr package provides a lot of customization options for code chunks, which determine what information is written to the output file. These options are written in the form of `tag=value`.
+The knitr package provides a lot of customization options for code chunks embedded within the file. These options are written in the form of `tag=value`.
 
 <img src="../img/r-chunkoptions.png">
 
@@ -30,9 +30,9 @@ There is a [comprehensive list](https://yihui.org/knitr/options/) of all the ava
 
 ### Global options
 
-knitr allows for global options, which means choosing **options that apply to all code chunks in an RMarkdown file**. These will be the default options used for all the code chunks in the document, unless a modification is specified in an individual code chunk.
+`knitr` also allows for global options, which means choosing **options that apply to all code chunks in an RMarkdown file**. These will be the default options used for all the code chunks in the document, unless a modification is specified in an individual code chunk.
 
-Global options should be placed inside your `setup` code chunk. The **`setup` chunk is a special knitr chunk that should be placed at the start of the document**. We recommend storing all `library()` loads required for the script and other `load()` requests for external files here. 
+Global options should be placed inside your `setup` code chunk. The **`setup` chunk is a special knitr chunk that should be placed at the start of the document**. We recommend storing all `library()` loads required for the script in this `setup` chunk too! 
 
 <img src="../img/setup_chunk2.png" width="500">
 
@@ -46,7 +46,7 @@ ___
 2. For the code chunk named `data-ordering` do the following:
     - First, **add a new line of code** to display first few rows of the newly created `data_ordered` data frame. You may use `head()` function here.
     - Next, **modify the options** for (`{r data-ordering}`) such that in the knitted report, the output from the new line of code will show up, but the code is hidden.
-3. Without removing the last code chunk (`{r boxplot}`) from the Rmd file, **modify its options** such that neither the code nor its output appear in the report
+3. Without removing the second-to-last code chunk (`{r boxplot}`) from the Rmd file, **modify its options** such that neither the code nor its output appear in the report
 4. **knit the markdown** 
 
 [Answer Key](https://raw.githubusercontent.com/hbctraining/Training-modules/master/Rmarkdown/data/workshop-answer-activity2.Rmd)
@@ -55,15 +55,17 @@ ___
 
 ### Figures
 
-A neat feature of knitr is how much simpler it is to generate figures. For the most part, you don’t need to do anything. If a code chunk produces a figure, it will automatically be produced and inserted into the final document. A single chunk can support multiple plots, and they will be arranged in squares below the chunk in RStudio. There are a few code chunk options commonly used for plots. For example, to easily resize the figures in the final report, you can specify the `fig.height` and `fig.width` of the figure when setting up the code chunk.
+A neat feature of knitr is how much simpler it is to generate and add figures to a report! For the most part, you don’t need to do anything special, just add a code chunk that generates a figure. When the file is knit, the figure will automatically be produced and inserted into the final document. A single chunk can support multiple plots, and they will be appear one after the other below the chunk. 
+
+There are a few code chunk options commonly used for plots. For example, to easily resize the figures in the final report, you can specify the `fig.height` and `fig.width` of the figure when setting up the code chunk.
 
 <img src="../img/r-figure.png">
 
-You can simply return a plot in a chunk, and also have knitr automatically write the files to disk, in an organized subfolder. Using the `dev` option you are able to specify the desired filetype for your image file, including PNG, PDF, and SVG. 
+In addition to displaying it in the report, you can also have `knitr` automatically write the files to a subfolder by using the code chunk option `dev`.
 
 ### Tables
 
-knitr includes a simple but powerful function for generating stylish tables in a knit report named `kable()`. Here's an example using R's built-in `mtcars` dataset:
+`knitr` includes a simple but powerful function for generating stylish tables in a knit report named `kable()`. Here's an example using R's built-in `mtcars` dataset:
 
 ```r
 help("kable", "knitr")
@@ -82,7 +84,6 @@ mtcars %>%
 | Valiant           |  18.1|    6|   225|  105|  2.76|  3.460|  20.22|    1|    0|     3|     1|
 
 There are some other functions that allow for more powerful customization of tables, including `pander::pander()` and `xtable::xtable()`, but the simplicity and cross-platform reliability of `knitr::kable()` makes it an easy pick.
-
 
 ### Generating the report
 

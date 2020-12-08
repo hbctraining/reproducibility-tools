@@ -99,7 +99,7 @@ In this example report we are using a *toy dataset* to determine the impact of a
 ### Load Libraries
 ```
 
-The syntax for formatting the text portion of the report is relatively easy. You can easily get text that is **bolded**, *italicized*, ***bolded & italicized***. You can create "headers" and "sub-headers" by placing an "#" or "##" and so on in front of a line of text, generate numbered and bulleted lists, add hyperlinks to words or phrases, and so on.
+The syntax for formatting the text portion of the report is relatively easy. You can easily get text that is **bolded**, *italicized*, ***bolded & italicized***. You can create "headers" and "sub-headers" to organize the information by placing an "#" or "##" and so on in front of a line of text, generate numbered and bulleted lists, add hyperlinks to words or phrases, and so on.
 
 Let's take a look at the syntax of how to do this in RMarkdown:
 
@@ -144,7 +144,7 @@ ___
 
 1. Scroll down to the end of the `workshop-example.Rmd` document. **Add a new code chunk.** Within the code chunk place the code `sessionInfo()`.
 2. **Add a new section header** above the newly created code chunk. Use a title that best describes the output. Have this header be the same size as the "Project details" header.
-3. **Modify the `author` and `title`** parameters at the top of the script.
+3. **Modify the `author` and `title`** parameters at the top of the script to have your name and your chosen title
 4. **Knit the markdown**. 
 
 [Answer Key](https://raw.githubusercontent.com/hbctraining/Training-modules/master/Rmarkdown/data/workshop-answer-activity3.Rmd)

@@ -72,6 +72,8 @@ In the console, you will see a flurry of text scrolling by. The text indicates p
 
 [Markdown](https://en.wikipedia.org/wiki/Markdown) is a lightweight markup language with **plain-text-formatting syntax**. It is often used for formatting README files, writing messages in online discussion forums, and creating *rich text* documents using a plain text editor. The Markdown language has been adopted by many different coding groups, and some have added their own "flavours". RStudio implements an **"R-flavoured markdown"**, or **"RMarkdown"**, which has really nice features for text and code formatting.
 
+> The [RStudio cheatsheet for Rmarkdown](https://github.com/rstudio/cheatsheets/blob/master/rmarkdown-2.0.pdf) is quite daunting, but includes more advanced Rmarkdown options that may be helpful as you become familiar with report generation, including options for adding interactive plots RShiny.
+
 ### Components of a `.Rmd` file
 
 Let's take a closer look at the "raw" `workshop-example.Rmd` file and understand the components therein.
@@ -137,6 +139,16 @@ Alternatively, there are keyboard shortcuts available as well.
 Finally, you can write inline R code enclosed by single backticks (\`) containing a lowercase `r`. This allows for variable returns outside of code chunks, and is extremely useful for making report text more dynamic. For example, you can print the current date inline within the report with this syntax: `` `r Sys.Date()` ``. See how we implement this in the YAML header.
 
 For the **final code chunk in your analysis, it is recommended to run the `sessionInfo()`** function. This function will output the R version and the versions of all libraries loaded in the R environment. Documenting the versions of the tools you used is important for reproduction of your analysis in the future.
+
+### Generating the report
+
+Once we have finished creating an RMarkdown file, we finally need to "knit" the report. You can knit the files by using the `knit()` function, or by just clicking on "knit" in the panel above the script as we had done in our first activity in this lesson. 
+
+> Note that when creating your own reports, you will very likely find yourself knitting the report periodically as you work through rather than just once at the end. It is an iterative process usually since you may have to turn off warnings, or if you decide you need a figure to be larger/smaller, or updating the descriptive text in the document to be informative (for others and your future self).
+
+When you click on the "knit" button, by default an HTML report will be generated. If you would prefer a different document format, this can be specified in the YAML header with the `output:` parameter as discussed above, or you can also click on the button in the panel above the script and click on "Knit" to get the various options as shown in the image under the 5th part of the exercise above.
+
+> **Note**: *PDF rendering is sometimes problematic, especially when running R remotely, like on the cluster. If you run into problems, it's likely an issue related to [pandoc](http://pandoc.org).*
 
 ___
 

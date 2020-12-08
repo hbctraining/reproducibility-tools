@@ -12,7 +12,7 @@
 
 ### Assignment #1
 
-* [Activity 4l](../activities/Rmd_exercise4.md)
+* [Activity 4](../activities/Rmd_exercise4.md)
 * Upload the requested files to [Dropbox](https://www.dropbox.com/request/d7ypnDNbv0xtaL5UuMoU) **day before the next class**.
 * [Email us](mailto:hbctraining@hsph.harvard.edu) about questions that you need answered to work through the exercise.
 * Post questions that you would like to have reviewed in class [here](https://PollEv.com/hbctraining945).

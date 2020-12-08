@@ -10,11 +10,11 @@ author: Michael J. Steinbaugh, Meeta Mistry, Radhika Khetani, Jihe Liu
 * Describe how to specify the output format for RMarkdown
 
 
-## Not all code chunks need to be equal
+## More about Code chunks
 
-By this point, we have mentioned the word "knit" quite a few times, and you have installed the `knitr` package too. But, we have not yet fully defined what it is. [knitr](https://yihui.name/knitr/) is an R package, developed by [Yihui Xie](https://yihui.name), designed to convert RMArkdown and a couple of other formats into a final report in HTML or PDF or other formats. 
+By this point, we have mentioned the word "knit" quite a few times, and you have installed the `knitr` package too. But, we have not yet fully defined what it is. [knitr](https://yihui.name/knitr/) is an R package, developed by [Yihui Xie](https://yihui.name), designed to convert RMarkdown and a couple of other file formats into a final report document in HTML or PDF or other formats. 
 
-The knitr package provides a lot of customization options for code chunks embedded within the file. These options are written in the form of `tag=value`.
+The `knitr` package provides a lot of customization options for code chunks embedded within the file. These options are written in the form of `tag=value`.
 
 <img src="../img/r-chunkoptions.png">
 
@@ -53,7 +53,7 @@ ___
 
 ___
 
-### Figures
+### Adding figures
 
 A neat feature of knitr is how much simpler it is to generate and add figures to a report! For the most part, you don’t need to do anything special, just add a code chunk that generates a figure. When the file is knit, the figure will automatically be produced and inserted into the final document. A single chunk can support multiple plots, and they will be appear one after the other below the chunk. 
 
@@ -63,7 +63,7 @@ There are a few code chunk options commonly used for plots. For example, to easi
 
 In addition to displaying it in the report, you can also have `knitr` automatically write the files to a subfolder by using the code chunk option `dev`.
 
-### Tables
+### Adding tables
 
 `knitr` includes a simple but powerful function for generating stylish tables in a knit report named `kable()`. Here's an example using R's built-in `mtcars` dataset:
 

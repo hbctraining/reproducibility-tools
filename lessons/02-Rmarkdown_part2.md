@@ -5,14 +5,14 @@ author: Michael J. Steinbaugh, Meeta Mistry, Radhika Khetani, Jihe Liu
 ---
 
 ## Learning Objectives
-* Detail the many options for code chunk evaluation 
+* Use code chunk options to customize the report 
 * Describe how to add figures and tables to an RMarkdown
 * Describe how to specify the output format for RMarkdown
 
 
-## So many options for code chunks!
+## Not all code chunks need to be equal
 
-There are By this point, we have mentioned the word "knit" quite a few times, and you have installed the `knitr` package too. But, we have not yet fully defined what it is. [knitr](https://yihui.name/knitr/) is an R package, developed by [Yihui Xie](https://yihui.name), designed to convert RMArkdown and a couple of other formats into a final report in HTML or PDF or other formats. 
+By this point, we have mentioned the word "knit" quite a few times, and you have installed the `knitr` package too. But, we have not yet fully defined what it is. [knitr](https://yihui.name/knitr/) is an R package, developed by [Yihui Xie](https://yihui.name), designed to convert RMArkdown and a couple of other formats into a final report in HTML or PDF or other formats. 
 
 The knitr package provides a lot of customization options for code chunks embedded within the file. These options are written in the form of `tag=value`.
 
@@ -42,7 +42,7 @@ ___
 
 #### Exercise #3
 
-1. Only some of the code chunks in the `.rmd` file have names; go through and **add names to the unnamed code chunks**.
+1. Only some of the code chunks in the `workshop-example.Rmd` file have names; go through and **add names to the unnamed code chunks**.
 2. For the code chunk named `data-ordering` do the following:
     - First, **add a new line of code** to display first few rows of the newly created `data_ordered` data frame. You may use `head()` function here.
     - Next, **modify the options** for (`{r data-ordering}`) such that in the knitted report, the output from the new line of code will show up, but the code is hidden.
@@ -84,79 +84,6 @@ mtcars %>%
 | Valiant           |  18.1|    6|   225|  105|  2.76|  3.460|  20.22|    1|    0|     3|     1|
 
 There are some other functions that allow for more powerful customization of tables, including `pander::pander()` and `xtable::xtable()`, but the simplicity and cross-platform reliability of `knitr::kable()` makes it an easy pick.
-
-### Generating the report
-
-Once we have finished creating an RMarkdown file, we finally need to knit the report. You can knit it by using the `knit()` function, or by just clicking on "knit" in the panel above the script as we had done in our first activity in this lesson. 
-
-> Note that when creating your own reports, you might find yourself knitting the report periodically as you work through it, rather than just once at the end. 
-
-When executing `knit()` on a document, by default this will generate an HTML report. If you would prefer a different document format, this can be specified in the YAML header with the `output:` parameter. You can also click on the button in the panel above the script and click on "Knit" to get the various options as shown below:
-
-<img src="../img/r-knit-button.png">
-
-> **Note**: *PDF rendering is sometimes problematic, especially when running R remotely, like on the cluster (Cannon or O2). If you run into problems, it's likely an issue related to [pandoc](http://pandoc.org).*
-
-The [RStudio cheatsheet for Rmarkdown](https://github.com/rstudio/cheatsheets/blob/master/rmarkdown-2.0.pdf) is quite daunting, but includes more advanced Rmarkdown options that may be helpful as you become familiar with report generation, including options for adding interactive plots RShiny.
-
-___
-
-#### Activity 4
-
-1. **Download the linked [R script](https://github.com/hbctraining/Training-modules/raw/master/Rmarkdown/Rscript.R)** and save it within the `rmd_workshop` project directory.
-2. **Download the linked [RData object](https://github.com/hbctraining/Training-modules/raw/master/Rmarkdown/data/Rmarkdown_data.Rdata)** by right-clicking and save it to the `data` folder within the `rmd_workshop` project directory.
-3. Open the Rscript file, **transform the R script into a RMarkdown file** by clicking `File` -> `Rename`, and rename it as `Rscript.Rmd`. It is now a RMarkdown file.
-4. **Make modifications** with the following specifications:
-    - Create an R chunk for all code underneath each `#` comment in the original R script
-    - Comment on the plots (you may have to run the code from the R script to see the plots first)
-    - Add a floating table of contents at the beginning (refer to this [instruction](https://bookdown.org/yihui/rmarkdown/html-document.html#floating-toc), and make sure indentation is properly used)
-4. **knit the markdown** 
-
-[Answer Key](https://raw.githubusercontent.com/hbctraining/Training-modules/master/Rmarkdown/data/workshop-answer-activity4.Rmd)
-
-***
-
-> **Note1: output formats**
-> 
-> RStudio supports a [number of formats](http://rmarkdown.rstudio.com/formats.html), each with their own customization options. Refer to their website for more details.
-> 
-> The `knit()` command works great if you only need to generate a single document format. RMarkdown also supports a more advanced function named `rmarkdown::render()`, allows for output of multiple document formats. To accomplish this, we recommend saving a special file named `_output.yaml` in your project root. Here's an example from our [bcbioRnaseq](https://github.com/hbc/bcbioRnaseq) package:
->
-> ```r
-> rmarkdown::html_document:
->         code_folding: hide
->         df_print: kable
->         highlight: pygments
->         number_sections: false
->         toc: true
-> rmarkdown::pdf_document:
->         number_sections: false
->         toc: true
->         toc_depth: 1
-> ```
-
-***
-
-> **Note2: working directory behavior**
-> 
-> knitr redefines the working directory of an RMarkdown file in a manner that can be confusing. If you're working in RStudio with an RMarkdown file that is not at the same location as the current R working directory (`getwd()`), you can run into problems with broken file paths. Make sure that any paths to files specified in the RMarkdown document is relative to its location, and not your current working directory.
-> 
-> A simple way to make sure that the paths are not an issue is by creating an R project for the analysis, and saving all RMarkdown files at the top level and referring to the data and output files within the project directory. This will prevent unexpected problems related to this behavior.
-
-***
-
-## Summary
-In this lesson, we learnt what is basic RMarkdown syntax, how to create code chunks, figures and tables, as well as how to generate report using `knitr` package. We also listed out some additional resources below for further study. Next time you work with R, start thinking about how RMarkdown could enhance your reproducibility research!
-
-***
-
-**Additional resources**
-================
-
--   [knitr in a knutshell](http://kbroman.org/knitr_knutshell/)
--   [knitr book](https://www.amazon.com/gp/product/1498716962)
--   [knitr examples](https://yihui.name/knitr/demos)
--   [knitr vignettes](https://github.com/yihui/knitr/tree/master/vignettes)
 
 ***
 

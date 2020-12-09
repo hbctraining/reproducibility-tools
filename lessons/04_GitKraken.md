@@ -29,9 +29,9 @@ Since we are going to be using [GitHub](https://github.com/) we will need to reg
 
 Most of you should have already installed [GitKraken](https://www.gitkraken.com/download). Open it, and sign in using the credentials you used to sign up for a GitHub account. 
 
-<img src="img/2.new-setup.png" width="700" align="center">
+<img src="../img/2.new-setup.png" width="700" align="center">
 
-<img src="img/2.new-setup2.png" width="700" align="center">
+<img src="../img/2.new-setup2.png" width="700" align="center">
 
 > When connecting GitHub to GitKraken, make sure that the authorization is performed on either Chrome or Firefox and not on Internet explorer.
 
@@ -64,7 +64,7 @@ There are a number of different ways to add files/folders for Git/GitKraken to t
 * **Click on the folder icon at the top left corner**. This will allow you to either *Open* an existing repository, or *Clone* a repository that you or someone else has created, or *Init* (initialize/create) a new repository. 
 * Today, we will be initializing a repository within a new folder, **click on Init, and then GitHub.com**, so that we can create a repository that we will keep locally, *as well at a remote location* as a backup or perhaps for sharing:
 
-<img src="img/2.new-init.png" width="700" align="center">
+<img src="../img/2.new-init.png" width="700" align="center">
 
 Fill in the fields as appropriate:
 * your GitHub account
@@ -81,7 +81,7 @@ Voila! You now have your first Git repo!
 
 Our folder should now be visible on the top left and we will be able to see more information about it in the left column.
 
-<img src="img/2.new-first_repo.png" width="700" align="center">
+<img src="../img/2.new-first_repo.png" width="700" align="center">
 
 We'll point out a few features here:
 * a list of known/open repos at the top left
@@ -91,11 +91,11 @@ We'll point out a few features here:
 
 Since we'll now want to add more files to this repository, right-mouse click on the `README.md` file and select "Show in Finder" ("Show in Explorer") from the pop-up menu:
 
-<img src="img/2.new-show_in_finder.png" width="700" align="center">
+<img src="../img/2.new-show_in_finder.png" width="700" align="center">
 
 The folder we created the repository with now contains an extra folder with the name `.git` (this is a hidden folder). This folder is how GitKraken will track changes (adding files/folders, modifying existing ones, deleting files/folders) we make within our version controlled folder: 
 
-<img src="img/2.new-finder_view.png" width="700" align="center">
+<img src="../img/2.new-finder_view.png" width="700" align="center">
 
 > To view hidden folders in Mac OSX, you can press Command+Shift+Dot.
 
@@ -108,31 +108,31 @@ But before we continue, we wish to utilize a few best practices from research da
 
 When done with the moving, your new repo (folder) should look something like the following image:
 
-<img src="img/2.new-finder_view_added_files.png" width="700" align="center">
+<img src="../img/2.new-finder_view_added_files.png" width="700" align="center">
 
 Now, when we switch back to GitKraken, you'll notice the timeline window at the top has changed. GitKraken has noticed files have changes, and it's indicated this new set of changes is considered "Work in Progress" (WIP):
 
-<img src="img/2.new-first_wip.png" width="700" align="center">
+<img src="../img/2.new-first_wip.png" width="700" align="center">
 
 Click on the **WIP** line at the top to show the files it is watching, show in the bottom pane. You can resize this panel to show all the files if you desire:
 
-<img src="img/2.new-file_list_resize.png" width="700" align="center">
+<img src="../img/2.new-file_list_resize.png" width="700" align="center">
 
 A **commit** tells Git that you made some changes which you want to record. Though a **commit** seems similar to saving a file, there are different aims behind ‘committing’ changes compared to saving changes. **Commits** take a snapshot of the file at that point and allow you to document information about the changes made to the document.
 
 We next need to tell Git that we wish to stage these files for a commit, what we call an initial commit, when we take a snapshot of the files at the start of our work and any tracking that we wish to do. To include or **add** these files for a commit, we **stage** all the changes by clicking on the "Stage all changes" button:
 
-<img src="img/2.new-initial_commit_stage.png" width="700" align="center">
+<img src="../img/2.new-initial_commit_stage.png" width="700" align="center">
 
 You also have the option of adding only certain files to the "Staging" area if you wish to make separate commits. Simply click on the word Stage that appears near the files you wish to include.
 
 To commit changes **you must give a summary of the changes**, include an optional message, and click on the Commit button:
 
-<img src="img/2.new-local_change.png" width="700" align="center">
+<img src="../img/2.new-local_change.png" width="700" align="center">
 
 After the commit, the timeline changes to reflect the current state & history of our repository. Clicking on the top line, our recent commit, shows in the bottom pane the changes that were include, which is the addition (green plus square) of these files:
 
-<img src="img/2.new-local_change_after_commit.png" width="700" align="center">
+<img src="../img/2.new-local_change_after_commit.png" width="700" align="center">
 
 A useful way to think about commits is as the ‘history’ of your project. Each commit records a development or change made to the documents in your repository; the history of the project can be traced back by looking at all of the commits. 
 
@@ -228,11 +228,11 @@ for (trials in 1:3000) {
 
 Save this file as well, and go back to GitKraken. Again, the program creates a new **WIP** timeline entry as it has detected changes. Click on this WIP line to show that GitKraken has noticed that our files have changed, and click on the README.md (file icon with an ellipsis inside):
 
-<img src="img/2.new-viewing_readme_diff.png" width="700" align="center">
+<img src="../img/2.new-viewing_readme_diff.png" width="700" align="center">
 
 When you click on the filename, you will see that these new lines of text appear; this lets us know that Git is able to see changes in your file but at the moment these changes haven’t been recorded in an official ‘snapshot’ of your repository. To do this we need to **add** (**stage**) and **commit** our changes, just as we did before.
 
-<img src="img/git-staging-area.png" width="700" align="center">
+<img src="../img/git-staging-area.png" width="700" align="center">
 
 > **Text Editors:**
 >
@@ -244,11 +244,11 @@ Since we wish to keep all the different types of changes as separate commits, we
 
 First, stage only the `README.md` file, and, as we did with our previous initial commit, include a change message, and click on the Commit button:
 
-<img src="img/2.new-pre_commit_readme_change.png" width="700" align="center">
+<img src="../img/2.new-pre_commit_readme_change.png" width="700" align="center">
 
 Again, you'll see our timeline has changed to include this commit. Now also stage the changed code file, include a meaningful change message, and click Commit. Our timeline should now contain these two serial commits:
 
-<img src="img/2.new-post_serial_commit_changes.png" width="700" align="center">
+<img src="../img/2.new-post_serial_commit_changes.png" width="700" align="center">
 
 There may be times, however, when we wish to ensure that we save a coordinated set of changes. For example, if we want to make coordinated changes to multiple files it makes sense to make the changes and then stage (add) and commit all together (**atomic commit**). 
 
@@ -287,7 +287,7 @@ montecarloPi(3000)
 
 When we return to GitKraken, it has noticed the two changes. Since the change in the main code file depends on the presence of this other file, we need to ensure this snapshot captures these dependent changes. So we stage both files, give a meaningful commit message reflecting this process, and Commit. Your repo should now look like the following:
 
-<img src="img/2.new-post_coordinated_commit_change.png" width="700" align="center">
+<img src="../img/2.new-post_coordinated_commit_change.png" width="700" align="center">
 
 ***
 

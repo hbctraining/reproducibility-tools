@@ -6,13 +6,13 @@ author: "Bob Freeman, Meeta Mistry, Radhika Khetani, Kathleen Keating"
 
 
 
-In this lesson the focus will be on gaining an understanding of the basic aims and principles of Version Control by working with a plain text document using Git (GitKraken & GitHub).
+In this lesson, our focus will be on gaining an understanding of the basic aims and principles of version control by working with a plain text document using Git (GitKraken & GitHub).
 
 ## Getting Started with Git using a GUI (Graphical User Interface)
 
 Usually when programmers use Git for version control of their code, they use the command-line user interface, i.e. a terminal interface from a UNIX/Linux OS. However, there are several tools that enable the use of Git easily for novices using a Graphical User Interface (GUI), enabling a point-and-click interface. Two examples of GUIs are [GitHub Desktop](https://desktop.github.com/) and [GitKraken](www.gitkraken.com). 
 
-Although there are several advantages to using the command line version of Git in the long run, a GUI is a great place to start with learning about Version Control. 
+Although there are several advantages to using the command line version of Git in the long run, a GUI is a great place to start with learning about version control. 
 
 > **A Note on Terminology**
 > 
@@ -52,7 +52,7 @@ A few salient features of repositories are listed below:
 * The changes made within folders with repositories are being "watched" by Git as mentioned above, but these changes have to be deliberately added to the repository in order to be version controlled or recorded 
 * It can be set up to ignore some items in the folder (very large datasets, or temp files)
 
-Download the folder we have generated for this session [from here](../../raw/master/data/example_files.zip), and unzip it in a location of your choosing. We recommend placing it on your Desktop for the duration of this workshop.
+Download the folder we have generated for this session [from here](../data/example_files.zip), and unzip it in a location of your choosing. We recommend placing it on your Desktop for the duration of this workshop.
 
 ### Creating a Folder/Repository, Starting from your Local Machine
 

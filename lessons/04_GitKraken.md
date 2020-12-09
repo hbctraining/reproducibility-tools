@@ -4,10 +4,7 @@ title: "Getting Started with Git using GitKraken"
 author: "Bob Freeman, Meeta Mistry, Radhika Khetani, Kathleen Keating"
 ---
 
-***
-Previous: [Introduction to Version Control](01_Intro_to_versioning.md)
 
-***
 
 In this lesson the focus will be on gaining an understanding of the basic aims and principles of Version Control by working with a plain text document using Git (GitKraken & GitHub).
 
@@ -300,11 +297,6 @@ When we return to GitKraken, it has noticed the two changes. Since the change in
 5. Switch repos back to the `gitkraken_workshop` repo.
 
 ***
-
-Next: [Remote repositories, managing conflicts](https://hbctraining.github.io/versioning_data_scripts/03_Github_remote.html)
-
-***
-
 
 * Materials used in these lessons are derived from Daniel van Strien's ["An Introduction to Version Control Using GitHub Desktop,"](http://programminghistorian.org/lessons/getting-started-with-github-desktop), Programming Historian, (17 June 2016). [The Programming Historian ISSN 2397-2068](http://programminghistorian.org/), is released under the [Creative Commons Attribution license](https://creativecommons.org/licenses/by/4.0/) (CC BY 4.0).*
 

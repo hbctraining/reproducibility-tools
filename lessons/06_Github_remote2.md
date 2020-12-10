@@ -4,11 +4,21 @@ title: "Git(hub) Remote"
 author: "Bob Freeman, Meeta Mistry, Radhika Khetani, Kathleen Keating"
 ---
 
-### Making Changes Remotely
+## Learning Objectives
 
-It is also possible to make a change to your repository on the web interface. We forgot to give attribution to our functions in the `util_functions.R` file. Go into the `code` directory, and click on the name of the file in the title area to take you to a new page showing your document.
+## Making Changes Remotely
 
-Click on the 'Edit' option or icon. You will now be able to edit the file and add some new text. Let's add comments to both the square function:
+We now have our work both locally on our computers and online in the GitHub web interface. So far any edits we have made to our files have been directly on the local versions and then we pushed the changes to the online repository. It is also possible to **make a change to your repository on the web interface**. 
+
+To demonstrate how to do this, we will edit one of the files in our **`code`** folder. Inside this folder we have several scripts and we realized that we forgot to give attribution to our functions in the `util_functions.R` file.
+
+Navigate to the **gitkraken_workshop** repository online in GitHub.
+
+Go into the `code` directory, and click on the name of the file (`util_functions.R`) in the title area. This will take you to a new page showing your document.
+
+Click on the 'Edit' option or the pencil icon in the top right-hand corner of the document. You will now be able to edit the file and add some new text. **We are going to make two edits to this file!**
+
+1. We want to add some comments above the "Square function". This comment provides the resources from which we obtained and adapted this code. You can copy the text provided below and paste it into your document.
 
 ```
 # Square function
@@ -16,22 +26,32 @@ Click on the 'Edit' option or icon. You will now be able to edit the file and ad
 # and https://www.r-bloggers.com/how-to-write-and-debug-an-r-function/
 ```
 
-and the Anscombe's quartet function:
+2. Next, we will do a similar thing for the and the "Anscombe's quartet function". The text you need to add is provided below.
 
 ```
 # Anscombe's quartet
 # Examples from https://www.r-bloggers.com/using-and-abusing-data-visualization-anscombes-quartet-and-cheating-bonferroni/
 ```
-
+<p align="center">
 <img src="../img/3.new-edit_on_github_web.png" width="700" align="center">
+</p>
 
-Once you have made some changes to your file, you will again see the option to commit changes near the bottom of the text entry box.
+Once you have made some changes to your file, **scroll to the bottom of the window**. You will see the option to **commit changes**, and two associated text entry boxes. The first box is to give your commit a short description of the changes you made. The second box allows you to provide more detailed text about the commit, which is optional.
 
+Provide an informative description for your commit and then press "Commit".
+
+<p align="center">
 <img src="../img/3.new-online_commit.png" width="700" align="center">
+</p>
+
+
+## Deleting files on GitHub
 
 One can also add and delete files from the repo. Since we're working in R, let's remove the python code files. One must first view the file itself (click on the file's name) to reveal the Delete (trash can) icon. Click here to delete:
 
+<p align="center">
 <img src="../img/3.delete_one_file.png" width="700" align="center">
+</p>
 
 This solitary action requires a description and subsequent Commit:
 

@@ -102,7 +102,7 @@ After committing, you should now see the `Pi Formulas...` document in your `docs
 
 ***
 
-**Exercise**
+**Exercise: Creating a new file**
 
 
 ***

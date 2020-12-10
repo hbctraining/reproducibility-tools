@@ -55,15 +55,17 @@ Let's delete one of the files in our `code` folder. Since we're working in R, we
 <img src="../img/3.delete_one_file.png" width="700" align="center">
 </p>
 
-You will see that this solitary action is not complete until you provide a description and a subsequent Commit. Deleting a document is a change, and is therefore tracked like any other change you make to your repository. Provide a description and commit this change.
+You will see that this solitary action is not complete until you provide a description and a subsequent Commit. Deleting a document is a change, and is therefore tracked like any other change you make to your repository. **Provide a description and commit this change**.
 
+<p align="center">
 <img src="../img/3.commit_delete_one_file.png" width="700" align="center">
+</p>
 
 ***
 
 **Excercise**
 
-In your `code` folder, you will find that there are two more Python files (`.py`). Identify those files and delete them using the methid described above. Once complete, the `code` folder in your repo should look like the following:
+In your `code` folder, you will find that there are two more Python files (`.py`). Identify those files and delete them using the method described above. Once complete, the `code` folder in your repository should look like the following:
 
 <p align="center">
 <img src="../img/3.code_folder_after_deletions.png" width="700" align="center">
@@ -73,15 +75,40 @@ In your `code` folder, you will find that there are two more Python files (`.py`
 
 ## Adding files to a repository online
 
-One can also add files and folders to the repo via the web interface. We'll keep this simple. In the `doc` folder we can add the `Pi formulas...` document from our workshop downloads folder. Navigate to the `docs` folder in the repo, and click on the Upload files button.
+We can also **add files and folders to the repository via the web interface**. There are two ways to do this, by uploading existing files or create new files directly in the interface.
 
+### Uploading files
+
+We'll start with adding files through upload. In your **gitkraken_workshop** repository, navigate to the `docs` folder. On this page you will see all of its contents listed, and at the top there is an "Add File" button. If you click on this, you will see two dropdown options appear: "Create new files" and "Upload files". **Select "Upload files"**. This will take you to a new page.
+
+> **NOTE:** The screenshot below is slightly outdated and does not accurately reflect the dropdown options described above. We have included the image to give some example of where to navigate.
+
+<p align="center">
 <img src="../img/3.upload_files_button.png" width="700" align="center">
+</p>
+  
+The file that **we would like to add to this folder** is called **"Pi Formulas -- from Wolfram MathWorld.pdf"**. The document is located in our workshop downloads folder. To add it to the repo using the web interface you can do one of two things:
 
-This action also requires a Description and subsequent Commit:
+1. Find the file in a File Explorer window on your computer, and then drag and drop it on to this page.
+2. Click on the "choose your files" and find/select the file in the window that pops up. 
 
+Once the file is selected, the Upload will require a Description and subsequent Commit:
+
+<p align="center">
 <img src="../img/3.commit_uploaded_file.png" width="700" align="center">
+</p>
 
-You should now see the `Pi Formulas...` document in your `docs` folder.
+After committing, you should now see the `Pi Formulas...` document in your `docs` folder.
+
+***
+
+**Exercise**
+
+
+***
+
+
+## Syncing remote changes to your local repository
 
 Two important sidebars: since on GitHub.com file changes are done serially, coodinated file changes cannot be done here -- the must be done on your local machine with GitKraken. Also, all these changes are realtime on the GitHub remote -- Once you have committed these changes these changes are immediate.
 

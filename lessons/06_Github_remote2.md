@@ -18,7 +18,7 @@ Go into the `code` directory, and click on the name of the file (`util_functions
 
 Click on the 'Edit' option or the pencil icon in the top right-hand corner of the document. You will now be able to edit the file and add some new text. **We are going to make two edits to this file!**
 
-1. We want to add some comments above the "Square function". This comment provides the resources from which we obtained and adapted this code. You can copy the text provided below and paste it into your document.
+1. We want to add some comments above the "Square function". This comment provides the resources from which we obtained and adapted this code. You can **copy the text provided below and paste it into your document**.
 
 ```
 # Square function
@@ -26,7 +26,7 @@ Click on the 'Edit' option or the pencil icon in the top right-hand corner of th
 # and https://www.r-bloggers.com/how-to-write-and-debug-an-r-function/
 ```
 
-2. Next, we will do a similar thing for the and the "Anscombe's quartet function". The text you need to add is provided below.
+2. Next, we will do a similar thing for the and the "Anscombe's quartet function". The **text you need to add is provided below**.
 
 ```
 # Anscombe's quartet
@@ -36,30 +36,42 @@ Click on the 'Edit' option or the pencil icon in the top right-hand corner of th
 <img src="../img/3.new-edit_on_github_web.png" width="700" align="center">
 </p>
 
-Once you have made some changes to your file, **scroll to the bottom of the window**. You will see the option to **commit changes**, and two associated text entry boxes. The first box is to give your commit a short description of the changes you made. The second box allows you to provide more detailed text about the commit, which is optional.
+Once you have made some changes to your file, **scroll to the bottom of the window**. You will see the option to commit changes, and two associated text entry boxes. The first box is to give your commit a short description of the changes you made. The second box allows you to provide more detailed text about the commit, which is optional.
 
-Provide an informative description for your commit and then press "Commit".
+**Provide an informative description for your commit and then press "Commit"**.
 
 <p align="center">
 <img src="../img/3.new-online_commit.png" width="700" align="center">
 </p>
 
 
-## Deleting files on GitHub
+## Deleting files online
 
-One can also add and delete files from the repo. Since we're working in R, let's remove the python code files. One must first view the file itself (click on the file's name) to reveal the Delete (trash can) icon. Click here to delete:
+One can also add and delete files from the repositiory online. To do this, you will first need to view the file itself (by clicking on the file's name). Once you are viewing your file you will see a trash can icon at the top right-hand side, located to the right of the edit/pencil icon. 
+
+Let's delete one of the files in our `code` folder. Since we're working in R, we will remove the python code files. Click on the file and find the trash can icon and click on it:
 
 <p align="center">
 <img src="../img/3.delete_one_file.png" width="700" align="center">
 </p>
 
-This solitary action requires a description and subsequent Commit:
+You will see that this solitary action is not complete until you provide a description and a subsequent Commit. Deleting a document is a change, and is therefore tracked like any other change you make to your repository. Provide a description and commit this change.
 
 <img src="../img/3.commit_delete_one_file.png" width="700" align="center">
 
-Let's delete the other two as well. the `code` folder in your repo should look like the following:
+***
 
+**Excercise**
+
+In your `code` folder, you will find that there are two more Python files (`.py`). Identify those files and delete them using the methid described above. Once complete, the `code` folder in your repo should look like the following:
+
+<p align="center">
 <img src="../img/3.code_folder_after_deletions.png" width="700" align="center">
+</p>
+
+***
+
+## Adding files to a repository online
 
 One can also add files and folders to the repo via the web interface. We'll keep this simple. In the `doc` folder we can add the `Pi formulas...` document from our workshop downloads folder. Navigate to the `docs` folder in the repo, and click on the Upload files button.
 

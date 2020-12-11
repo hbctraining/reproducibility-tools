@@ -133,11 +133,14 @@ And click on the filename itself to **see the changes made within each file**:
 <img src="../img/3.view_remote_file_diff.png" width="700" align="center">
   </p>
 
-You can see from this view that we now have the text with changes highlighted in <span style="color:green">green</span> and <span style="color:red">red</span>. <span style="color:red">Red</span> indicates where things have been removed, while <span style="color:green">green</span> indicates additions. 
+You can see from this view that we now have the text with changes highlighted in <span style="color:green">green</span> and <span style="color:red">red</span>.
+
+* <span style="color:red">Red</span> indicates where things have been removed
+* <span style="color:green">Green</span> indicates addition of text 
 
 Click on the filename again to return to our commit timeline.
 
-To get all these changes back onto our own (local) computer, we need to Pull these changes back to our local repo, using the Pull button in the GitKraken toolbar towards the top of the screen:
+To **get all these changes back onto our own (local) computer**, we need to **Pull** these changes back to our local repo, using the Pull button in the GitKraken toolbar towards the top of the screen:
 
 <p align="center">
 <img src="../img/3.new-pull.png" width="700" align="center">
@@ -149,18 +152,22 @@ If all goes well, you should see a brief 'Success' message, and your repos shoul
 <img src="../img/3.local_remote_in_sync.png" width="700" align="center">
 </p>
 
-Two important sidebars: since on GitHub.com file changes are done serially, coodinated file changes cannot be done here -- the must be done on your local machine with GitKraken. Also, all these changes are realtime on the GitHub remote -- Once you have committed these changes these changes are immediate.
+> **NOTE**: Two important things to keep in mind when making changes on the web interface:
+> * On GitHub.com file changes are done serially, so coodinated file changes cannot be done here.
+> * All of these changes in the web browser are realtime on the GitHub remote -- the commits take effect immediately.
 
 
 ## Viewing File Histories
 
-One very useful feature of this and other Git clients is looking at how a file has changed over time. In GitKraken, select the timeline entry 'Refactor code...', and in the section below, right-mouse click on the `scriptlets.R` file and select "File History" to see exactly that: 
+One very useful feature of this and other Git clients is looking at how a file has changed over time. 
+
+In GitKraken, select the timeline entry 'Refactor code...', and in the section below, right-mouse click on the `scriptlets.R` file and select "File History". 
 
 <p align="center">
 <img src="../img/3.new-get_to_file_history.png" width="700" align="center">
 </p>
 
-Our code file is displayed with comments on the left and differences between the (left) selected and previous versions:
+You should now **see the history** of the `scriptlets.R` file. Our code file is displayed with comments on the left and differences between the (left) selected and previous versions:
 
 <p align="center">
 <img src="../img/3.new-showing_file_history.png" width="700" align="center">
@@ -178,7 +185,7 @@ And finally, clicking on the File View button shows all the changes together, wi
 <img src="../img/3.new-history_combined_file_view.png" width="700" align="center">
 </p>
 
-Click on the X at the upper right to close this window and return to the commit timeline.
+To close this window and return to the commit timeline, click on the X at the upper right.
 
 ***
 

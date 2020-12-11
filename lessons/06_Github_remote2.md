@@ -107,7 +107,7 @@ After committing, you should now see the `Pi Formulas...` document in your `docs
 
 **Exercise: Creating a new file**
 
-1. Navigate to the `code` folder. We are going to create and Rmarkdown file in this directory.
+1. Navigate to the `code` folder. We are going to create an Rmarkdown file in this directory.
 2. Click on the "Add File" button and choose "Create new file" from the drop-down button.
 3. You will now find yourself on a new page, with your cursor flashing in a text box at the top of the page. Give your new file the name `workshop_rmd_exercise.Rmd`.
 4. In the space below, you can add the contents of your file. Locate the .Rmd file you created in [Day 1 self-learning](../activities/Rmd_exercise4.md). Copy and paste the code into the browser space labeled "< > Edit new file".
@@ -156,8 +156,8 @@ If all goes well, you should see a brief 'Success' message, and your repos shoul
 </p>
 
 > **NOTE**: Two important things to keep in mind when making changes on the web interface:
-> * On GitHub.com file changes are done serially, so coodinated file changes cannot be done here.
-> * All of these changes in the web browser are realtime on the GitHub remote -- the commits take effect immediately.
+> * On GitHub.com file changes are done serially, so commits with modifications to multiple files cannot be done here.
+> * All of these changes in the web browser are realtime on the GitHub remote, i.e. the commits take effect immediately without an intermediate **add** or **stage** step.
 
 
 ## Viewing File Histories

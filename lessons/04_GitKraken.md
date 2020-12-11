@@ -82,11 +82,12 @@ Voila! You now have your first Git repo!
 
 The new folder should now be visible on the top left of the GitKraken interface and we can see more information about it in the left column. 
 
-<img src="../img/2.new-show_in_finder.png" width="700" align="center">
+<img src="../img/2.new-first_repo.png" width="700" align="center">
 
 > The folder should also appear on your Desktop! If you can't find your folder, you can click on the Readme.md file and click on "Show in Finder", the folder will open (external to GitKraken).
 >
-> <img src="../img/2.new-first_repo.png" width="700" align="center">
+> 
+<img src="../img/2.new-show_in_finder.png" width="700" align="center">
 
 What is where on the GitKraken interface?
 * a list of known/open repos at the top left

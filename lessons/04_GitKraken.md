@@ -62,7 +62,7 @@ Download the folder we have generated for this session [from here](https://githu
 
 There are a number of different ways to add files/folders for Git/GitKraken to track.
 
-* **Within the GitKraken interface click on the folder icon at the top left corner**. This will allow you to either *Open* an existing repository, or *Clone* a repository that you or someone else has created, or *Init* (initialize/create) a new repository. 
+* **In the GitKraken interface click on the folder icon at the top left corner**. This will allow you to either *Open* an existing repository, or *Clone* a repository that you or someone else has created, or *Init* (initialize/create) a new repository. 
 * Today, we will be initializing a repository within a new folder, **click on Init, and then GitHub.com**, so that we can create a repository that we will keep locally, *as well at a remote location* as a backup or perhaps for sharing:
 
 <img src="../img/2.new-init.png" width="700" align="center">
@@ -87,15 +87,15 @@ The new folder should now be visible on the top left of the GitKraken interface 
 > The folder should also appear on your Desktop! If you can't find your folder, you can click on the Readme.md file and click on "Show in Finder", the folder will open (external to GitKraken).
 >
 > 
-<img src="../img/2.new-show_in_finder.png" width="700" align="center">
+> <img src="../img/2.new-show_in_finder.png" width="700" align="center">
 
-What is where on the GitKraken interface?
+The layout of the GitKraken interface:
 * a list of known/open repos at the top left
 * a button/function bar in the top middle
 * a listing of the *branches* for your local and linked remote repositories
 * and then the commit (snapshot) message and files that are part of this commit
 
-The folder we created the repository with now contains an extra folder with the name `.git` (this is a "hidden" folder, so don't worry if you don't see it!). This folder is how GitKraken will track changes (adding files/folders, modifying existing ones, deleting files/folders) we make within our version controlled folder: 
+The folder we created the repository with now contains an extra hidden folder with the name `.git` (any file or folder whose name starts with a "." is hidden in normal circumstamces, so don't worry if you don't see it!). This folder is how Git will track changes (adding files/folders, modifying existing ones, deleting files/folders) we make within the repository folder. 
 
 <img src="../img/2.new-finder_view.png" width="700" align="center">
 
@@ -103,36 +103,38 @@ The folder we created the repository with now contains an extra folder with the 
 
 ### Staging and Committing Changes
 
-But before we continue, we want to highlight a few research data management best practices: organize your files, structure your folder and name files consistently. 
+Before we continue, we want to highlight a few research data management best practices: organize your files, structure your folder and name files consistently. 
 
 1. Let's start by creating 5 new directories in the folder (in Finder, outside of Git: `code`, `data`, `docs`, `figures`, and `other`
-2. Now, let's move some of the files into these newly created directories from the downloaded `example_files` folder. Move the files into the appropriate folders as shown in the image below. We won't be moving `Pi Formulas...`, `README.md` (since one is already exists in our new repo), and `util_functions.R`.
-
-When done with the moving, your new repo (folder) should look something like the following image:
+2. Now, let's move some of the files from the downloaded `example_files` folder into these newly created directories. Please use the image below as a guide to which file goes where. We won't be moving all the files out of the `example_files` folder, the following 3 files will **not be moved** to the new repo - `Pi Formulas...`, `README.md` (since one is already exists in our new repo), and `util_functions.R`.
 
 <img src="../img/2.new-finder_view_added_files.png" width="700" align="center">
 
-Now, when we go to the GitKraken window, you'll notice the timeline window at the top has changed. GitKraken has noticed files have changes, and it's indicated this new set of changes is considered "Work in Progress" (WIP):
+After all the moving, you will notice the timeline window at the top has changed. GitKraken has noticed the changes in the repo, and it has indicated this as "Work in Progress" or **WIP**:
 
 <img src="../img/2.new-first_wip.png" width="700" align="center">
 
-Click on the **WIP** (Work In Progress) line at the top to show the files it is watching, show in the bottom pane. You can resize this panel to show all the files if you desire:
+Click on the **WIP** line at the top to show the files it is watching in the bottom pane. You can resize this panel to show all the files if you like:
 
 <img src="../img/2.new-file_list_resize.png" width="700" align="center">
 
-A **commit** tells Git that you made some changes which you want to record. Though a **commit** seems similar to saving a file, there are different aims behind ‘committing’ changes compared to saving changes. **Commits** take a snapshot of the file at that point and allow you to document information about the changes made to the document. 
+These changes have been noted, but this new *version* of the folder is not yet recorded (saved) by Git. A **commit** tells Git that you made some changes which you want to record. Though a **commit** seems similar to saving a file, there are different aims behind ‘committing’ changes compared to saving changes. **Commits** take a snapshot of the file(s) at that point. You can actually record or commit modifications to multiple files/folders at once. i.e. single commit can have multiple updates.  
 
-We next need to tell Git that we wish to stage these files for a commit, what we call an initial commit, when we take a snapshot of the files at the start of our work and any tracking that we wish to do. To include or **add** these files for a commit, we **stage** all the changes by clicking on the "Stage all changes" button:
+Committing changes usually happens in 2 stages:
+1. `add` or stage one or many modifications incrementally
+2. `commit` them with a special commit message to document the type of updates
+
+To include or **add** these files for a commit, we **stage** all the changes by clicking on the "Stage all changes" button:
 
 <img src="../img/2.new-initial_commit_stage.png" width="700" align="center">
 
 You also have the option of adding only certain files to the "Staging" area if you wish to make separate commits. Simply click on the word Stage that appears near the files you wish to include.
 
-To commit changes **you must give a summary of the changes**, include an optional message, and click on the Commit button:
+To commit changes one **must give a summary of the changes** followed by clicking on the Commit button:
 
 <img src="../img/2.new-local_change.png" width="700" align="center">
 
-After the commit, the timeline changes to reflect the current state & history of our repository. Clicking on the top line, our recent commit, shows in the bottom pane the changes that were include, which is the addition (green plus square) of these files:
+After the commit, the timeline at the top will change to reflect the current state & it has documented the history of our repository. When we click on the top line, our recent commit shows in the bottom panel.
 
 <img src="../img/2.new-local_change_after_commit.png" width="700" align="center">
 
@@ -144,9 +146,9 @@ A useful way to think about commits is as the ‘history’ of your project. Eac
 
 > **Note about Branches**:
 >
-> When you commit you will see ‘commit to master’. This refers to the **master** branch. 
+> When you commit you will see ‘commit to master’. This refers to the **master** (or **main**) branch. 
 > 
-> Within a Git repository it is possible to have multiple ‘branches’. These different branches are essentially different (virtual) places in which to work. Often they are used to test new ideas or work on a particular feature without modifying or "contaminating" the master copy (e.g. production version of a webpage). This feature is very useful when collaborating with others. We do not have time to go into this aspect of Version Control today, but we encourage you to explore it further.
+> Within a Git repository it is possible to have multiple ‘branches’. These different branches are essentially different (virtual) places in which to work. Often they are used to test new ideas or work on a particular feature without modifying or "contaminating" the master copy (e.g. production version of a webpage). This feature is very useful when collaborating with others. We do not have time to go into this aspect of Version Control in this workshop, but we encourage you to explore it further.
 
 ### Changing File Contents and Committing Changes
 
@@ -228,11 +230,11 @@ for (trials in 1:3000) {
 # END
 ```
 
-Save this file as well, and go back to GitKraken. Again, the program creates a new **WIP** timeline entry as it has detected changes. Click on this WIP line to show that GitKraken has noticed that our files have changed, and click on the README.md (file icon with an ellipsis inside):
+Save this file as well, and go back to GitKraken. Once again, you will notice a new **WIP timeline entry** as it has detected changes. Click on this WIP line to show that GitKraken has noticed that our files have changed, and click on the README.md (file icon with an ellipsis inside):
 
 <img src="../img/2.new-viewing_readme_diff.png" width="700" align="center">
 
-When you click on the filename, you will see that these new lines of text appear; this lets us know that Git is able to see changes in your file but at the moment these changes haven’t been recorded in an official ‘snapshot’ of your repository. To do this we need to **add** (**stage**) and **commit** our changes, just as we did before.
+When you click on the filename, you will see that these new lines of text appear; this lets us know that Git is able to see changes in your file but at the moment these changes haven’t been recorded in an official ‘snapshot’ of your repository. To do this we need to **add** (**stage**) first and then **commit** these changes to record them in the 'snapshot', just as we did before.
 
 <img src="../img/git-staging-area.png" width="700" align="center">
 
@@ -248,11 +250,11 @@ First, stage only the `README.md` file, and, as we did with our previous initial
 
 <img src="../img/2.new-pre_commit_readme_change.png" width="700" align="center">
 
-Again, you'll see our timeline has changed to include this commit. Now also stage the changed code file, include a meaningful change message, and click Commit. Our timeline should now contain these two serial commits:
+Again, you'll see our timeline has changed to include this commit. Now, stage the changed R file and include a meaningful change message, and click Commit. Our timeline should now contain these two serial commits:
 
 <img src="../img/2.new-post_serial_commit_changes.png" width="700" align="center">
 
-There may be times, however, when we wish to ensure that we save a coordinated set of changes. For example, if we want to make coordinated changes to multiple files it makes sense to make the changes and then stage (add) and commit all together (**atomic commit**). 
+There may be times, however, when we wish to ensure that we save a coordinated set of changes. For example, if we want to make coordinated changes to multiple files it makes sense to make the changes and then stage (add) and commit all the updated files all together (**atomic commit**). 
 
 Let's say we want to update the code in the `scriplets.R` file to the following wherein we want to use the `util_functions.R` in the code. Remember that the `util_functions.R` is the Rscript file we left behind in the folder we had downloaded. 
 
@@ -287,7 +289,9 @@ montecarloPi(3000)
 
 2. Now, let's move the `util_functions.R` script file from the downloaded `example_files` folder into the `code` folder in our new repo. 
 
-When we return to GitKraken, it has noticed the two changes. Since the change in the main code file depends on the presence of this other file, we need to ensure this snapshot captures these dependent changes. So we stage both files, give a meaningful commit message reflecting this process, and Commit. Your repo should now look like the following:
+When we return to GitKraken, it has noticed the two changes. Since the change in the main code file depends on the presence of this other file, we need to ensure this commit (snapshot) captures these inter-dependent changes. So, let's stage both files, give a meaningful commit message reflecting this process, and then commit! 
+
+Your repo should now look like the following:
 
 <img src="../img/2.new-post_coordinated_commit_change.png" width="700" align="center">
 

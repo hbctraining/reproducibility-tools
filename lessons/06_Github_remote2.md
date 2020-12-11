@@ -149,7 +149,7 @@ To **get all these changes back onto our own (local) computer**, we need to **Pu
 <img src="../img/3.new-pull.png" width="700" align="center">
 </p>
 
-If all goes well, you should see a brief 'Success' message, and your repos should be in sync again:
+If all goes well, you should see a brief 'Success' message, and your repos should be in sync again. **Take a screenshot of your GitKraken window, that shows the changes that you have synced to your local repo. Upload this image to the Dropbox link on the schedule page.**
 
 <p align="center">
 <img src="../img/3.local_remote_in_sync.png" width="700" align="center">

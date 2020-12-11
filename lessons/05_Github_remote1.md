@@ -33,14 +33,14 @@ Notice that our commit short descriptions are shown here; and that we can see th
 
 1. Push the changes to the "learning_github" repo (from the previous exercise) to the remote repo on github.com
 2. Make changes to data-file.txt on GitHub.com
-3. Sync or "Pull" the changes that were made remotely to the local repository
+3. [Bonus] Can you figure out how to Sync or "Pull" the changes that were made remotely to the local repository?
 ***
 
-On Github, you can choose to keep it public or make it private; and if it's private, you can choose specific GitHub users with whom you want to share it or collaborate with. For this lesson, we will stick with having a public repository. 
+On Github, you can choose to keep repositories public or make them private; and if they are private, you can choose specific GitHub users with whom you want to share it or collaborate with. For this lesson, we will stick with having a public repository. 
 
 Once your document is online, you can continue to make local changes to your file. But you will have to synchronize your local changes to reflect these changes in the published GitHub repository. GitHub stores changes both locally (on your computer) and remotely (on their servers), and it is important to keep these changes in sync. 
 
-In GitKraken and standard Git workflows, this is accomplished by regular, intentional rounds of **Pull** and **Push**, which both **pulls** in changes from the remote repository, and **pushes** any local changes to the remote repo. 
+In GitKraken and standard Git workflows, this is accomplished by regular, intentional rounds of **Pull** and **Push**, which both **pulls** in changes from the remote repository, and **pushes** any local changes to the remote repo. You will be learning more about this in the self-learning lesson!
 
 ***
 

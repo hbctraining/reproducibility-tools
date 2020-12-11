@@ -84,13 +84,13 @@ We can also **add files and folders to the repository via the web interface**. T
 
 We'll start with adding files through upload. In your **gitkraken_workshop** repository, navigate to the `docs` folder. On this page you will see all of its contents listed, and at the top there is an "Add File" button. If you click on this, you will see two dropdown options appear: "Create new files" and "Upload files". **Select "Upload files"**. This will take you to a new page.
 
-> **NOTE:** The screenshot below is slightly outdated and does not accurately reflect the dropdown options described above. We have included the image to give some example of where to navigate.
+> **NOTE:** The screenshot below is slightly outdated and does not accurately reflect the dropdown options described above. Please refer to the text above for the actual options.
 
 <p align="center">
 <img src="../img/3.upload_files_button.png" width="700" align="center">
 </p>
   
-The file that **we would like to add to this folder** is called **"Pi Formulas -- from Wolfram MathWorld.pdf"**. The document is located in our workshop downloads folder. To add it to the repo using the web interface you can do one of two things:
+The file that **we would like to add to this folder** is called **"Pi Formulas -- from Wolfram MathWorld.pdf"**. The document is located in our workshop downloads folder. To add it to the repo using the web interface, you can do one of two things:
 
 1. Find the file in a File Explorer window on your computer, and then drag and drop it on to this page.
 2. Click on the "choose your files" and find/select the file in the window that pops up. 

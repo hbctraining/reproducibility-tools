@@ -4,15 +4,17 @@ title: "Getting Started with Git using GitKraken"
 author: "Bob Freeman, Meeta Mistry, Radhika Khetani, Kathleen Keating"
 ---
 
+## Learning Objectives
 
+* Describe version control
+* Implement version control on text file with Git using the GitKraken interface
 
-In this lesson, our focus will be on gaining an understanding of the basic aims and principles of version control by working with a plain text document using Git (GitKraken & GitHub).
 
 ## Getting Started with Git using a GUI (Graphical User Interface)
 
-Usually when programmers use Git for version control of their code, they use the command-line user interface, i.e. a terminal interface from a UNIX/Linux OS. However, there are several tools that enable the use of Git easily for novices using a Graphical User Interface (GUI), enabling a point-and-click interface. Two examples of GUIs are [GitHub Desktop](https://desktop.github.com/) and [GitKraken](www.gitkraken.com). 
+Long-time users of Git often use the command-line user interface (CLI), i.e. a Terminal. However, there are several tools that enable novices to use Git with a Graphical User Interface (GUI) (point-and-click) interface. Two examples of GUIs for Git are [GitHub Desktop](https://desktop.github.com/) and [GitKraken](www.gitkraken.com). We will be using the latter.
 
-Although there are several advantages to using the command line version of Git in the long run, a GUI is a great place to start with learning about version control. 
+Although there are several advantages to using Git from the command-line interface in the long run, a GUI is a great place to start with learning the basics. 
 
 > **A Note on Terminology**
 > 
@@ -20,7 +22,7 @@ Although there are several advantages to using the command line version of Git i
 
 ### Register for a GitHub Account
 
-Since we are going to be using [GitHub](https://github.com/) we will need to register for an account at GitHub if we don’t already have one. 
+Since we are going to be using [GitHub](https://github.com/) along with GitKraken you will need to register for an account on GitHub if we don’t already have one. 
 
 ### Install GitKraken
 
@@ -30,9 +32,11 @@ Most of you should have already installed [GitKraken](https://www.gitkraken.com/
 
 <img src="../img/2.new-setup2.png" width="700" align="center">
 
-> When connecting GitHub to GitKraken, make sure that the authorization is performed on either Chrome or Firefox and not on Internet explorer.
-
 Once you sign in, GitKraken will take you to it's welcome screen. At this point, you are ready to start working with *a repository*.
+
+> **Note 1:** It is important to note that you **do not need a Github account to use Git (or GitKraken) locally** on your computer. However, if you plan to either collaborate with others or use the files from multiple computers, you will need to use a host like Github. 
+>
+> **Note 2:** When connecting GitHub to GitKraken, make sure that the authorization is performed on either Chrome or Firefox and **not on Internet explorer**.
 
 ## Version Controlling a directory of files
 
@@ -46,11 +50,11 @@ Once you sign in, GitKraken will take you to it's welcome screen. At this point,
 Essentially, a (project) folder is chosen to be tracked and a Git repository is initiated within it; this ensure that the contents, and the changes to the contents within that folder will be "watched" by Git.
 
 A few salient features of repositories are listed below:
-* A repository can have many files and sub-folders (basically, a normal project folder)
-* A separate repository for each separate project
-* Do not create repositories for folders within a repository (avoid matryoshka repos!)
-* The changes made within folders with repositories are being "watched" by Git as mentioned above, but these changes have to be deliberately added to the repository in order to be version controlled or recorded 
-* It can be set up to ignore some items in the folder (very large datasets, or temp files)
+* A repository can have many files and sub-folders (basically, a normal folder).
+* Best practice is to have a separate repository for each project.
+* Do not create repositories for folders within a repository (avoid *matryoshka* repositories!).
+* The changes made within repository folders are being "watched" by Git as mentioned above, but these changes have to be deliberately added to the repository in order to be version controlled or recorded.
+* You can be control the items that Git is "watching". It is best practice to ignore very large datasets, or temp files.
 
 Download the folder we have generated for this session [from here](https://github.com/hbctraining/reproducibility-tools/raw/master/data/example_files.zip), and unzip it in a location of your choosing. We recommend placing it on your Desktop for the duration of this workshop.
 
@@ -58,39 +62,39 @@ Download the folder we have generated for this session [from here](https://githu
 
 There are a number of different ways to add files/folders for Git/GitKraken to track.
 
-* **Click on the folder icon at the top left corner**. This will allow you to either *Open* an existing repository, or *Clone* a repository that you or someone else has created, or *Init* (initialize/create) a new repository. 
+* **Within the GitKraken interface click on the folder icon at the top left corner**. This will allow you to either *Open* an existing repository, or *Clone* a repository that you or someone else has created, or *Init* (initialize/create) a new repository. 
 * Today, we will be initializing a repository within a new folder, **click on Init, and then GitHub.com**, so that we can create a repository that we will keep locally, *as well at a remote location* as a backup or perhaps for sharing:
 
 <img src="../img/2.new-init.png" width="700" align="center">
 
 Fill in the fields as appropriate:
-* your GitHub account
-* the name of the repository. *Keep this to letters, numbers, and underscores; for this class, let's call it "gitkraken_workshop".*
-* add a description of what this folder/repository will contain.
-* set the access for the remote location, whether this should be viewable by anyone, or kept private to yourself and only people you add as collaborators
-* leave the "Clone after init" option checked. This will make the repository available to you on GitHub.
-* For the "New repository path", select a location on your computer where the newly created folder (with repo) should be placed using the Browse window. For this class, let's place the repo on your Desktop.
-* Finally, click on the "Create Repository and Clone" button.
+1. your GitHub account name
+1. the name of the repository. *Keep this to letters, numbers, and underscores; for this class, let's call it "gitkraken_workshop".*
+1. add a description of what this folder/repository will contain.
+1. set the access for the remote location, whether this should be viewable by anyone, or kept private to yourself and only people you add as collaborators
+1. leave the "Clone after init" option checked. This will make the repository available to you on GitHub.
+1. for the "New repository path", select a location on your computer where the newly created folder (with repo) should be placed using the Browse window. For this class, let's place the repo on your Desktop.
+1. Finally, click on the "Create Repository and Clone" button.
 
-**Note: sometimes people fail at this step and they are confused as to how to proceed. FINISH THE INSTRUCTIONS LISTED ABOVE!**
+**Note: Make sure you follow all the steps and instructions listed above!**
 
 Voila! You now have your first Git repo!
 
-Our folder should now be visible on the top left and we will be able to see more information about it in the left column.
-
-<img src="../img/2.new-first_repo.png" width="700" align="center">
-
-We'll point out a few features here:
-* a list of known/open repos at the top left
-* a button/function bar in the top middle
-* a listing of the branches for your local and linked remote repositories
-* and then the commit (snapshot) message and files that are part of this commit
-
-Since we'll now want to add more files to this repository, right-mouse click on the `README.md` file and select "Show in Finder" ("Show in Explorer") from the pop-up menu:
+The new folder should now be visible on the top left of the GitKraken interface and we can see more information about it in the left column. 
 
 <img src="../img/2.new-show_in_finder.png" width="700" align="center">
 
-The folder we created the repository with now contains an extra folder with the name `.git` (this is a hidden folder). This folder is how GitKraken will track changes (adding files/folders, modifying existing ones, deleting files/folders) we make within our version controlled folder: 
+> The folder should also appear on your Desktop! If you can't find your folder, you can click on the Readme.md file and click on "Show in Finder", the folder will open (external to GitKraken).
+>
+> <img src="../img/2.new-first_repo.png" width="700" align="center">
+
+What is where on the GitKraken interface?
+* a list of known/open repos at the top left
+* a button/function bar in the top middle
+* a listing of the *branches* for your local and linked remote repositories
+* and then the commit (snapshot) message and files that are part of this commit
+
+The folder we created the repository with now contains an extra folder with the name `.git` (this is a "hidden" folder, so don't worry if you don't see it!). This folder is how GitKraken will track changes (adding files/folders, modifying existing ones, deleting files/folders) we make within our version controlled folder: 
 
 <img src="../img/2.new-finder_view.png" width="700" align="center">
 
@@ -98,24 +102,24 @@ The folder we created the repository with now contains an extra folder with the 
 
 ### Staging and Committing Changes
 
-But before we continue, we wish to utilize a few best practices from research data management: organize your files, using appropriate folder structure and file naming. 
+But before we continue, we want to highlight a few research data management best practices: organize your files, structure your folder and name files consistently. 
 
-1. Let's start by creating 5 new directories: `code`, `data`, `docs`, `figures`, and `other`
+1. Let's start by creating 5 new directories in the folder (in Finder, outside of Git: `code`, `data`, `docs`, `figures`, and `other`
 2. Now, let's move some of the files into these newly created directories from the downloaded `example_files` folder. Move the files into the appropriate folders as shown in the image below. We won't be moving `Pi Formulas...`, `README.md` (since one is already exists in our new repo), and `util_functions.R`.
 
 When done with the moving, your new repo (folder) should look something like the following image:
 
 <img src="../img/2.new-finder_view_added_files.png" width="700" align="center">
 
-Now, when we switch back to GitKraken, you'll notice the timeline window at the top has changed. GitKraken has noticed files have changes, and it's indicated this new set of changes is considered "Work in Progress" (WIP):
+Now, when we go to the GitKraken window, you'll notice the timeline window at the top has changed. GitKraken has noticed files have changes, and it's indicated this new set of changes is considered "Work in Progress" (WIP):
 
 <img src="../img/2.new-first_wip.png" width="700" align="center">
 
-Click on the **WIP** line at the top to show the files it is watching, show in the bottom pane. You can resize this panel to show all the files if you desire:
+Click on the **WIP** (Work In Progress) line at the top to show the files it is watching, show in the bottom pane. You can resize this panel to show all the files if you desire:
 
 <img src="../img/2.new-file_list_resize.png" width="700" align="center">
 
-A **commit** tells Git that you made some changes which you want to record. Though a **commit** seems similar to saving a file, there are different aims behind ‘committing’ changes compared to saving changes. **Commits** take a snapshot of the file at that point and allow you to document information about the changes made to the document.
+A **commit** tells Git that you made some changes which you want to record. Though a **commit** seems similar to saving a file, there are different aims behind ‘committing’ changes compared to saving changes. **Commits** take a snapshot of the file at that point and allow you to document information about the changes made to the document. 
 
 We next need to tell Git that we wish to stage these files for a commit, what we call an initial commit, when we take a snapshot of the files at the start of our work and any tracking that we wish to do. To include or **add** these files for a commit, we **stage** all the changes by clicking on the "Stage all changes" button:
 

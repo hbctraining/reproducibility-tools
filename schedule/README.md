@@ -21,6 +21,21 @@
 
 ## Day 2
 
+| Time            |  Topic  | Instructor |
+|:------------------------:|:------------------------------------------------:|:--------:|
+| 09:30 - 10:10 | [What is Version Control](../lessons/03_Intro_to_versioning.md) | |
+| 10:10 - 10:55 | [Using Git(Kraken) for version control](../lessons/04_GitKraken.md) | |
+| 10:55 - 11:00 | Break |  |
+| 11:00 - 11:45 | [GitHub: a remote repository](../lessons/05_Github_remote1.md) |  |
+| 11:45 - 12:00 | Assignment review |  |
+
+### Assignment #1
+
+* [Practice making remote changes (GitHub) and sycning to your local repo](../lessons/06_Github_remote2.md)
+* Upload the files requested in the above exercise to [Dropbox](https://www.dropbox.com/request/d7ypnDNbv0xtaL5UuMoU) **day before the next class**.
+* [Email us](mailto:hbctraining@hsph.harvard.edu) about questions that you need answered to work through the exercise.
+* Post questions that you would like to have reviewed in class [here](https://PollEv.com/hbctraining945).
+
 ---
 
 ## Day 3

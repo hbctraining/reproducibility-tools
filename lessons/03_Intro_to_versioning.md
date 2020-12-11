@@ -6,7 +6,7 @@ author: "Daniel van Strien, Radhika Khetani, Bob Freeman, Meeta Mistry, Kathleen
 
 #  Versioning your Data and Scripts
 
-3. Downloading the [workshop sample files zipped folder](https://github.com/hbctraining/versioning_data_scripts/raw/master/data/example_files.zip) and unzip it.
+Download the [workshop sample files zipped folder](https://github.com/hbctraining/versioning_data_scripts/raw/master/data/example_files.zip) and unzip it.
 
 ## What is Version Control?
 
@@ -61,9 +61,6 @@ Dropbox, Google Drive and other services offer some form of version control in t
 * Allows comments on every modification making it easier to revert to older version
 * Allows you and others to navigate the history of a document readily
 * Ensures that changes across multiple documents are coordinated and saved together (easy conflict resolution) 
-
-***
-Next: [Getting Started with Git using GitKraken](02_GitKraken.md)
 
 ***
 

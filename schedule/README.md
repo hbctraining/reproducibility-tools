@@ -24,11 +24,12 @@
 
 | Time            |  Topic  | Instructor |
 |:------------------------:|:------------------------------------------------:|:--------:|
-| 09:30 - 10:10 | [What is Version Control](../lessons/03_Intro_to_versioning.md) | |
-| 10:10 - 10:55 | [Using Git(Kraken) for version control](../lessons/04_GitKraken.md) | |
-| 10:55 - 11:00 | Break |  |
-| 11:00 - 11:45 | [GitHub: a remote repository](../lessons/05_Github_remote1.md) |  |
-| 11:45 - 12:00 | Assignment review |  |
+| 09:30 - 10:00 | RMarkdown assignment review | |
+| 10:00 - 10:15 | [What is Version Control](../lessons/03_Intro_to_versioning.md) | |
+| 10:15 - 11:05 | [Using Git(Kraken) for version control](../lessons/04_GitKraken.md) | |
+| 11:05 - 11:10 | Break |  |
+| 11:10 - 11:50 | [GitHub: a remote repository](../lessons/05_Github_remote1.md) |  |
+| 11:50 - 12:00 | Assignment review |  |
 
 ### Assignment #1
 

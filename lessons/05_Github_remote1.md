@@ -31,7 +31,7 @@ Notice that our commit short descriptions are shown here; and that we can see th
 
 **Exercise #2**
 
-1. Push the changes to the "learning_github" repo (from the preivous exercise) to the remote repo on github.com
+1. Push the changes to the "learning_github" repo (from the previous exercise) to the remote repo on github.com
 2. Make changes to data-file.txt on GitHub.com
 3. Sync or "Pull" the changes that were made remotely to the local repository
 ***

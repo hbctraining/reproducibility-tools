@@ -104,25 +104,34 @@ After committing, you should now see the `Pi Formulas...` document in your `docs
 
 **Exercise: Creating a new file**
 
+1. Navigate to the `code` folder. We are going to create and Rmarkdown file in this directory.
+2. Click on the "Add File" button and choose "Create new file" from the drop-down button.
+3. You will now find yourself on a new page, with your cursor flashing in a text box at the top of the page. Give your new file the name `workshop_rmd_exercise.Rmd`.
+4. In the space below, you can add the contents of your file. Locate the .Rmd file you created in [Day 1 self-learning](../activities/Rmd_exercise4.md). Copy and paste the code into the browser space labeled "< > Edit new file".
+5. Scroll down to the Commit box at the bottom and give your commit a descriptive title. Then click "Commit new file".
 
 ***
 
 
 ## Syncing remote changes to your local repository
 
-Two important sidebars: since on GitHub.com file changes are done serially, coodinated file changes cannot be done here -- the must be done on your local machine with GitKraken. Also, all these changes are realtime on the GitHub remote -- Once you have committed these changes these changes are immediate.
+Let's return to our local machine and apply the changes we made online to our local repo. GitKraken has already noticed that our remote repo has changed, and the markers for the two repos (local and remote) have diverged:
 
-Let's return to our local machine. GitKraken has already noticed that our remote repo has changed, and the markers for the two repos (local and remote) have diverged:
-
+<p align="center">
 <img src="../img/3.new-local_remote_differ_on_commits.png" width="700" align="center">
+  </p>
 
-Click on the timeline entry to view the file changes:
+Click on the timeline entry to **view the file changes**:
 
+<p align="center">
 <img src="../img/3.view_remote_commit_changes.png" width="700" align="center">
+  </p>
 
-And click on the filename itself to see the changes made within:
+And click on the filename itself to **see the changes made within each file**:
 
+<p align="center">
 <img src="../img/3.view_remote_file_diff.png" width="700" align="center">
+  </p>
 
 You can see from this view that we now have the text with changes highlighted in <span style="color:green">green</span> and <span style="color:red">red</span>. <span style="color:red">Red</span> indicates where things have been removed, while <span style="color:green">green</span> indicates additions. 
 
@@ -130,29 +139,44 @@ Click on the filename again to return to our commit timeline.
 
 To get all these changes back onto our own (local) computer, we need to Pull these changes back to our local repo, using the Pull button in the GitKraken toolbar towards the top of the screen:
 
+<p align="center">
 <img src="../img/3.new-pull.png" width="700" align="center">
+</p>
 
 If all goes well, you should see a brief 'Success' message, and your repos should be in sync again:
 
+<p align="center">
 <img src="../img/3.local_remote_in_sync.png" width="700" align="center">
+</p>
+
+Two important sidebars: since on GitHub.com file changes are done serially, coodinated file changes cannot be done here -- the must be done on your local machine with GitKraken. Also, all these changes are realtime on the GitHub remote -- Once you have committed these changes these changes are immediate.
+
 
 ## Viewing File Histories
 
 One very useful feature of this and other Git clients is looking at how a file has changed over time. In GitKraken, select the timeline entry 'Refactor code...', and in the section below, right-mouse click on the `scriptlets.R` file and select "File History" to see exactly that: 
 
+<p align="center">
 <img src="../img/3.new-get_to_file_history.png" width="700" align="center">
+</p>
 
 Our code file is displayed with comments on the left and differences between the (left) selected and previous versions:
 
+<p align="center">
 <img src="../img/3.new-showing_file_history.png" width="700" align="center">
+</p>
 
 Clicking on the previous comment shows the next level of changes:
 
+<p align="center">
 <img src="../img/3.new-file_history_previous_comments.png" width="700" align="center">
+</p>
 
 And finally, clicking on the File View button shows all the changes together, with the log (legend) of changes being indicated with color coding:
 
+<p align="center">
 <img src="../img/3.new-history_combined_file_view.png" width="700" align="center">
+</p>
 
 Click on the X at the upper right to close this window and return to the commit timeline.
 

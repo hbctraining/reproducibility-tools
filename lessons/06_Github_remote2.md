@@ -5,6 +5,9 @@ author: "Bob Freeman, Meeta Mistry, Radhika Khetani, Kathleen Keating"
 ---
 
 ## Learning Objectives
+* Explore different ways of making remote changes on GitHub (editing, adding files, deleting files)
+* Understand how to sync remote changes to your local repository using GitKraken
+* Evaluate file history in GitKraken
 
 ## Making Changes Remotely
 
@@ -184,6 +187,7 @@ And finally, clicking on the File View button shows all the changes together, wi
 <p align="center">
 <img src="../img/3.new-history_combined_file_view.png" width="700" align="center">
 </p>
+
 
 To close this window and return to the commit timeline, click on the X at the upper right.
 

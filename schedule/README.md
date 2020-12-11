@@ -26,9 +26,9 @@
 |:------------------------:|:------------------------------------------------:|:--------:|
 | 09:30 - 10:00 | RMarkdown assignment review | Jihe |
 | 10:00 - 10:15 | [What is Version Control](../lessons/03_Intro_to_versioning.md) | Meeta |
-| 10:15 - 11:05 | [Using Git(Kraken) for version control](../lessons/04_GitKraken.md) | Radhika |
+| 10:15 - 11:05 | [Using Git(Kraken) for version control locally](../lessons/04_GitKraken.md) | Radhika |
 | 11:05 - 11:10 | Break |  |
-| 11:10 - 11:50 | [GitHub: a remote repository](../lessons/05_Github_remote1.md) | Radhika |
+| 11:10 - 11:50 | [Using GitHub for version control "remotely"](../lessons/05_Github_remote1.md) | Radhika |
 | 11:50 - 12:00 | Assignment review | Meeta |
 
 ### Assignment #2

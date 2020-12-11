@@ -34,9 +34,8 @@ Notice that our commit short descriptions are shown here; and that we can see th
 
 **Exercise #2**
 
-1. Push the changes to the "learning_github" repo (from the previous exercise) to the remote repo on github.com
-2. Make changes to data-file.txt on GitHub.com
-3. [Bonus] Can you figure out how to Sync or "Pull" the changes that were made remotely to the local repository?
+Push the changes to the "learning_github" repo (from the previous exercise) to the remote repo on github.com.
+
 ***
 
 On Github, you can choose to keep repositories public or make them private; and if they are private, you can choose specific GitHub users with whom you want to share it or collaborate with. For this lesson, we will stick with having a public repository. 

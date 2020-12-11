@@ -4,6 +4,9 @@ title: "Git(hub) Remote"
 author: "Bob Freeman, Meeta Mistry, Radhika Khetani, Kathleen Keating"
 ---
 
+## Learning Objectives
+* Describe the process of "Syncing" local and remote versions of Git repositories
+
 ## Repositories online (remote)
 
 ### Pushing Your Changes to Your Remote Repository

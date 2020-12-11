@@ -149,7 +149,7 @@ To **get all these changes back onto our own (local) computer**, we need to **Pu
 <img src="../img/3.new-pull.png" width="700" align="center">
 </p>
 
-If all goes well, you should see a brief 'Success' message, and your repos should be in sync again. **Take a screenshot of your GitKraken window, that shows the changes that you have synced to your local repo. Upload this image to the Dropbox link on the schedule page.**
+If all goes well, you should see a brief 'Success' message, and your repos should be in sync again. 
 
 <p align="center">
 <img src="../img/3.local_remote_in_sync.png" width="700" align="center">
@@ -159,6 +159,13 @@ If all goes well, you should see a brief 'Success' message, and your repos shoul
 > * On GitHub.com file changes are done serially, so commits with modifications to multiple files cannot be done here.
 > * All of these changes in the web browser are realtime on the GitHub remote, i.e. the commits take effect immediately without an intermediate **add** or **stage** step.
 
+***
+
+**Exercise**
+
+**Take a screenshot of your GitKraken window, which shows the changes that you have synced to your local repo. Upload this image to the Dropbox link on the schedule page.**
+
+***
 
 ## Viewing File Histories
 

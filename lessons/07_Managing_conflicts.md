@@ -67,7 +67,7 @@ and then proceed to **commit** and merge the changes (resolved conflict). When y
 
 <img src="../img/3.new-commit_and_merge_conflict.png" width="600" align="center">
 
-GK now shows our commit & its message in the timeline in the upper pane:
+GitKraken now shows our commit & its message in the timeline in the upper panel:
 
 <img src="../img/3.new-merged_conflict_timeline.png" width="600" align="center">
 

@@ -84,9 +84,8 @@ If you are careful about always syncing changes you will be able to avoid having
 
 **Exercise #3**
 
-1. Create a conflict within the "data-file.txt" file by making changes locally and remotely.
+1. For the "learning_github" repo you generated earlier, create a conflict within the "data-file.txt" file by making changes locally and remotely.
 2. Resolve the conflict and commit.
-3. [Optional] Add your neighbor as a collaborator to a the "learning_github" repo (in Settings -> Collaborators & teams), make changes to create a conflict within the "data-file.txt" document in one of the repos (pick one), and resolve the conflict.
 
 ***
 

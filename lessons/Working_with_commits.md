@@ -57,9 +57,27 @@ To perform this, click on the "Removing Hello World" commit node, and right-mous
 
 <img src="../img/gitkraken_revert2.png" width="700" align="center">
   
-When prompted, you can immediate commit this explicit change, or keep the changes as a WIP (work in progress) for you to do additional work. Clicking Yes enters the new commit to your repo.
+When prompted, you can immediate commit this explicit change, or keep the changes as a WIP (work in progress) for you to do additional work. Clicking Yes enters the new commit to your repo. Take a look at the `example_Rcode.R` file. You should see that it is how it was, when we first started this lesson.
+
+## Resetting (Checking Out Previous) Commits
+
+At times, there may be the need to go back in history to a previous commit: perhaps you wish to retrieve files that you've deleted or changed, or perhaps you wish to inspect the state of your project and code to inform current work. No matter what it is, like a time machine, Git allows you to move the pointer on your repo to any commit, and it will likewise change the repo files and structure to reflect that.
+
+We realized that deleting all of those Python scripts (in the [self-learning lesson](06_Github_remote2.md)) was a big mistake. We actually need that code for a subset of our analyses!
+
+Now, we want those back. Working with a previous commit will help us here. If we right-click on the commit where right before we deleted the first file, "including attribution for utility functions", we have an option to "Reset master to this commit", with three options: soft, mixed, and hard:
+
+<img src="../img/gitkraken_reset_options.png" width="700" align="center">
+
+The 'soft' option allows us to keep any changes. Although this may seem the safest option, one could run into problems if there are files that overlap or change over time. We don't want any conflicts so we will go with the 'hard' option. Once you select this, note that the "main" node has moved down to the older commit. Ifyou open up your finder window and look inside the code folder you will now see the Python files
 
 
+> **NOTE:** The 'hard' option seems extreme, discarding all of our changes. If we had been working on the repo and had some changes staged, this would be problematic. We wouldn't want to risk totally losing everything, if we potentially wanted to come back. In this scenario you would want to consider the [stash](https://support.gitkraken.com/working-with-commits/stashing/) option before choosing the 'hard' reset.
+
+<img src="../img/gitkraken_reset_hard.png" width="700" align="center">
+
+
+---
 
 * Materials used in these lessons are derived from Daniel van Strien's ["An Introduction to Version Control Using GitHub Desktop,"](http://programminghistorian.org/lessons/getting-started-with-github-desktop), Programming Historian, (17 June 2016). [The Programming Historian ISSN 2397-2068](http://programminghistorian.org/), is released under the [Creative Commons Attribution license](https://creativecommons.org/licenses/by/4.0/) (CC BY 4.0).*
 

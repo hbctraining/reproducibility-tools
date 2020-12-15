@@ -31,17 +31,14 @@ Now go back to your GitKraken window and click on the //WIP node on the graph. S
 
 You'll note that the previous commit message is copied into the Message and Description fields. This is your chance to edit the commit message you previously made a typo on. And you can amend the commit with additional changes, which we also did by removing additional code.
 
-The commit button is titled Amend Previous Commit instead. Go ahead.
+The commit button is titled Amend Previous Commit instead. 
 
-<img src="../img/amend3.png" width="700" align="center">
-
-
-If you wish to amend the message only, hover over and click on the commit message in the bottom pane for the latest commit:
+<img src="../img/gitkraken_amend3.png" width="700" align="center">
 
 
-Change your commit message, and click on the Update Message button at the bottom:
+If you wish to amend the message only, hover over and click on the commit message. If you right click you get the option to "Edit commit message".
 
-<img src="../img/4.04.update_message_button.png" width="700" align="center">
+<img src="../img/gitkraken_amend4.png" width="700" align="center">
 
 
 ## Reverting Commits

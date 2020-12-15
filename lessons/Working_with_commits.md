@@ -43,17 +43,21 @@ If you wish to amend the message only, hover over and click on the commit messag
 
 ## Reverting Commits
 
-Sometimes you just want to undo the last thing you did. Like that last change (e.g. commit, branch, etc) you didn't mean to make? GitKraken's Undo button in the top toolbar will let you undo most actions (which can also Redo if needed!). Hover over the Undo button to see what action it will take, and click if that seems appropriate:
+Sometimes you just want to undo the last thing you did. Maybe that last change you made (e.g. commit, branch, etc) was something you didn't mean to make. GitKraken's Undo button in the top toolbar will let you undo most actions (which can also Redo if needed!). 
 
-<img src="../img/4.05.undo_button_hover.png" width="700" align="center">
+Hover over the Undo button to see what action it will take:
 
-If the Undo option is not available or not appropriate, one can use the Revert Commit option for the latest commit or even a previous one. This will not only bring back the changes to your working directory, but will include an explicit commit to document that this change to the repo. To perform this, click on the commit node, and right-mouse click to see the popup menu. From there, select the Revert Commit option:
+<img src="../img/gitkraken_revert1.png" width="700" align="center">
 
-<img src="../img/4.06.revert_commit_popup_menu.png" width="700" align="center">
+Looks like, if we wanted, we could undo the Amend Commit that we just did. This would revert us back to the original commit with only the "Hello World" code removed (and the typo in the commit message).
+
+If the Undo option is not available or not appropriate, one can also use the Revert Commit option. This allows you to not only undo the latest commit but it can also revert back to an older previous commit (that may have happened many commits before the last one). This will not only bring back the changes to your working directory, but will include an explicit commit to document this change to the repo. 
+
+To perform this, click on the "Removing Hello World" commit node, and right-mouse click to see the popup menu. From there, select the Revert Commit option:
+
+<img src="../img/gitkraken_revert2.png" width="700" align="center">
   
-When prompted, you can immediate commit this explicit change, or keep the changes as a WIP (work in progress) for you to do additional work. Clicking Yes enters the new commit to your repo:
-
-<img src="../img/4.07.commit_a_revert_commit.png" width="700" align="center">
+When prompted, you can immediate commit this explicit change, or keep the changes as a WIP (work in progress) for you to do additional work. Clicking Yes enters the new commit to your repo.
 
 
 

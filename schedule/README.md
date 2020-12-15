@@ -33,7 +33,7 @@
 
 ### Assignment #2
 
-* [Pactice exercise](../activities/git_exercise.md)
+* [Practice exercise](../activities/git_exercise.md)
 * [More about working on Github and practice with GitHub](../lessons/06_Github_remote2.md)
 * Upload the files requested in the above exercise to [Dropbox](https://www.dropbox.com/request/sfOKVBPhFdS8BpifRIyt) **day before the next class**.
 * [Email us](mailto:hbctraining@hsph.harvard.edu) about questions that you need answered to work through the exercise.
@@ -42,6 +42,16 @@
 ---
 
 ## Day 3
+
+| Time            |  Topic  | Instructor |
+|:------------------------:|:------------------------------------------------:|:--------:|
+| 09:30 - 10:00 | GitHub assignment review | Meeta |
+| 10:00 - 10:40 | [Managing conflicts with GitKraken](../lessons/07_Managing_conflicts.md) | Radhika |
+| 10:40 - 10:45 | Break | |
+| 10:45 - 11:25 |[Working with Commits](../lessons/Working_with_commits.md) | Meeta |
+| 11:25 - 11:50 | Discussion Q & A | All|
+| 11:50 - 12:00 | Wrap-up| Radhika |
+
 
 ---
 

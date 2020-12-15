@@ -50,7 +50,7 @@
 | 10:40 - 10:45 | Break | |
 | 10:45 - 11:25 |[Working with Commits](../lessons/Working_with_commits.md) | Meeta |
 | 11:25 - 11:50 | Discussion Q & A | All|
-| 11:50 - 12:00 | Wrap-up| Radhika |
+| 11:50 - 12:00 | [Wrap-up](../lectures/Workshop_wrapup.pdf)| Radhika |
 
 
 ---

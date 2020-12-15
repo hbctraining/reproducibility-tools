@@ -54,3 +54,8 @@
 -   [knitr vignettes](https://github.com/yihui/knitr/tree/master/vignettes)
 
 
+### GitHub and GitKraken
+* The [GitKraken guide](https://support.gitkraken.com/getting-started/guide) is a great way to start exploring it's functionality, and learning more about what Git can do.
+* GitHub also provides extensive support in the form of [guides](https://guides.github.com/) and [help](https://help.github.com/).
+* GitHub [Glossary](https://help.github.com/articles/github-glossary/) outlines the most commonly used GitHub/Git terminology.
+

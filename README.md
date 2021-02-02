@@ -11,6 +11,8 @@ Reproducibility is an integral part of high-quality research, and it is the case
 
 **Note for Trainers:** Please note that the schedule linked below assumes that learners will spend between 2-3 hours on reading through, and completing exercises from selected lessons between classes. The online component of the workshop focuses on more exercises and discussion/Q & A.
 
+> These materials were developed for a trainer-led workshop, but are also amenable to self-guided learning.
+
 ### Learning Objectives
 
 - How to generate reports for your analyses using RMarkdown 

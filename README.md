@@ -7,7 +7,6 @@
 ### Description
 
 Reproducibility is an integral part of high-quality research, and it is the case for computational work as well. In bioinformatics, good reproducible work is critical for result interpretation, code sharing and project collaboration. This online hands-on workshop will instruct participants on several best practices for reproducible research in Bioinformatics, and introduce the use of RMarkdown, Git version control and Github. To attend this workshop, working knowledge of R or completion of the [Introduction to R workshop](https://hbctraining.github.io/Intro-to-R/) is required.
-> These materials were developed for a trainer-led workshop, but are also amenable to self-guided learning.
 
 **Note for Trainers:** Please note that the schedule linked below assumes that learners will spend between 2-3 hours on reading through, and completing exercises from selected lessons between classes. The online component of the workshop focuses on more exercises and discussion/Q & A.
 

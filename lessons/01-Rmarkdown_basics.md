@@ -19,7 +19,7 @@ When you do lab work, you use lab notebooks to organize your methods, results, a
 <img src="../img/reproducibility.jpg" width="800">
 </p>
 
-*Image source: Peng 2011 https://doi.org/10.1126/science.1213847*
+*Image source: "Reproducible Research in Computational Science", Peng 2011 https://doi.org/10.1126/science.1213847*
 
 
 ## RMarkdown

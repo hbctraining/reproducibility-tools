@@ -5,10 +5,11 @@
 | Time            |  Topic  | Instructor |
 |:------------------------:|:------------------------------------------------:|:--------:|
 | 09:30 - 10:10 | [Workshop Introduction](https://github.com/hbctraining/reproducibility-tools/blob/master/lectures/Intro_to_workshop.pdf) | Radhika |
+Jelena
 | 10:10 - 10:55 | [RMarkdown Basics](../lessons/01-Rmarkdown_basics.md) | Meeta |
 | 10:55 - 11:00 | Break |  |
 | 11:00 - 11:45 | [RMarkdown Intermediate](../lessons/02-Rmarkdown_intermediate.md) | Radhika |
-| 11:45 - 12:00 | Assignment review | Jihe |
+| 11:45 - 12:00 | Assignment review | Meeta |
 
 ### Assignment #1
 

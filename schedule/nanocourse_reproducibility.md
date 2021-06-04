@@ -14,10 +14,9 @@ Jelena
 ### Assignment #1
 
 * [Practice with RMarkdown](../activities/Rmd_exercise4.md)
-* Upload the files requested in the above exercise to [Dropbox](https://www.dropbox.com/request/d7ypnDNbv0xtaL5UuMoU) **day before the next class**.
+* Upload the files requested in the above exercise to [Dropbox]() **day before the next class**.
 * [Email us](mailto:hbctraining@hsph.harvard.edu) about questions that you need answered to work through the exercise.
-* Post questions that you would like to have reviewed in class [here](https://PollEv.com/hbctraining945).
-* [**Answer key**](https://raw.githubusercontent.com/hbctraining/reproducibility-tools/master/activities/Rmd_exercise4_answerkey.rmd)
+* Post questions that you would like to have reviewed in class [here](https://PollEv.com/discourses/weUDm3Q5QpbBVZMEYV2Sn/respond).
 
 ---
 
@@ -36,9 +35,9 @@ Jelena
 
 * [Practice exercise](../activities/git_exercise.md)
 * [More about working on Github and practice with GitHub](../lessons/06_Github_remote2.md)
-* Upload the files requested in the above exercise to [Dropbox](https://www.dropbox.com/request/sfOKVBPhFdS8BpifRIyt) **day before the next class**.
+* Upload the files requested in the above exercise to [Dropbox]() **day before the next class**.
 * [Email us](mailto:hbctraining@hsph.harvard.edu) about questions that you need answered to work through the exercise.
-* Post questions that you would like to have reviewed in class [here](https://PollEv.com/hbctraining945).
+* Post questions that you would like to have reviewed in class [here](https://PollEv.com/discourses/weUDm3Q5QpbBVZMEYV2Sn/respond).
 
 ---
 
@@ -49,7 +48,7 @@ Jelena
 | 09:30 - 10:00 | GitHub assignment review | Meeta |
 | 10:00 - 10:40 | [Managing conflicts with GitKraken](../lessons/07_Managing_conflicts.md) | Radhika |
 | 10:40 - 10:45 | Break | |
-| 10:45 - 11:25 |[Working with Commits](../lessons/Working_with_commits.md) | Meeta |
+| 10:45 - 11:25 | [Working with Commits](../lessons/Working_with_commits.md) | Meeta |
 | 11:25 - 11:50 | Discussion Q & A | All|
 | 11:50 - 12:00 | [Wrap-up](../lectures/Workshop_wrapup.pdf)| Radhika |
 

@@ -4,9 +4,9 @@
 
 | Time            |  Topic  | Instructor |
 |:------------------------:|:------------------------------------------------:|:--------:|
-| 13:00 - 13:10 | Introduction to Nanocourse | Radhika |  
+| 13:00 - 13:10 | [Introduction to Nanocourse](https://www.dropbox.com/s/2t4d6mwi5v089yo/Intro_to_nanocourse.pdf?dl=0) | Radhika |  
 | 13:10 - 13:30 | R3 (Research, Rigor, Reproducibility) & Me | Jelena |
-| 13:30 - 13:40 | Setting up | Radhika | 
+| 13:30 - 13:40 | [Setting up](https://www.dropbox.com/s/twd55zxwczs5eqw/Setting-up.pdf?dl=0) | Radhika | 
 | 13:40 - 14:25 | [RMarkdown Basics](../lessons/01-Rmarkdown_basics.md) | Meeta |
 | 14:25 - 14:30 | Break |  |
 | 14:30 - 15:15 | [RMarkdown Intermediate](../lessons/02-Rmarkdown_intermediate.md) | Radhika |
@@ -15,7 +15,7 @@
 ### Assignment #1
 
 * [Practice with RMarkdown](../activities/Rmd_exercise4.md)
-* Upload the files requested in the above exercise to [Dropbox]() **day before the next class**.
+* Upload the files requested in the above exercise to [Dropbox](https://www.dropbox.com/request/XcDilfhxcdma2dALWUJa) **day before the next class**.
 * [Email us](mailto:hbctraining@hsph.harvard.edu) about questions that you need answered to work through the exercise.
 * Post questions that you would like to have reviewed in class [here](https://PollEv.com/discourses/weUDm3Q5QpbBVZMEYV2Sn/respond).
 
@@ -35,7 +35,7 @@
 
 * [Practice exercise](../activities/git_exercise.md)
 * [More about working on Github and practice with GitHub](../lessons/06_Github_remote2.md)
-* Upload the files requested in the above exercise to [Dropbox]() **day before the next class**.
+* Upload the files requested in the above exercise to [Dropbox](https://www.dropbox.com/request/8WcveeBj4Qc5WRhQqKFC) **day before the next class**.
 * [Email us](mailto:hbctraining@hsph.harvard.edu) about questions that you need answered to work through the exercise.
 * Post questions that you would like to have reviewed in class [here](https://PollEv.com/discourses/weUDm3Q5QpbBVZMEYV2Sn/respond).
 

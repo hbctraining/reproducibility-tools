@@ -1,15 +1,16 @@
-# Workshop Schedule
+# Nanocourse Schedule
 
 ## Day 1
 
 | Time            |  Topic  | Instructor |
 |:------------------------:|:------------------------------------------------:|:--------:|
-| 09:30 - 10:10 | [Workshop Introduction](https://github.com/hbctraining/reproducibility-tools/blob/master/lectures/Intro_to_workshop.pdf) | Radhika |
-Jelena
-| 10:10 - 10:55 | [RMarkdown Basics](../lessons/01-Rmarkdown_basics.md) | Meeta |
-| 10:55 - 11:00 | Break |  |
-| 11:00 - 11:45 | [RMarkdown Intermediate](../lessons/02-Rmarkdown_intermediate.md) | Radhika |
-| 11:45 - 12:00 | Assignment review | Meeta |
+| 13:00 - 13:10 | Introduction to Nanocourse | Radhika |  
+| 13:10 - 13:30 | R3 (Research, Rigor, Reproducibility) & Me | Jelena |
+| 13:30 - 13:40 | Setting up | Radhika | 
+| 13:40 - 14:25 | [RMarkdown Basics](../lessons/01-Rmarkdown_basics.md) | Meeta |
+| 14:25 - 14:30 | Break |  |
+| 14:30 - 15:15 | [RMarkdown Intermediate](../lessons/02-Rmarkdown_intermediate.md) | Radhika |
+| 15:15 - 15:30 | Assignment review | Meeta |
 
 ### Assignment #1
 
@@ -24,12 +25,11 @@ Jelena
 
 | Time            |  Topic  | Instructor |
 |:------------------------:|:------------------------------------------------:|:--------:|
-| 09:30 - 10:00 | RMarkdown assignment review | Jihe |
-| 10:00 - 10:15 | [What is Version Control](../lessons/03_Intro_to_versioning.md) | Meeta |
-| 10:15 - 11:05 | [Using Git(Kraken) for version control locally](../lessons/04_GitKraken.md) | Radhika |
-| 11:05 - 11:10 | Break |  |
-| 11:10 - 11:50 | [Using GitHub for version control "remotely"](../lessons/05_Github_remote1.md) | Radhika |
-| 11:50 - 12:00 | Assignment review | Meeta |
+| 13:00 - 13:30 | RMarkdown assignment review | Radhika |
+| 13:30 - 13:45 | [What is Version Control](../lessons/03_Intro_to_versioning.md) | Meeta |
+| 13:45 - 14:35 | [Using Git(Kraken) for version control locally](../lessons/04_GitKraken.md) | Radhika |
+| 14:35 - 14:40 | Break |  |
+| 14:40 - 15:30 | [Using GitHub for version control "remotely"](../lessons/05_Github_remote1.md) | Radhika |
 
 ### Assignment #2
 
@@ -45,13 +45,12 @@ Jelena
 
 | Time            |  Topic  | Instructor |
 |:------------------------:|:------------------------------------------------:|:--------:|
-| 09:30 - 10:00 | GitHub assignment review | Meeta |
-| 10:00 - 10:40 | [Managing conflicts with GitKraken](../lessons/07_Managing_conflicts.md) | Radhika |
-| 10:40 - 10:45 | Break | |
-| 10:45 - 11:25 | [Working with Commits](../lessons/Working_with_commits.md) | Meeta |
-| 11:25 - 11:50 | Discussion Q & A | All|
-| 11:50 - 12:00 | [Wrap-up](../lectures/Workshop_wrapup.pdf)| Radhika |
-
+| 13:00 - 13:30 | GitHub assignment review | Meeta |
+| 13:30 - 14:10 | [Managing conflicts with GitKraken](../lessons/07_Managing_conflicts.md) | Radhika |
+| 14:10 - 14:15 | Break | |
+| 14:15 - 15:00 | [Working with Commits](../lessons/Working_with_commits.md) | Meeta |
+| 15:00 - 15:20 | Discussion Q & A | All|
+| 15:20 - 15:30 | Wrap-up | Radhika |
 
 ---
 

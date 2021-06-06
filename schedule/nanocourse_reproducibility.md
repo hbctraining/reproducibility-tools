@@ -4,9 +4,9 @@
 
 | Time            |  Topic  | Instructor |
 |:------------------------:|:------------------------------------------------:|:--------:|
-| 13:00 - 13:10 | [Introduction to Nanocourse](https://www.dropbox.com/s/2t4d6mwi5v089yo/Intro_to_nanocourse.pdf?dl=0) | Radhika |  
+| 13:00 - 13:10 | [Introduction to Nanocourse](../lectures/Intro_to_nanocourse.pdf) | Radhika |  
 | 13:10 - 13:30 | R3 (Research, Rigor, Reproducibility) & Me | Jelena |
-| 13:30 - 13:40 | [Setting up](https://www.dropbox.com/s/twd55zxwczs5eqw/Setting-up.pdf?dl=0) | Radhika | 
+| 13:30 - 13:40 | [Setting up](../lectures/Setting-up.pdf) | Radhika | 
 | 13:40 - 14:25 | [RMarkdown Basics](../lessons/01-Rmarkdown_basics.md) | Meeta |
 | 14:25 - 14:30 | Break |  |
 | 14:30 - 15:15 | [RMarkdown Intermediate](../lessons/02-Rmarkdown_intermediate.md) | Radhika |

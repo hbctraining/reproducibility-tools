@@ -19,17 +19,17 @@ mydocument_v3_rev-BHP.txt
 mydocument_v8_Final?.txt
 ```
 
-Some tools let us deal with this a bit better without creating a new file for every "save", such as Microsoft Word's "Track Changes" or DropBox's and Google Docs' "version history" feature.
+Some tools let us deal with this a bit better without creating a brand new file for every "save". For example, using Microsoft Word's "Track Changes" allows us to highlight the changes that are being made within the document. This can be helpful for when collaborating on a document so other people can see the changes being made. Alternatively, DropBox and Google Docs have a built-in "version history" feature which keeps older versions of documents (up to a certain point in time) so that you can revert back to if need be.
 
-Version control systems on the other hand start with a base version of the document and then save just the changes you made at each step of the way by taking a so-called "snapshot". A snapshot records information about when a doc was saved, and all the changes between the current document and the previous version. The user (you) decides when these snapshots are collected, and this allows one to ‘rewind’ your file to an older version. 
+**Version control systems** on the other hand start with a base version of the document and then **save only the changes you made at each step** of the way by taking a so-called "snapshot". A snapshot records information about when a file was saved, and all the differences between the current document and the previous version. The user (you) decides when these snapshots are collected, and this allows one to ‘rewind’ your file to an older version. 
 
 <img src="../img/play-changes.png" width="600" align="center">
 
-For example, two users can make independent sets of changes based on the same document and have 2 separate snapshots documenting the changes.
+Version control is also very useful when collaborating. For example, two users can make independent sets of changes based on the same document and each have separate snapshots documenting their changes.
 
 <img src="../img/versions.png" width="400" align="center">
 
-If there aren't conflicts (i.e updates to the same line), the two sets of changes can be "merged" back into the same base document.
+If there aren't any conflicts (i.e updates to the same line), the two sets of changes can be "merged" back into the same base document.
 
 <img src="../img/merged_example.png" width="400" align="center">
 

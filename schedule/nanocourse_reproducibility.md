@@ -63,7 +63,7 @@
 
 ### GitHub and GitKraken
 * The [GitKraken guide](https://support.gitkraken.com/getting-started/guide) is a great way to start exploring it's functionality, and learning more about what Git can do.
-* GitHub also provides extensive support in the form of [guides](https://guides.github.com/) and [help](https://help.github.com/).
+* GitHub also provides extensive support in the form of [guides](https://guides.github.com/), [help](https://help.github.com/) and [docs](https://docs.github.com/en/github).
 * GitHub [Glossary](https://help.github.com/articles/github-glossary/) outlines the most commonly used GitHub/Git terminology.
 * Software Carpentry's [Version Control with Git](https://swcarpentry.github.io/git-novice/)
 * Data Carpentry for Biologist's lessons on [Version Control](https://datacarpentry.org/semester-biology/materials/version-control-R/)

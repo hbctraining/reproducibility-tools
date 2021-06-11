@@ -21,9 +21,9 @@ Let's add a change to our remote repository to main documentation `README.md` fi
 
 <img src="../img/3.new-edit_online_to_start_conflict.png" width="700" align="center">
 
-Don't forget to commit this change on Github. 
+Commit this change on Github! 
 
-Without syncing/pulling, make a change to the same document using the text editor locally:
+Now let's move back to GitKrken, and without syncing/pulling, make a change to the same document locally:
 
 <img src="../img/3.new-edit_locally_to_make_conflict.png" width="700" align="center">
 

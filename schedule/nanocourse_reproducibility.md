@@ -49,7 +49,7 @@
 | 14:10 - 14:15 | Break | |
 | 14:15 - 15:00 | [Working with Commits](../lessons/Working_with_commits.md) | Meeta |
 | 15:00 - 15:20 | Discussion Q & A | All|
-| 15:20 - 15:30 | Wrap-up | Radhika |
+| 15:20 - 15:30 | [Wrap-up](https://www.dropbox.com/s/qog4r3mytpu783c/Nanocourse_wrapup.pdf?dl=1) | Radhika |
 
 ---
 

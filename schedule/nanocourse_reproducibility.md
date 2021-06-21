@@ -62,6 +62,7 @@
 -   [knitr vignettes](https://github.com/yihui/knitr/tree/master/vignettes)
 
 ### GitHub and GitKraken
+* [Git on the command line](https://hbctraining.github.io/Training-modules/Git-Github/#learning-objectives)
 * The [GitKraken guide](https://support.gitkraken.com/getting-started/guide) is a great way to start exploring it's functionality, and learning more about what Git can do.
 * GitHub also provides extensive support in the form of [guides](https://guides.github.com/), [help](https://help.github.com/) and [docs](https://docs.github.com/en/github).
 * GitHub [Glossary](https://help.github.com/articles/github-glossary/) outlines the most commonly used GitHub/Git terminology.

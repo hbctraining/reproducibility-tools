@@ -24,16 +24,14 @@
 
 | Time            |  Topic  | Instructor |
 |:------------------------:|:------------------------------------------------:|:--------:|
-| 09:30 - 10:00 | RMarkdown assignment review | Jihe |
+| 09:30 - 10:00 | RMarkdown assignment review | Meeta |
 | 10:00 - 10:15 | [What is Version Control](../lessons/03_Intro_to_versioning.md) | Meeta |
 | 10:15 - 11:05 | [Using Git(Kraken) for version control locally](../lessons/04_GitKraken.md) | Radhika |
 | 11:05 - 11:10 | Break |  |
-| 11:10 - 11:50 | [Using GitHub for version control "remotely"](../lessons/05_Github_remote1.md) | Radhika |
-| 11:50 - 12:00 | Assignment review | Meeta |
+| 11:10 - 12:00 | [Using GitHub for version control "remotely"](../lessons/05_Github_remote1.md) | Radhika |
 
 ### Assignment #2
 
-* [Practice exercise](../activities/git_exercise.md)
 * [More about working on Github and practice with GitHub](../lessons/06_Github_remote2.md)
 * Upload the files requested in the above exercise to [Dropbox](https://www.dropbox.com/request/sfOKVBPhFdS8BpifRIyt) **day before the next class**.
 * [Email us](mailto:hbctraining@hsph.harvard.edu) about questions that you need answered to work through the exercise.

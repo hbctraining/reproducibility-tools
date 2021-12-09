@@ -4,6 +4,8 @@ title: "Managing Conflicts"
 author: "Bob Freeman, Meeta Mistry, Radhika Khetani, Kathleen Keating"
 ---
 
+## Learning objectives
+* Manage conflicts in git repositories
 
 ## Managing Conflicts
 

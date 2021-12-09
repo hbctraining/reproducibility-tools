@@ -5,7 +5,7 @@ author: "Bob Freeman, Meeta Mistry, Radhika Khetani, Kathleen Keating"
 ---
 
 ## Learning Objectives
-* Describe the process of "Syncing" local and remote versions of Git repositories
+* Sync local and remote versions of a Git repository
 
 ## Repositories online (remote)
 

@@ -6,6 +6,12 @@ author: "Daniel van Strien, Radhika Khetani, Bob Freeman, Meeta Mistry, Kathleen
 
 #  Versioning your Data and Scripts
 
+## Learning Objectives
+
+* Explain the need for version control
+
+## Setup
+
 Download the [workshop sample files zipped folder](https://github.com/hbctraining/versioning_data_scripts/raw/master/data/example_files.zip) and unzip it.
 
 ## What is Version Control?

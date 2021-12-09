@@ -5,9 +5,9 @@ author: "Bob Freeman, Meeta Mistry, Radhika Khetani, Kathleen Keating"
 ---
 
 ## Learning Objectives
-* Explore different ways of making remote changes on GitHub (editing, adding files, deleting files)
-* Understand how to sync remote changes to your local repository using GitKraken
-* Evaluate file history in GitKraken
+* Make changes to git repository on GitHub (editing, adding files, deleting files)
+* Sync local and remote versions of a Git repository
+* Access version history of a given file or repository
 
 ## Making Changes Remotely
 

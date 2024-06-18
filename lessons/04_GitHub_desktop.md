@@ -22,11 +22,32 @@ Although there are several advantages to using Git from the command-line interfa
 
 ### Register for a GitHub Account
 
-Since we are going to be using [GitHub](https://github.com/) along with GitKraken you will need to register for an account on GitHub if we don’t already have one. 
+Since we are going to be using [GitHub](https://github.com/) along with [GitHub Desktop](https://desktop.github.com/) you will need to register for an account on GitHub if we don’t already have one. 
 
 ### Install GitHub Desktop
 
-**ADD NEW CONTENT HERE**
+* After you have downloaded and installed GitHub desktop, open the application and click the `Sign in to GitHub.com` button
+* A browser window will open up prompting you to authorize a GitHub User. Sign in to Github or click `continue` if you are already signed in. Depending on your browser, you may see a pop-up prompting you to open `Open GitHub Desktop`; if you agree you will see a follow-up message redirecting you back to the GitHub Desktop application
+* On GitHub Desketop, you will see a `Configure Git` prompt which will allow you to use your GitHub account name and email address or configure manually. You should select `Use my GitHub account name and email address` which should auto-fill your GitHub name/email, and click `Finish`
+* Then you will be directed to a `Let's get started!` prompt. If you already have repositories in your GitHub account, you should see them here. You will also see options to create and clone repositories. At this point, you've configured GitHub Desktop and are ready to start working with a *repository*.
+
+
+<p>
+    <img src="../img/2.GHD_setup1.png" width="700" align="center">
+    <em>1. When you open GitHub Desktop, click "Sign in to GitHub.com" </em>
+</p>
+<p>
+    <img src="../img/2.GHD_setup2.png" width="700" align="center">
+    <em>2. In your browser, you will be prompted to authorize a GitHub user. Click "Continue" </em>
+</p>
+<p>
+    <img src="../img/2.GHD_setup3.png" width="700" align="center">
+    <em>3. On GitHub Desktop, you will see the Configure Git prompt. Select "Use my GitHub account name and email address" </em>
+</p>
+<p>
+    <img src="../img/2.GHD_setup4.png" width="700" align="center">
+    <em>4. When yo usee the "Let's get started!" prompt, you are ready to begin! </em>
+</p>
 
 ## Version Controlling a directory of files
 
@@ -52,11 +73,20 @@ Download the folder we have generated for this session [from here](https://githu
 
 There are a number of different ways to add files/folders for Git/GitHub Desktop to track...
 
-* **In the GitHub DESKTOP interface click on....**. T\
+* **In GitHub Desktop, click `+ Crete a new repository on your Local Drive...`**
 
-*
+* 
 
+Fill in the fields as appropriate:
 
+1. The `Name` of the repository. Keep this to letters, numbers, and underscores; for this class, let's call it "githubdesktop_workshop".
+2. Add a `Description` of what this folder/repository will contain.
+3. Choose a `Local Path` where the repository will be stored on your computer. For this workshop, let's place the repo on your Desktop
+4. If you want, you can Initialize the repository with a README by clicking the box. For now, we will leave this blank
+5. If you would like to choose options for `Git Ignore` and `License`, there are options from the dropdown menu. For this workshop, we will select `None` for both.
+6. Finally, click the `Create Repository` button.
+
+**WE SHOULD ADD MORE ABOUT WHAT GIT IGNORE AND LICENSE DO, see https://docs.github.com/en/desktop/overview/creating-your-first-repository-using-github-desktop**
 
 **Note: Make sure you follow all the steps and instructions listed above!**
 

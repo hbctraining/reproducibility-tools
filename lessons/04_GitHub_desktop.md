@@ -99,7 +99,7 @@ Fill in the fields as appropriate:
 5. If you would like to choose options for `Git Ignore` and `License`, there are options from the dropdown menu. For this workshop, we will select `None` for both.
 6. Finally, click the `Create Repository` button.
 
-**!!!SHOULD WE ADD MORE ABOUT WHAT GIT IGNORE AND LICENSE DO?, see https://docs.github.com/en/desktop/overview/creating-your-first-repository-using-github-desktop**
+**!!!ADD MORE ABOUT WHAT GIT IGNORE AND LICENSE DO ALSO DS_STORE, see https://docs.github.com/en/desktop/overview/creating-your-first-repository-using-github-desktop**
 
 **Note: Make sure you follow all the steps and instructions listed above!**
 

@@ -111,7 +111,7 @@ Your GitHube Desktop screen should now look like this:
     <img src="../img/2.GHD_layout.png" width="800" align="center">
 </p>
 
-### A quick tour of the GitHub Desktop layout
+### A quick tour of the GitHub Desktop interface
 The black bar on the upper part of the screen is called the repository bar, which has 3 sections:
 
 **Current Repository** (left) shows name of the current repository, which is the new repository you just created. If you click here, you'll see a dropdown menu to create and navigate between repositories. 

@@ -73,9 +73,22 @@ Download the folder we have generated for this session [from here](https://githu
 
 There are a number of different ways to add files/folders for Git/GitHub Desktop to track...
 
-* **In GitHub Desktop, click `+ Crete a new repository on your Local Drive...`**
+**Method 1: In GitHub Desktop, on the `Let's get started!` screen, click `+ Crete a new repository on your Local Drive...`**
 
-* 
+**Method 2:** In GitHub Desktop, if you are already past the `Let's get started!` screen, click `Current repository` in the lefthand side of the repository bar, then in the dropdown menu that appears, click `Add` and select `Create New Repository...`
+
+**Method 3:** In GitHub Desktop, click `File` in the Menu Bar, then select `New Repository...`
+
+**Method 4:** You can also add an existing local repository starting with Method 2 or Method 3 but selecting `Add Existing Repository...` or `Add Local Repository` from the respective dropdown menus and providing the local path of the repository
+
+For this tutorial, we will be using **Method 1**
+
+When you create a new local repository, you will be greeted with this prompt:
+
+<p>
+    <img src="../img/2.GHD_create_new_repo.png" width="350" align="center">
+    <em>Create a New Repository</em>
+</p>
 
 Fill in the fields as appropriate:
 
@@ -86,33 +99,39 @@ Fill in the fields as appropriate:
 5. If you would like to choose options for `Git Ignore` and `License`, there are options from the dropdown menu. For this workshop, we will select `None` for both.
 6. Finally, click the `Create Repository` button.
 
-**WE SHOULD ADD MORE ABOUT WHAT GIT IGNORE AND LICENSE DO, see https://docs.github.com/en/desktop/overview/creating-your-first-repository-using-github-desktop**
+**!!!SHOULD WE ADD MORE ABOUT WHAT GIT IGNORE AND LICENSE DO?, see https://docs.github.com/en/desktop/overview/creating-your-first-repository-using-github-desktop**
 
 **Note: Make sure you follow all the steps and instructions listed above!**
 
 Voila! You now have your first Git repo!
 
-The new folder should now be visible on the ..... GitHub Desktop interface and we can see more information about it ....
+Your GitHube Desktop screen should now look like this:
+
+<p>
+    <img src="../img/2.GHD_layout.png" width="800" align="center">
+</p>
+
+### A quick tour of the GitHub Desktop layout
+The black bar on the upper part of the screen is called the repository bar, which has 3 sections:
+
+**Current Repository** (left) shows name of the current repository, which is the new repository you just created. If you click here, you'll see a dropdown menu to create and navigate between repositories. 
+
+**Current Branch** (middle) displays the current branch. If you click here, it will let you view and switch to different branches in your repository (these will be visible once you create *pull* requests in your repository) or create a new branch. 
+
+**Publish repository** (right). This option appears because we haven't yet published our repo to the GitHub Server, which we'll do later on in the lesson. This part of the repository bar will change depending on the status of your current branch and repository.
+
+On the left side of the screen you will also see two tabs:
+
+**Changes** will show you changes made to files in your current directory that haven't been committed to your local repository. This tab also hase "Summary" and "Description" text boxes to describe your changes, and and **Commit to BRANCH** button, which will tell you which branch you are committing to.
+
+**History** will show past commits you've made to the current branch of your repository. For now, you'll only see the **Initial commit** from creating the repository. You will also see any changes to files you created during the commit; in our case, we see there is a *README.md* as well as a *.gitattributes* file. Our *.gitignore* and *LICENSE* files would also appear here if we opted to create those during the initial commit. When you click on these files, you can see the *diff* -- only the parts of the file that changed are displayed. For the initial commit, that's all of the file.
 
 
-
-> The folder should also appear on your Desktop! If you can't find your folder, you can click on the Readme.md file and click on "Show in Finder", the folder will open (external to GitHub Desktop).
+> **Note 1:** The folder should also appear on your Desktop! If you can't find your folder, you can click on `Show in Finder` in the "View the files of your repository in Finder" section on the main screen
 >
-> 
-> <img src="../img/2.new-show_in_finder.png" width="700" align="center">
+> **Note 2:** files like *.gitattributes* or any files which start with a `.` are hidden files, so they may not be visible in your Finder window by defualt. To view hidden folders in Mac OSX, you can press `Command+Shift+.`
 
-The layout of the GitHub Desktop interface:
-
-* ...
-* ...
-
-The folder we created the repository with now contains an extra hidden folder with the name `.git` (any file or folder whose name starts with a "." is hidden in normal circumstamces, so don't worry if you don't see it!). This folder is how Git will track changes (adding files/folders, modifying existing ones, deleting files/folders) we make within the repository folder. 
-
-<img src="../img/2.new-finder_view.png" width="700" align="center">
-
-> To view hidden folders in Mac OSX, you can press Command+Shift+Dot.
-
-### Staging and Committing Changes
+### Committing Changes
 
 Before we continue, we want to highlight a few research data management best practices: organize your files, structure your folder and name files consistently. 
 

@@ -99,9 +99,11 @@ Fill in the fields as appropriate:
 5. If you would like to choose options for `Git Ignore` and `License`, there are options from the dropdown menu. For this workshop, we will select `None` for both.
 6. Finally, click the `Create Repository` button.
 
-**!!!ADD MORE ABOUT WHAT GIT IGNORE AND LICENSE DO ALSO DS_STORE, see https://docs.github.com/en/desktop/overview/creating-your-first-repository-using-github-desktop**
+**Make sure you follow all the steps and instructions listed above!**
 
-**Note: Make sure you follow all the steps and instructions listed above!**
+>**More on `Git Ignore` and `License` options**
+> * Selecting the **`Git Ignore`** option will create a hidden file caled .gitignore. This file allows you to specify if there are files which you would like to store in your local repository but not store in version control. You can learn more about ignoring files [here](https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files)
+> * The **`License`** option lets you add an open-source license to a LICENSE file in your repository. You can find out more about licenses [here](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository)
 
 Voila! You now have your first Git repo!
 
@@ -134,11 +136,9 @@ Your GitHube Desktop screen should now look like this:
 
 Before we continue, we want to highlight a few research data management best practices: organize your files, structure your folder and name files consistently. We recommend having separate folders for `code` (or `scripts`), `data`, `docs`, `figures`, and `other` to keep your data organized.
 
-One way of making new folders in your GitHub Desktop repository is in `Finder`. If you navigate to your GitHub Repository, you can right click and create new folder locally.
+You can make folders in your local GitHub repository just as you normally would in `Finder`, such as by right clicking and selecting `New Folder` from the drop down menu. For this workshop, we will add folders (and some files) to our repository by [downloading and unzipping the GitHub Desktop workshop materials](../data/githubdesktop_workshop_materials.zip) and simply moving the individual folders into your GitHub Desktop repository in Finder.
 
-For this workshop, we will add folders (and some files) to our repository by [downloading and unzipping the GitHub Desktop workshop materials](../data/githubdesktop_workshop_materials.zip) and moving the individual folders into your GitHub Desktop repository in Finder 
-
->**Note: only move the folders inside of `githubdesktop_workshop_materials`, but do not move the parent file itself**
+>**Note: only move the folders inside of `githubdesktop_workshop_materials`, but do not move the parent `githubdesktop_workshop_materials` folder itself or the `util_functions.R` file in that folder -- we will get to that file later**
 
 In Finder, your repository should look like this:
 
@@ -278,7 +278,7 @@ Save this file as well, and go back to GitHub Desktop. You'll see that your READ
     <img src="../img/2.GHD_modified_files.png" width="800" align="center">
 </p>
 
-If you click on these files, you can review the changes you've made. For text-based files, anything highlighted in green is being added to the file, while anything highlighted in red is being removed from the pre-existing file. Anything unchanged will not be highlighted. Right now, all of our files are new, so everything is highlighted in green.
+If you click on these files, you can review the changes you've made. For text-based files, anything highlighted in green is being added to the file, while anything highlighted in red is being removed from the pre-existing file. Anything unchanged will not be highlighted.
 
 As before, this is GitHub Desktop's way of **adding**/**staging** these changes, but they haven't yet been recorded in an official `snapshot` of your repository. To **commit** these changes to your repository and make an official record of them, you'll need to add a summary and click `Commit to main`, just as we did before.
 
@@ -306,7 +306,7 @@ But what if we want to see our previous commits? We can access all of our previo
 
 There may be times, however, when we wish to ensure that we save a coordinated set of changes. For example, if we want to make coordinated changes to multiple files it makes sense to make the changes and then stage (add) and commit all the updated files all together (**atomic commit**). 
 
-Let's say we want to update the code in the `scriplets.R` file to the following wherein we want to use the `util_functions.R` in the code. Remember that the `util_functions.R` is the Rscript file we left behind in the folder we had downloaded. 
+Let's say we want to update the code in the `scriplets.R` file to the following wherein we want to use the `util_functions.R` in the code. Remember that the `util_functions.R` is the Rscript file we left behind in the `githubdesktop_workshop_materials` folder we had downloaded. 
 
 1. Let's update the `scriplets.R` file with the following information and save it:
 
@@ -337,23 +337,40 @@ montecarloPi(3000)
 # END
 ```
 
-2. Now, let's move the `util_functions.R` script file from the downloaded `example_files` folder into the `code` folder in our new repo. 
+2. Now, let's move the `util_functions.R` script file from the `githubdesktop_workshop_materials` into the `code` folder in our new repo.
 
-When we return to GitKraken, it has noticed the two changes. Since the change in the main code file depends on the presence of this other file, we need to ensure this commit (snapshot) captures these inter-dependent changes. So, let's stage both files, give a meaningful commit message reflecting this process, and then commit! 
+When we return to the GitHub Desktop application, it has noticed the two changes. Since the change in the main code file depends on the presence of this other file, we need to ensure this commit (snapshot) captures these inter-dependent changes. So, let's keep both files selected for staging, give a meaningful commit message reflecting this process, and then commit! 
 
-Your repo should now look like the following:
+<p>
+    <img src="../img/2.GHD_atomic_commit.png" width="800" align="center">
+</p>
 
-<img src="../img/2.new-post_coordinated_commit_change.png" width="700" align="center">
+### Publishing your local GitHub repository remotely to github.com
+
+One last thing: It's all well and done to have a GitHub repo on your computer, but to take full advantage of GitHub's tracking and sharing capabilities, we should publish our repository to github.com. To do so, simply click the `Publish repository` tab on the righthand side of the repository bar. A window will pop up which will allow you to make changes to the repository name and description, as well as choose the organization (the default is `None` which will publish the repository to your personal GitHub account). You can also select whether to keep the code private or make it public. Once you've made any changes, click the `Publish Repository` button:
+
+<p>
+    <img src="../img/2.GHD_publish_repo.png" width="800" align="center">
+</p>
+
+This will only take a moment. And you'll notice that the `Publish repository` tab in the repository bar now says `Fetch origin.` We'll cover the concept of Fetching at a later time.
+
+If you go to your github.com profile page and click `Repositories` from the bar up top, you'll see your newly published github repository:
+
+
+<p>
+    <img src="../img/2.GHD_githubweb.png" width="800" align="center">
+</p>
 
 ***
 
 **Exercise #1**
 
-1. Create a repository `learning_github` in GitKraken. Make sure to create it both locally, and remotely on github.com.
+1. Create a repository `learning_github` in GitHub Desktop. Make sure to create it both locally, and then publish it remotely on github.com.
 2. Find the folder on your local computer, and add a couple of small text files to it from your computer. 
 3. Create a new plain text file called `data-file.txt`, add a line or 2 of content to it and save it to the `learning_github` folder.
-4. Go to GitKraken, and commit the change with an approriate message.
-5. Switch repos back to the `gitkraken_workshop` repo.
+4. Go to GitHub Desktop, and commit the change with an approriate message.
+5. Switch repos back to the `githubdesktop_workshop` repo.
 
 ***
 

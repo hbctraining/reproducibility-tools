@@ -112,7 +112,7 @@ Your GitHube Desktop screen should now look like this:
 </p>
 
 ### A quick tour of the GitHub Desktop interface
-The black bar on the upper part of the screen is called the repository bar, which has 3 sections:
+**The black bar on the upper part of the screen is called the repository bar, which has 3 sections:**
 
 **Current Repository** (left) shows name of the current repository, which is the new repository you just created. If you click here, you'll see a dropdown menu to create and navigate between repositories. 
 
@@ -120,12 +120,11 @@ The black bar on the upper part of the screen is called the repository bar, whic
 
 **Publish repository** (right). This option appears because we haven't yet published our repo to the GitHub Server, which we'll do later on in the lesson. This part of the repository bar will change depending on the status of your current branch and repository.
 
-On the left side of the screen you will also see two tabs:
+**On the left side of the screen you will also see two tabs:**
 
 **Changes** will show you changes made to files in your current directory that haven't been committed to your local repository. This tab also hase "Summary" and "Description" text boxes to describe your changes, and and **Commit to BRANCH** button, which will tell you which branch you are committing to.
 
 **History** will show past commits you've made to the current branch of your repository. For now, you'll only see the **Initial commit** from creating the repository. You will also see any changes to files you created during the commit; in our case, we see there is a *README.md* as well as a *.gitattributes* file. Our *.gitignore* and *LICENSE* files would also appear here if we opted to create those during the initial commit. When you click on these files, you can see the *diff* -- only the parts of the file that changed are displayed. For the initial commit, that's all of the file.
-
 
 > **Note 1:** The folder should also appear on your Desktop! If you can't find your folder, you can click on `Show in Finder` in the "View the files of your repository in Finder" section on the main screen
 >
@@ -133,38 +132,47 @@ On the left side of the screen you will also see two tabs:
 
 ### Committing Changes
 
-Before we continue, we want to highlight a few research data management best practices: organize your files, structure your folder and name files consistently. 
+Before we continue, we want to highlight a few research data management best practices: organize your files, structure your folder and name files consistently. We recommend having separate folders for `code` (or `scripts`), `data`, `docs`, `figures`, and `other` to keep your data organized.
 
-**MODIFY THIS BECAUSE WE WILL HAVE THEM CREATE A MUCH SIMPLER DIRECTORY STRUCTURE WITH LESS FILES**
+One way of making new folders in your GitHub Desktop repository is in `Finder`. If you navigate to your GitHub Repository, you can right click and create new folder locally.
 
-1. Let's start by creating 5 new directories in the folder (in Finder, outside of Git: `code`, `data`, `docs`, `figures`, and `other`
-2. Now, let's move some of the files from the downloaded `example_files` folder into these newly created directories. Please use the image below as a guide to which file goes where. We won't be moving all the files out of the `example_files` folder, the following 3 files will **not be moved** to the new repo - `Pi Formulas...`, `README.md` (since one is already exists in our new repo), and `util_functions.R`.
+For this workshop, we will add folders (and some files) to our repository by [downloading and unzipping the GitHub Desktop workshop materials](../data/githubdesktop_workshop_materials.zip) and moving the individual folders into your GitHub Desktop repository in Finder 
 
+>**Note: only move the folders inside of `githubdesktop_workshop_materials`, but do not move the parent file itself**
 
+In Finder, your repository should look like this:
 
-After all the moving, **WHAT DOES IT LOOK LIKE IN GITHUB DESKTOP?**
+<p>
+    <img src="../img/2.GHD_folders_in_finder.png" width="800" align="center">
+</p>
 
+Now, look in your GitHub Desktop application. You can see that these folders and files actually show up on the left hand panel, ready to be committed to your repository:
 
+<p>
+    <img src="../img/2.GHD_folders_in_GHD.png" width="800" align="center">
+</p>
 
+You'll notice that GitHub Desktop will actually show you any changes you made to these files on the right hand side of the panel. You can click on each file to review these changes.
 
-These changes have been noted, but this new *version* of the folder is not yet recorded (saved) by Git. A **commit** tells Git that you made some changes which you want to record. Though a **commit** seems similar to saving a file, there are different aims behind ‘committing’ changes compared to saving changes. **Commits** take a snapshot of the file(s) at that point. You can actually record or commit modifications to multiple files/folders at once. i.e. single commit can have multiple updates.  
+>Note: Wait a minute, where is the `other` folder? Git will ignore folders that are empty. If you would like to make sure Git recognizes an empty folder, you can put a file in it. If you don't want to clutter your empty folders, you can put a hidden file  with a name starting with a `.`, such as `.gitkeep`, in the folder. 
+
+>Note: to the right of each file, you'll see a `+` in a box. This indicates that these are newly added files. If you were to delete a file, you would see a `-`, and if you modify an existing file, you'll see a `dot`
+
+These changes have been noted, but this new *version* of the repository is not yet recorded (saved) by Git. A **commit** tells Git that you made some changes which you want to record. Though a **commit** seems similar to saving a file, there are different aims behind ‘committing’ changes compared to saving changes. **Commits** take a snapshot of the file(s) at that point. You can actually record or commit modifications to multiple files/folders at once. i.e. single commit can have multiple updates.  
 
 Committing changes usually happens in 2 stages:
 1. `add` or stage one or many modifications incrementally
 2. `commit` them with a special commit message to document the type of updates
 
-To include or **add** these files for a commit, we **stage** all the changes by clicking on .....
+GitHub Desktop automatically **adds**, or **stages**, any changes we make to the repository and displays them on the left hand side of the application. You have the option of excluding any of these changes from the **commit** by deselecting the check box to the left of each file.
 
+To **commit** these changes one **must give a summary of the changes** in the `summary` box at the bottom of the left panel, followed by clicking on the `Commit to **main**` button. You can also add a longer description, but this is optional.
 
+After the commit, your screen will display the summary of your last commit, when it was made, and even the option to `undo` the commit. The changes to your files will no longer be displayed, because they have been committed. Here is how your GitHub Desktop application will look after your first commit (in this case, the summary was `My first commit!`:
 
-You also have the option of adding only certain files to the "Staging" area if you wish to make separate commits. ...
-
-
-To commit changes one **must give a summary of the changes** followed by clicking on the Commit button:
-
-
-
-After the commit, SCREENSHOT OF GITHUB DESKTOP?
+<p>
+    <img src="../img/2.GHD_first_commit.png" width="800" align="center">
+</p>
 
 
 A useful way to think about commits is as the ‘history’ of your project. Each commit records a development or change made to the documents in your repository; the history of the project can be traced back by looking at all of the commits. 
@@ -175,7 +183,7 @@ A useful way to think about commits is as the ‘history’ of your project. Eac
 
 > **Note about Branches**:
 >
-> When you commit you will see ‘commit to master’. This refers to the **master** (or **main**) branch. 
+> When you commit you will see ‘commit to main’. This refers to the **main** branch. 
 > 
 > Within a Git repository it is possible to have multiple ‘branches’. These different branches are essentially different (virtual) places in which to work. Often they are used to test new ideas or work on a particular feature without modifying or "contaminating" the master copy (e.g. production version of a webpage). This feature is very useful when collaborating with others. We do not have time to go into this aspect of Version Control in this workshop, but we encourage you to explore it further.
 
@@ -187,7 +195,9 @@ Let's open the `README.md` document using our favorite text editor (see note bel
 
 > README files are an essential part of any analysis workflow, so that your future self or your collaborators are able to understand what they need to know. Git and Github encourage this practice for every repository. [Click here to learn more about README files associated with biomedical datasets/analyses](https://datamanagement.hms.harvard.edu/readme-files).
 
-Let's turn our `README.md` file for this Git repository into something more meaningful by added some boilerplate text and helpful information to the small amount of text already there:
+To open your README.md file, you can either click on it directly in Finder, or you can click the `Open in Sublime Text` (or other text editor if that's your preference) button in the `Open the repository in your external editor` box in the middle of your screen. This will open the whole repository within Sublime Text, and you can select your README file within the editor from the menu on the left.
+
+Let's turn our `README.md` file for this Git repository into something more meaningful by adding some boilerplate text and helpful information to the small amount of text already there:
 
 ```
 ## Overview
@@ -215,33 +225,84 @@ This is all available as CC BY 4.0 license. Enjoy!
 
 Save the changes to your file.
 
-Let's also open ANOTHER file?  Copy & paste this code:
+Let's also open the `scriptlets.R file`. You'll notice we have some template text there as well -- great for reminding you what you need to do when starting to code. Let's flesh out this file by adding these example functions and replacing everything in the file before `# main code` in the original file. Copy & paste this code:
 
 ```
-EXAMPLE CODE
+#!/usr/bin/env Rscript
+
+# This script will include a collection of small scripts steps
+# often seen as example code. We're using this solely for demo purposes
+
+# Put globals, installs, and sources here
+source("./util_functions.R")
+
+# Put functions here
+# 1. Prints hello world
+
+myString <- "Hello, World!"
+
+print (myString)
+
+
+# 2. Square function
+# adapted from https://hbctraining.github.io/Intro-to-R/lessons/03_introR-functions-and-arguments.html#user-defined-functions
+# and https://www.r-bloggers.com/how-to-write-and-debug-an-r-function/
+
+square_it <- function(x){
+  sq <- x*x
+  return(sq)
+}
+
+square_it(5)
+
+
+# 3. Monte Carlo Pi
+
+for (trials in 1:3000) {
+  count = 0
+  for(i in 1:trials) {
+    if((runif(1,0,1)^2 + runif(1,0,1)^2) < 1) {
+      count = count + 1
+    }
+  }
+  print(paste(trials, ": ", (count*4) / trials))
+}
+
+
+# main code
 ```
 
-Save this file as well, and go back to GitHub Desktop. WHAT DOES IT LOOK LIKE?
+Save this file as well, and go back to GitHub Desktop. You'll see that your README.md and scriptlets.R files are in the left hand panel with the modified indicator to the right of the file: 
 
-When you click on the filename, you will see that these new lines of text appear; this lets us know that Git is able to see changes in your file but at the moment these changes haven’t been recorded in an official ‘snapshot’ of your repository. To do this we need to **add** (**stage**) first and then **commit** these changes to record them in the 'snapshot', just as we did before.
+<p>
+    <img src="../img/2.GHD_modified_files.png" width="800" align="center">
+</p>
 
+If you click on these files, you can review the changes you've made. For text-based files, anything highlighted in green is being added to the file, while anything highlighted in red is being removed from the pre-existing file. Anything unchanged will not be highlighted. Right now, all of our files are new, so everything is highlighted in green.
 
+As before, this is GitHub Desktop's way of **adding**/**staging** these changes, but they haven't yet been recorded in an official `snapshot` of your repository. To **commit** these changes to your repository and make an official record of them, you'll need to add a summary and click `Commit to main`, just as we did before.
 
 > **Text Editors:**
 >
-> When creating a plain text document, you will want to use a text editor like Atom, TextWrangler/Sublime Text (Mac) or NotePad++ (Windows) instead of Microscoft Word or the default text editors. You will also want to make sure that you save it as plain text. There are a [large number of free and paid text editors available](https://en.wikipedia.org/wiki/List_of_text_editors) to choose from. In a pinch, you can always use TextEdit (Mac) or Notepad (Windows).
+> When creating a plain text document, you will want to use a text editor like Atom, TextMate, TextWrangler, or Sublime Text (Mac) or NotePad++ (Windows) instead of Microscoft Word or the default text editors. You will also want to make sure that you save it as plain text. There are a [large number of free and paid text editors available](https://en.wikipedia.org/wiki/List_of_text_editors) to choose from. In a pinch, you can always use TextEdit (Mac) or Notepad (Windows).
 
-In the context of GitKraken when you **stage** your changes, it is similar to the **add** command on the command line interface. You can add several changes in the staging area, and only **commit** when you are ready. 
+In the context of GitHub Desktop when the application **stages** your changes in the local repository, it is similar to the **add** command on the command line interface. You can add several changes in the staging area, and only **commit** when you are ready. 
 
-Since we wish to keep all the different types of changes as separate commits, we will stage and commit first the documentation change to the README file, and then the code change in the Rscript file. 
+Since we wish to keep all the different types of changes as separate commits, we will first commit the documentation change to the README file, and then the code change in the Rscript file. 
 
-First, stage only the `README.md` file, and, as we did with our previous initial commit, include a change message, and click on the Commit button:
+First, deselect the `scriptlets.R` file so only the `README.md` file has a checkbox, and, as we did with our previous initial commit, include a summary message (you'll notice that GitHub Desktop has conveniently suggested `Update README.md` for us), and click on the Commit button:
 
-<img src="../img/2.new-pre_commit_readme_change.png" width="700" align="center">
+<p>
+    <img src="../img/2.GHD_commit_readme.png" width="800" align="center">
+</p>
 
-Again, you'll see our timeline has changed to include this commit. Now, stage the changed R file and include a meaningful change message, and click Commit. Our timeline should now contain these two serial commits:
+Again, you'll see this latest commit in the lower left hand corner. Now, select the changed R file and include a meaningful change message (feel free to use the one suggested by GitHub Desktop), and click `Commit to main`. You'll see the latest commit in the lower left again. 
 
-<img src="../img/2.new-post_serial_commit_changes.png" width="700" align="center">
+But what if we want to see our previous commits? We can access all of our previous commits by clicking the `History` tab in the left hand panel:
+
+<p>
+<img src="../img/2.GHD_history.png" width="800" align="center">
+</p>
 
 There may be times, however, when we wish to ensure that we save a coordinated set of changes. For example, if we want to make coordinated changes to multiple files it makes sense to make the changes and then stage (add) and commit all the updated files all together (**atomic commit**). 
 

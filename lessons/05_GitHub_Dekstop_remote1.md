@@ -11,21 +11,15 @@ author: "Meeta Mistry, Radhika Khetani, Heather Wick"
 
 ### Pushing Your Changes to Your Remote Repository
 
-In the last lesson we were only recording our changes locally, but we may want to have these changes be available remotely as well (for collaborating/sharing/backing up). The idea is you keep your local and remote repositories "in sync". 
+In the last lesson we were only recording our changes locally, but we may want to have these changes be available remotely as well (for collaborating/sharing/backing up). The idea is you keep your local and remote repositories "in sync".
 
-This is straightforward in GitHub Desktop and you do it by doing a one-way synchronization of your repository to the remote that you linked it to when you first created the repo. This one-way synchronization will **push** your repository from your computer to the GitHub website, and populate the *remote* repository on GitHub's servers in the process.
+At the end of the last lesson, we took the first step to synchronizing your repository locally and remotely by publishing it to GitHub's servers, but any further changes you make locally through GitHub Desktop will remain local and not appear remotely until they are **push**ed to GitHub's servers. Any time you make local changes, you might notice the right hand tab on the repository bar will say `Push origin`. `Origin` is the default name for your remote repository (it is possible to change the name, but that is beyond the scope of the lesson). Clicking this button will enact a one-way synchronization which will **push** your changes in your repository from your computer to the GitHub website, and populate the *remote* repository on GitHub's servers in the process.
 
-<img src="../img/" width="700" align="center">
+At the end of the last lesson, we saw our repository on our *Repositories* tab on GitHub.com. If you click on your repository, we can now view our changes on our remote at GitHub.com (if you don't want to navigate there by hand, in GitHub Desktop you can go to `Repository` in the menu bar, then select `View on GitHub` and it will automatically open the repository on GitHub.com for you: 
 
-We can now view our changes on our remote at GitHub.com. If the left pane, our remote is given the name 'origin', which is the default term for the remote repository in Git (note that you can call it whatever you'd like, and you can have more than one remote! But that is beyond the scope of this lesson.) If we then right-mouse click on our 'origin', we can select the pop-up menu option "View origin on GitHub.com":
+<img src="../img/2.GHD_githubweb_repo.png" width="800" align="center">
 
-<img src="../img/" width="700" align="center">
-
-Indeed, GitKraken sends us to our web browser and our repository on GitHub.com is displayed:
-
-<img src="../img/2.new-repo_on_github.png" width="700" align="center">
-
-Notice that our commit short descriptions are shown here; and that we can see the different commits -- serial & coordinated -- that we performed.
+Notice that our commit short descriptions are shown here; and that we can see the different commits that we performed.
 
 > You can also have a fully local repository, without a remote "synced" one on GitHub. 
 > If you would like to initialize such a repository with this intention pick the "Local Only" option under "Init".

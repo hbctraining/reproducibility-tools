@@ -82,15 +82,15 @@ We can also **add files and folders to the repository via the web interface**. T
 
 ### Uploading files
 
-We'll start with adding files through upload. In your **gitkraken_workshop** repository, navigate to the `docs` folder. On this page you will see all of its contents listed, and at the top there is an "Add File" button. If you click on this, you will see two dropdown options appear: "Create new files" and "Upload files". **Select "Upload files"**. This will take you to a new page.
+We'll start with adding files through upload. In your **github_desktop_workshop** repository on GitHub.com, navigate to the `docs` folder. On this page you will see all of its contents listed, and in the upper right you will see an `Add File` button. If you click on this, you will see two dropdown options appear: `Create new file` and `Upload files`. **Select `Upload files`**. This will take you to a new page.
 
 > **NOTE:** The screenshot below is slightly outdated and does not accurately reflect the dropdown options described above. Please refer to the text above for the actual options.
 
 <p align="center">
-<img src="../img/3.upload_files_button.png" width="700" align="center">
+<img src="../img/2.GHD_upload_files.png" width="800" align="center">
 </p>
   
-The file that **we would like to add to this folder** is called **"Pi Formulas -- from Wolfram MathWorld.pdf"**. The document is located in our workshop downloads folder. To add it to the repo using the web interface, you can do one of two things:
+The file that **we would like to add to this folder** is called **"Pi Formulas -- from Wolfram MathWorld.pdf"**. The document is located in our **github_desktop_workshop_materials** folder which you downloaded and unzipped earlier. To add it to the repo using the web interface, you can do one of two things:
 
 1. Find the file in a File Explorer window on your computer, and then drag and drop it on to this page.
 2. Click on the "choose your files" and find/select the file in the window that pops up. 
@@ -98,10 +98,14 @@ The file that **we would like to add to this folder** is called **"Pi Formulas -
 Once the file is selected, the Upload will require a Description and subsequent Commit:
 
 <p align="center">
-<img src="../img/3.commit_uploaded_file.png" width="700" align="center">
+<img src="../img/2.GHD_upload_files_2.png" width="800" align="center">
 </p>
 
-After committing, you should now see the `Pi Formulas...` document in your `docs` folder.
+After committing, you will be brought back to the main page of your repository, and you'll see your latest commits. If you navigate to the `docs` folder, you should now see the `Pi Formulas...` document there.
+
+<p align="center">
+<img src="../img/2.GHD_latest_commits_after_upload.png" width="800" align="center">
+</p>
 
 ***
 
@@ -110,8 +114,8 @@ After committing, you should now see the `Pi Formulas...` document in your `docs
 1. Navigate to the `code` folder. We are going to create an Rmarkdown file in this directory.
 2. Click on the "Add File" button and choose "Create new file" from the drop-down button.
 3. You will now find yourself on a new page, with your cursor flashing in a text box at the top of the page. Give your new file the name `workshop_rmd_exercise.Rmd`.
-4. In the space below, you can add the contents of your file. Locate the .Rmd file you created in [Day 1 self-learning](../activities/Rmd_exercise4.md). Copy and paste the code into the browser space labeled "< > Edit new file".
-5. Scroll down to the Commit box at the bottom and give your commit a descriptive title. Then click "Commit new file".
+4. In the space below, you can add the contents of your file. Locate the .Rmd file you created in [Day 1 self-learning](../activities/Rmd_exercise4.md). Copy and paste the code into the browser space labeled `Edit file contents here`.
+5. Click the green `Commit changes...` button in the upper right, give your commit a descriptive title, and commit the changes
 
 ***
 

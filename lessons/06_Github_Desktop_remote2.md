@@ -15,7 +15,7 @@ We now have our work both locally on our computers and online in the GitHub web 
 
 To demonstrate how to do this, we will edit one of the files in our **`code`** folder. Inside this folder we have several scripts and we realized that we forgot to give attribution to our functions in the `util_functions.R` file.
 
-Navigate to the **gitkraken_workshop** repository online in GitHub.
+Navigate to the **githubdesktop_workshop** repository online in GitHub.
 
 Go into the `code` directory, and click on the name of the file (`util_functions.R`) in the title area. This will take you to a new page showing your document.
 
@@ -36,15 +36,15 @@ Click on the 'Edit' option or the pencil icon in the top right-hand corner of th
 # Examples from https://www.r-bloggers.com/using-and-abusing-data-visualization-anscombes-quartet-and-cheating-bonferroni/
 ```
 <p align="center">
-<img src="../img/3.new-edit_on_github_web.png" width="700" align="center">
+<img src="../img/2.GHD_edit_utils.png" width="800" align="center">
 </p>
 
-Once you have made some changes to your file, **scroll to the bottom of the window**. You will see the option to commit changes, and two associated text entry boxes. The first box is to give your commit a short description of the changes you made. The second box allows you to provide more detailed text about the commit, which is optional.
+Once you have made some changes to your file, **click the green `Commit changes...` button** in the upper right hand corner of the screen. You will see the option to commit changes, and two associated text entry boxes. The first box is to give your commit a short description of the changes you made. The second box allows you to provide more detailed text about the commit, which is optional.
 
-**Provide an informative description for your commit and then press "Commit"**.
+**Provide an informative description for your commit and then press "Commit changes"**.
 
 <p align="center">
-<img src="../img/3.new-online_commit.png" width="700" align="center">
+<img src="../img/2.GHD_commit_utils.png" width="800" align="center">
 </p>
 
 
@@ -52,16 +52,16 @@ Once you have made some changes to your file, **scroll to the bottom of the wind
 
 One can also add and delete files from the repositiory online. To do this, you will first need to view the file itself (by clicking on the file's name). Once you are viewing your file you will see a trash can icon at the top right-hand side, located to the right of the edit/pencil icon. 
 
-Let's delete one of the files in our `code` folder. Since we're working in R, we will remove the python code files. Click on the file and find the trash can icon and click on it:
+Let's delete one of the files in our `code` folder. Since we're working in R, we will remove the python code file. Click on the `.py` file, then click the `...` button in the top right of the screen and select `Delete file`:
 
 <p align="center">
-<img src="../img/3.delete_one_file.png" width="700" align="center">
+<img src="../img/2.GHD_delete_py.png" width="800" align="center">
 </p>
 
-You will see that this solitary action is not complete until you provide a description and a subsequent Commit. Deleting a document is a change, and is therefore tracked like any other change you make to your repository. **Provide a description and commit this change**.
+You will see the screen change, indicating that `This file was deleted`, but the action won't be complete until you **commit** the change; GitHub will track this change just like any other you might make to your repository. Click the green **Commit changes...** button in the upper right. Just as before, GitHub will ask for a commit description. **Provide a description** (or use the suggested one) **and commit this change**.
 
 <p align="center">
-<img src="../img/3.commit_delete_one_file.png" width="700" align="center">
+<img src="../img/2.GHD_commit_delete_py.png" width="800" align="center">
 </p>
 
 ***

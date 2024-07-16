@@ -168,14 +168,19 @@ GitHub Desktop automatically **adds**, or **stages**, any changes we make to the
 
 To **commit** these changes one **must give a summary of the changes** in the `summary` box at the bottom of the left panel, followed by clicking on the `Commit to **main**` button. You can also add a longer description, but this is optional.
 
-After the commit, your screen will display the summary of your last commit, when it was made, and even the option to `undo` the commit. The changes to your files will no longer be displayed, because they have been committed. Here is how your GitHub Desktop application will look after your first commit (in this case, the summary was `My first commit!`:
+After the commit, your screen will return to how it looked before, but it will tell you the name and how recently you made your last commit, and you'll have an option to `undo` the commit in the bottom left. The changes to your files will no longer be displayed, because they have been committed. Here is how your GitHub Desktop application will look after your first commit (in this case, the summary was `My first commit!`:
 
 <p>
     <img src="../img/2.GHD_first_commit.png" width="800" align="center">
 </p>
 
 
-A useful way to think about commits is as the ‘history’ of your project. Each commit records a development or change made to the documents in your repository; the history of the project can be traced back by looking at all of the commits. 
+A useful way to think about commits is as the ‘history’ of your project. Each commit records a development or change made to the documents in your repository; the history of the project can be traced back by looking at all of the commits. You can directly view this `History` by clicking on the `History` tab on the left hand side of the application:
+
+<p>
+    <img src="../img/2.GHD_first_commit_history.png" width="800" align="center">
+</p>
+
 
 * Think carefully about when to make commits, since the advantages of version control rely on taking snapshots of your changes regularly.
 * Make the commits "atomic", i.e. **commit a few related changes together**; this will help if you have to revert back to a specific version/snapshot. 

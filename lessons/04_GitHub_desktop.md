@@ -138,7 +138,7 @@ Before we continue, we want to highlight a few research data management best pra
 
 You can make folders in your local GitHub repository just as you normally would in `Finder`, such as by right clicking and selecting `New Folder` from the drop down menu. For this workshop, we will add folders (and some files) to our repository by [downloading and unzipping the GitHub Desktop workshop materials](../data/githubdesktop_workshop_materials.zip) and simply moving the individual folders into your GitHub Desktop repository in Finder.
 
->**Note: only move the folders inside of `githubdesktop_workshop_materials`, but do not move the parent `githubdesktop_workshop_materials` folder itself or the `util_functions.R` file in that folder -- we will get to that file later**
+>**Note: only move the folders inside of `githubdesktop_workshop_materials`, but do not move the parent `githubdesktop_workshop_materials` folder itself or the `util_functions.R` or `Pi Formulas -- from Wolfram MathWorld.pdf` files in that folder -- we will get to those file later**
 
 In Finder, your repository should look like this:
 

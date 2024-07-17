@@ -122,42 +122,26 @@ After committing, you will be brought back to the main page of your repository, 
 
 ## Syncing remote changes to your local repository
 
-Let's return to our local machine and apply the changes we made online to our local repo. GitKraken has already noticed that our remote repo has changed, and the markers for the two repos (local and remote) have diverged:
+Let's return to our local machine and apply the changes we made online to our local repo. GitHub Desktop has already noticed that our remote repo has changed, and is now prompting that you can `Pull 2 commits form the origin remote` which is highlighted in a blue box with a `Pull origin` button in blue (you can also see that the repository bar has a `Pull origin` option and tells you when the repo was most recently **fetched**.
+
+> Note: **fetch** and **pull** are similar concepts with some important differences. When a repo is **fetched** from remote, it will note changes to your repo but not merge/commit them to your local directory. When you **pull**, it will note these changes **and** merge/commit them to your local directory.
 
 <p align="center">
-<img src="../img/3.new-local_remote_differ_on_commits.png" width="700" align="center">
+<img src="../img/2.GHD_pull_option.png" width="800" align="center">
   </p>
 
-Click on the timeline entry to **view the file changes**:
+Click on the **`Pull origin`** button, then navigate to the history tab to **view the commits** you just made via the GitHub website. You can click on individual files to see the changes you made:
 
 <p align="center">
-<img src="../img/3.view_remote_commit_changes.png" width="700" align="center">
+<img src="../img/2.GHD_view_pulled_commits_.png" width="700" align="center">
   </p>
 
-And click on the filename itself to **see the changes made within each file**:
-
-<p align="center">
-<img src="../img/3.view_remote_file_diff.png" width="700" align="center">
-  </p>
-
-You can see from this view that we now have the text with changes highlighted in <span style="color:green">green</span> and <span style="color:red">red</span>.
+As before, the changes to any text files are highlighted in <span style="color:green">green</span> and <span style="color:red">red</span>.
 
 * <span style="color:red">Red</span> indicates where things have been removed
 * <span style="color:green">Green</span> indicates addition of text 
 
-Click on the filename again to return to our commit timeline.
-
-To **get all these changes back onto our own (local) computer**, we need to **Pull** these changes back to our local repo, using the Pull button in the GitKraken toolbar towards the top of the screen:
-
-<p align="center">
-<img src="../img/3.new-pull.png" width="700" align="center">
-</p>
-
-If all goes well, you should see a brief 'Success' message, and your repos should be in sync again. 
-
-<p align="center">
-<img src="../img/3.local_remote_in_sync.png" width="700" align="center">
-</p>
+Now that we've **pull**ed our changes from remote, you'll also be able to see any changes in your Finder directory for the repository.
 
 > **NOTE**: Two important things to keep in mind when making changes on the web interface:
 > * On GitHub.com file changes are done serially, so commits with modifications to multiple files cannot be done here.
@@ -167,21 +151,27 @@ If all goes well, you should see a brief 'Success' message, and your repos shoul
 
 **Exercise**
 
-**Take a screenshot of your GitKraken window, which shows the changes that you have synced to your local repo. Upload this image to the Dropbox link on the schedule page.**
+**Take a screenshot of your GitHub Desktop window's history page, which shows the changes that you have synced to your local repo. Upload this image to the Dropbox link on the schedule page.**
 
 ***
 
 ## Viewing File Histories
 
-One very useful feature of this and other Git clients is looking at how a file has changed over time. 
+One very useful feature of GitHub and GitHub Desktop is the ability to see how a file has changed over time.
 
-In GitKraken, select the timeline entry 'Refactor code...', and in the section below, right-mouse click on the `scriptlets.R` file and select "File History". 
+On the repository page on GitHub.com, navigate to the file whose history you would like to view. In this case, let's go to `scriptlets.R`. You'll notice in the upper right there is a `History` button with a symbol of a clock surrounded by an arrow:
 
 <p align="center">
-<img src="../img/3.new-get_to_file_history.png" width="700" align="center">
+<img src="../img/2.GHD_view_file_history_web.png" width="700" align="center">
 </p>
 
-You should now **see the history** of the `scriptlets.R` file. Our code file is displayed with comments on the left and differences between the (left) selected and previous versions:
+You can click this to see all commits which relate to this file:
+
+<p align="center">
+<img src="../img/2.GHD_view_file_history_web_2.png" width="700" align="center">
+</p>
+
+You'lll notice that for each commit, there are a series of icons. One looks like a **document with `<>`** and the other is simply **<>**. Clicking these icons let you see the version of the file in that commit, or the whole repo as it looked in that commit, respectively. Let's click on the icon for
 
 <p align="center">
 <img src="../img/3.new-showing_file_history.png" width="700" align="center">

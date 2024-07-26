@@ -19,27 +19,44 @@ If you make changes in different parts of a file or within the repo, these chang
 
 An example will help illustrate the most likely way conflicts can emerge, and how to deal with them. 
 
-Let's add a change to our remote repository to main documentation `README.md` file. The first title line isn't properly formatted. Let's edit this file and line with a single `#` as an H1 tag:
+Let's add a change to our remote repository to main documentation `README.md` file. Let's add an attribution under the main header:
 
-<img src="../img/3.new-edit_online_to_start_conflict.png" width="700" align="center">
+```
+Made with materials devleoped in part by the HBC training team
+```
+
+<img src="../img/7.GHD_header_desc.png" width="800" align="center">
 
 Commit this change on Github! 
 
-Now let's move back to GitKrken, and without syncing/pulling, make a change to the same document locally:
+Now let's move back to GitHub Desktop. You'll noticed that the righthand button of the repository bar will say something like `Pull Origin` with the number `1` and a downward pointing arrow, and might say something like `last fetched a moment ago`. You'll aslo see a highlighted blue box saying **"Pull 1 commit from the origin remote** The current branch (`main`) has a commit on GitHub that does not exist on your machine" and a blue button that says `Pull Origin`. This is GitHub Desktop's way of allerting you that there is a remote change that you can incorporate locally, but **ignore the prompt to pull for now**. Instead, we will make a different change to the same document locally. Click the button to open the repot in `Sublime Text` (or your text editor of choice), click on the readme, and add the following line to the header:
 
-<img src="../img/3.new-edit_locally_to_make_conflict.png" width="700" align="center">
+```
+ A hands-on workshop to demonstrate using GitHub Desktop as a GUI client ot the Git version control system
+```
 
-Save the changed file. Return to GitKraken, click on the WIP line, stage your change, add a description, and Commit:
+<img src="../img/7.GHD_local_change_same_file.png" width="800" align="center">
 
-<img src="../img/3.new-local_conflict_commit.png" width="700" align="center">
+Save the changed file. Return to GitHub Desktop which should already show the change, add a description, and Commit:
 
-Note the divergence as a branch. Synchronize the repos by doing a Push. GitKraken warns us that we are behind the remote, so we must do a Pull:
+<img src="../img/7.GHD_local_change_same_file.png" width="800" align="center">
+
+You'll now notice that the righthand button in the repository has changed, and now shows both down- and up-pointing arrows, indicating you have changes to either push or pull. If you click on the triangle for this button, you'll see you have 3 options: `pull`, `fetch`, or `force push origin`. Note that **if you `force push origin`, you will overwrite and lose any independent changes to your remote repository (`origin`)**. That's one way to manage a conflict. But **what if we want to keep both changes?** In that case, we want to `pull` first:
  
-<img src="../img/3.new-local_pull_warning.png" width="700" align="center">
+<img src="../img/7.GHD_fetch_pull_or_push_origin.png" width="800" align="center">
  
-Once you do the Pull, we get a transient message about a 'Merge Conflict' and a timeline message warning us about "Merge Conflicts", which is not unexpected:
+If you click `pull`, you will get a popup indicating there is a conflicted file. you'll have the option to open it in a text editor or command line (which will show you the conflicts and let you resolve manually), or you can `Abort Merge` to undo the pull entirely. Note that `Continue Merge` is greyed out -- you'll have to resolve the conflict manually first!
 
-<img src="../img/3.new-merge_confict_warning.png" width="700" align="center">
+If you select the drop down menu attache to the option to open in the text editor, you'll see several options, including simply opening in the text editor, showing the file in `Finder`, or choosing a specific version of the file: `Use the modified file from main` (local) or 'Use the modified file from origin/main' (remote).
+
+<img src="../img/7.GHD_pull_to_merge.png" width="800" align="center">
+
+We want to keep both, so let's just open the file in our text editor:
+
+<img src="../img/7.GHD_manage_conflict_manually.png" width="800" align="center">
+
+You'll see that both changes are in this file, but each change is preceeded by `<<<<<<<` , `=======`, or `>>>>>>>`. These symbols indicate whether changes are originating from one file ##### add info from this https://stackoverflow.com/questions/7901864/git-conflict-markers
+
 
 This is not a big problem: What Git is aking you to do is manage these conflicts. GitKraken offers you the option of opening the file with the sync conflicts.
 

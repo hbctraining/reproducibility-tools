@@ -47,7 +47,7 @@ Ready to get started?
 
 ### Exercise #1: Knit an RMarkdown file to generate an HTML document
 
-Before we delve into the details, we will start with an activity to show you what an RMarkdown file (.Rmd extension) looks like, and how to generate the resulting HTML report using the `knit()` function (which is part of the R [knitr package](https://yihui.name/knitr/)).
+Before we delve into the details, we will start with an activity to show you what an RMarkdown file (.Rmd extension) looks like, and how to generate the resulting HTML report using the `knit()` function (which is part of the R [knitr package](https://yihui.name/knitr/)). HTML format is a common format output from "knitting" Rmd documents and is the default file format interpreted by web browsers. HTML is oftentimes the format that websites are written in. 
 
 1. Open up RStudio and **create a new project** in a new directory called `rmd_workshop`. Remember the location in computer where you create this project.
 2. **Right click [this RMarkdown file](https://raw.githubusercontent.com/hbctraining/Training-modules/master/Rmarkdown/data/workshop-example.Rmd)**. Download it (using **Save Link As**) and place it within the `rmd_workshop` project directory.
@@ -146,7 +146,7 @@ Once we have finished creating an RMarkdown file, we finally need to "knit" the 
 
 > Note that when creating your own reports, you will very likely find yourself knitting the report periodically as you work through rather than just once at the end. It is an iterative process usually since you may have to turn off warnings, or if you decide you need a figure to be larger/smaller, or updating the descriptive text in the document to be informative (for others and your future self).
 
-When you click on the "knit" button, by default an HTML report will be generated. If you would prefer a different document format, this can be specified in the YAML header with the `output:` parameter as discussed above, or you can also click on the button in the panel above the script and click on "Knit" to get the various options as shown in the image under the 5th part of the exercise above.
+When you click on the "knit" button, by default an HTML report will be generated. If you would prefer a different document format, this can be specified in the YAML header with the `output:` parameter as discussed above, or you can also click on the button in the panel above the script and click on "Knit" to get the various options as shown in the image under the 5th step of Exercise #1 above.
 
 > **Note**: *PDF rendering is sometimes problematic, especially when running R remotely, like on the cluster. If you run into problems, it's likely an issue related to [pandoc](http://pandoc.org).*
 

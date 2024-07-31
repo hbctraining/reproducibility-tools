@@ -12,7 +12,7 @@ author: Michael J. Steinbaugh, Meeta Mistry, Radhika Khetani, Jihe Liu, Mary Pip
 
 ## More about Code chunks
 
-By this point, we have mentioned the word "knit" quite a few times, and you have installed and loaded the `knitr` package too. But, we have not yet fully defined what it is. [knitr](https://yihui.name/knitr/) is an R package, developed by [Yihui Xie](https://yihui.name), designed to convert RMarkdown and a couple of other file formats into a final report document in HTML or PDF or other formats. 
+By this point, we have mentioned the word "knit" quite a few times, and you have installed and loaded the `knitr` package too. But, we have not yet fully defined what it is. [knitr](https://yihui.name/knitr/) is an R package, developed by [Yihui Xie](https://yihui.name), designed to convert RMarkdown and a couple of other file formats into a final report document in HTML, PDF or other formats. 
 
 The `knitr` package provides a lot of customization options for code chunks embedded within the file. These options are written in the form of `tag=value`.
 

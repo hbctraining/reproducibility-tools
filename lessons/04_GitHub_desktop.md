@@ -12,7 +12,7 @@ author: "Meeta Mistry, Heather Wick"
 
 ## Getting Started with Git using a GUI (Graphical User Interface)
 
-Long-time users of Git often use the command-line user interface (CLI), i.e. a Terminal. However, there are several tools that enable novices to use Git with a Graphical User Interface (GUI) (point-and-click) interface. Two examples of GUIs for Git are [GitHub Desktop](https://desktop.github.com/) and [GitKraken](www.gitkraken.com). We will be using the former.
+Long-time users of Git often use the command-line user interface (CLI), i.e. a Terminal. However, there are several tools that enable novices to use Git with a Graphical User Interface (GUI) (point-and-click) interface. Two examples of GUIs for Git are [GitHub Desktop](https://desktop.github.com/) and [GitKraken](https://www.gitkraken.com). We will be using the former.
 
 Although there are several advantages to using Git from the command-line interface in the long run, a GUI is a great place to start with learning the basics. 
 
@@ -26,27 +26,28 @@ Since we are going to be using [GitHub](https://github.com/) along with [GitHub 
 
 ### Install GitHub Desktop
 
-* After you have downloaded and installed GitHub desktop, open the application and click the `Sign in to GitHub.com` button
-* A browser window will open up prompting you to authorize a GitHub User. Sign in to Github or click `continue` if you are already signed in. Depending on your browser, you may see a pop-up prompting you to open `Open GitHub Desktop`; if you agree you will see a follow-up message redirecting you back to the GitHub Desktop application
-* On GitHub Desketop, you will see a `Configure Git` prompt which will allow you to use your GitHub account name and email address or configure manually. You should select `Use my GitHub account name and email address` which should auto-fill your GitHub name/email, and click `Finish`
-* Then you will be directed to a `Let's get started!` prompt. If you already have repositories in your GitHub account, you should see them here. You will also see options to create and clone repositories. At this point, you've configured GitHub Desktop and are ready to start working with a *repository*.
+1.  After you have downloaded and installed GitHub desktop, open the application and click the `Sign in to GitHub.com` button
 
-
-<p>
+<p align="center">
     <img src="../img/2.GHD_setup1.png" width="700" align="center">
-    <em>1. When you open GitHub Desktop, click "Sign in to GitHub.com" </em>
 </p>
-<p>
+
+2. A browser window will open up prompting you to authorize a GitHub User. Sign in to Github or click `Continue` if you are already signed in. Depending on your browser, you may see a pop-up prompting you to open `Open GitHub Desktop`; if you agree you will see a follow-up message redirecting you back to the GitHub Desktop application
+
+<p align="center">
     <img src="../img/2.GHD_setup2.png" width="700" align="center">
-    <em>2. In your browser, you will be prompted to authorize a GitHub user. Click "Continue" </em>
 </p>
-<p>
+
+3. On GitHub Desktop, you will see a `Configure Git` prompt which will allow you to use your GitHub account name and email address or configure manually. You should select `Use my GitHub account name and email address` which should auto-fill your GitHub name/email, and click `Finish`
+
+<p align="center">
     <img src="../img/2.GHD_setup3.png" width="700" align="center">
-    <em>3. On GitHub Desktop, you will see the Configure Git prompt. Select "Use my GitHub account name and email address" </em>
 </p>
-<p>
+
+4. Then you will be directed to a `Let's get started!` prompt. If you already have repositories in your GitHub account, you should see them here. You will also see options to create and clone repositories. At this point, you've configured GitHub Desktop and are ready to start working with a *repository*.
+
+<p align="center">
     <img src="../img/2.GHD_setup4.png" width="700" align="center">
-    <em>4. When yo usee the "Let's get started!" prompt, you are ready to begin! </em>
 </p>
 
 ## Version Controlling a directory of files
@@ -124,7 +125,7 @@ Your GitHube Desktop screen should now look like this:
 
 **On the left side of the screen you will also see two tabs:**
 
-**Changes** will show you changes made to files in your current directory that haven't been committed to your local repository. This tab also hase "Summary" and "Description" text boxes to describe your changes, and and **Commit to BRANCH** button, which will tell you which branch you are committing to.
+**Changes** will show you changes made to files in your current directory that haven't been committed to your local repository. This tab also has "Summary" and "Description" text boxes to describe your changes, and a **Commit to BRANCH** button, which will tell you which branch you are committing to. In this case the BRANCH should be "main", so it should say **Commit to main**.
 
 **History** will show past commits you've made to the current branch of your repository. For now, you'll only see the **Initial commit** from creating the repository. You will also see any changes to files you created during the commit; in our case, we see there is a *README.md* as well as a *.gitattributes* file. Our *.gitignore* and *LICENSE* files would also appear here if we opted to create those during the initial commit. When you click on these files, you can see the *diff* -- only the parts of the file that changed are displayed. For the initial commit, that's all of the file.
 

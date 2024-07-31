@@ -137,7 +137,7 @@ Your GitHube Desktop screen should now look like this:
 
 Before we continue, we want to highlight a few research data management best practices: organize your files, structure your folder and name files consistently. We recommend having separate folders for `code` (or `scripts`), `data`, `docs`, `figures`, and `other` to keep your data organized.
 
-You can make folders in your local GitHub repository just as you normally would in `Finder`, such as by right clicking and selecting `New Folder` from the drop down menu. For this workshop, we will add folders (and some files) to our repository by [downloading and unzipping the GitHub Desktop workshop materials](../data/githubdesktop_workshop_materials.zip) and simply moving the individual folders into your GitHub Desktop repository in Finder.
+You can make folders in your local GitHub repository just as you normally would in `Finder`, such as by right clicking and selecting `New Folder` from the drop down menu. For this workshop, we will add folders (and some files) to our repository by [downloading and unzipping the GitHub Desktop workshop materials](https://github.com/hbctraining/reproducibility-tools/blob/master/data/githubdesktop_workshop_materials.zip) and simply moving the individual folders into your GitHub Desktop repository in Finder.
 
 >**Note: only move the folders inside of `githubdesktop_workshop_materials`, but do not move the parent `githubdesktop_workshop_materials` folder itself or the `util_functions.R` or `Pi Formulas -- from Wolfram MathWorld.pdf` files in that folder -- we will get to those file later**
 

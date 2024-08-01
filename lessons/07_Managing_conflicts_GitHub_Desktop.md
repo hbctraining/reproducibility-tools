@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Managing Conflicts"
-author: "Bob Freeman, Meeta Mistry, Radhika Khetani, Kathleen Keating"
+author: "Bob Freeman, Meeta Mistry, Radhika Khetani, Kathleen Keating, Heather Wick"
 ---
 
 ## Learning objectives

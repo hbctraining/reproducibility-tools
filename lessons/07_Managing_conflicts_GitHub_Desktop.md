@@ -54,7 +54,8 @@ This is not a big problem: What Git is aking you to do is manage these conflicts
 <img src="../img/merge.png" width="400" align="center">
 
 If you select the drop down menu attached to the option to open in the text editor, you'll see several options, including simply opening in the text editor, showing the file in `Finder`, or choosing a specific version of the file: `Use the modified file from main` (local) or `Use the modified file from origin/main` (remote).
-<img src="../img/7.GHD_merge_conflicted_file width="800" align="center">
+
+<img src="../img/7.GHD_merge_conflicted_file.png" width="800" align="center">
 
 Let's open the file with an external text editor (the document will open with whichever text editor/application we have chosen as the default for opening Markdown files). 
 
@@ -78,16 +79,15 @@ Whichever option you choose, you must **remove** the conflict markers in order t
 
 Now you'll see that there are no more local changes; you'll also see the commit message in the lower left hand corner. And you'll also see a highlighted blue box prompting you to push your 2 local commits to origin:
 
-<img src="../img/7.GHD_merged_option_to_push_1.png" width="600" align="center">
+<img src="../img/7.GHD_merged_option_to_push_1.png" width="800" align="center">
 
-If you click the `History` tab, you can see the changes you made, and also an up arrow under the commit message on the left hand side, also prompting you to push to the remote repository:
+If you click the `History` tab and select this newest commit on the left hand side, you can see the changes you made to the file in the commit. There is an up arrow next to the commit summary on the left hand side, informing you that these changes have yet to be pushed to the remote repository:
 
-<img src="../img/7.GHD_merged_option_to_push_2.png" width="600" align="center">
+<img src="../img/7.GHD_merged_option_to_push_2.png" width="800" align="center">
 
-Now, synchronize your local changes by the standard workflow of **Pull and Push** and your local and remote repositories will be in sync:
+Now, you can synchronize your local changes with the remote repository by the standard workflow of **Pull and Push**. This can be done either by selecting **Push origin** from the repository bar up top, or by pressing the blue **Push oirign** button from the `Changes` tab. Once you do this, you'll notice both of those `Push` prompts will disappear and you'll no longer have a prompt in the `History` tab saying that the changes have not been pushed. If you go to your Github repository online, you'll now be able to see the changes to the readme file there as well.
 
-
-<img src="../img/3.new-commit_conflict_synched_timelines.png" width="700" align="center">
+<img src="../img/7.GHD_conflict_resolved_merge.png" width="800" align="center">
 
 This may seem like a convoluted approach to dealing with conflicts, but it is very useful as you have total control and the last word in dealing with conflicts. In contrast, if conflicts emerge on a system like Dropbox, the result is two files being created: Although this is better than potentially losing important changes, it also means you still have to look at these two documents and decide how you are going to merge them. 
 

@@ -2,7 +2,7 @@
 
 **Exercise #1: Pushing changes to GitHub.com**
 
-Push the changes to the "learning_github" repo (from the previous exercise) to the remote repo on github.com.
+Push the changes to the "learning_github" repo [from the previous exercise](../lessons/04_GitHub_desktop.md) to the remote repo on github.com.
 
 **Exercise #2: Creating a new file**
 

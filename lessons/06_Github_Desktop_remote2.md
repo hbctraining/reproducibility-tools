@@ -107,19 +107,6 @@ After committing, you will be brought back to the main page of your repository, 
 <img src="../img/2.GHD_latest_commits_after_upload.png" width="800" align="center">
 </p>
 
-***
-
-**Exercise: Creating a new file**
-
-1. Navigate to the `code` folder. We are going to create an Rmarkdown file in this directory.
-2. Click on the "Add File" button and choose "Create new file" from the drop-down button.
-3. You will now find yourself on a new page, with your cursor flashing in a text box at the top of the page. Give your new file the name `workshop_rmd_exercise.Rmd`.
-4. In the space below, you can add the contents of your file. Locate the .Rmd file you created in [Day 1 self-learning](../activities/Rmd_exercise4.md). Copy and paste the code into the browser space labeled `Edit file contents here`.
-5. Click the green `Commit changes...` button in the upper right, give your commit a descriptive title, and commit the changes
-
-***
-
-
 ## Syncing remote changes to your local repository
 
 Let's return to our local machine and apply the changes we made online to our local repo. GitHub Desktop has already noticed that our remote repo has changed, and is now prompting that you can `Pull 2 commits form the origin remote` which is highlighted in a blue box with a `Pull origin` button in blue (you can also see that the repository bar has a `Pull origin` option and tells you when the repo was most recently **fetched**.
@@ -146,14 +133,6 @@ Now that we've **pull**ed our changes from remote, you'll also be able to see an
 > **NOTE**: Two important things to keep in mind when making changes on the web interface:
 > * On GitHub.com file changes are done serially, so commits with modifications to multiple files cannot be done here.
 > * All of these changes in the web browser are realtime on the GitHub remote, i.e. the commits take effect immediately without an intermediate **add** or **stage** step.
-
-***
-
-**Exercise**
-
-**Take a screenshot of your GitHub Desktop window's history page, which shows the changes that you have synced to your local repo. Upload this image to the Dropbox link on the schedule page.**
-
-***
 
 ## Viewing File Histories
 

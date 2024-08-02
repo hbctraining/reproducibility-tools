@@ -1,14 +1,9 @@
-Exercises from remote1 and remote2
+## Exercises from remote1 and remote2
 
-***
 
 **Exercise #1: Pushing changes to GitHub.com**
 
 Push the changes to the "learning_github" repo (from the previous exercise) to the remote repo on github.com.
-
-***
-
-***
 
 **Exercise #2: Creating a new file**
 
@@ -18,12 +13,7 @@ Push the changes to the "learning_github" repo (from the previous exercise) to t
 4. In the space below, you can add the contents of your file. Locate the .Rmd file you created in [Day 1 self-learning](../activities/Rmd_exercise4.md). Copy and paste the code into the browser space labeled `Edit file contents here`.
 5. Click the green `Commit changes...` button in the upper right, give your commit a descriptive title, and commit the changes
 
-***
-
-***
-
 **Exercise #3: History**
 
-**Take a screenshot of your GitHub Desktop window's history page, which shows the changes that you have synced to your local repo. Upload this image to the Dropbox link on the schedule page.**
+Take a screenshot of your GitHub Desktop window's history page, which shows the changes that you have synced to your local repo. Upload this image to the Dropbox link on the schedule page.
 
-***

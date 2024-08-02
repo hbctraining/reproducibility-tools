@@ -24,14 +24,6 @@ Notice that our commit short descriptions are shown here; and that we can see th
 > You can also have a fully local repository, without a remote "synced" one on GitHub. 
 > If you would like to initialize such a repository with this intention pick the "Local Only" option under "Init".
 
-***
-
-**Exercise #2**
-
-Push the changes to the "learning_github" repo (from the previous exercise) to the remote repo on github.com.
-
-***
-
 On Github, you can choose to keep repositories public or make them private; and if they are private, you can choose specific GitHub users with whom you want to share it or collaborate with.
 
 Once your document is online, you can continue to make local changes to your file. But you will have to synchronize your local changes to reflect these changes in the published GitHub repository. GitHub stores changes both locally (on your computer) and remotely (on their servers), and it is important to keep these changes in sync. 

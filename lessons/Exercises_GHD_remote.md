@@ -1,5 +1,4 @@
-## Exercises from remote1 and remote2
-
+## Exercises from GitHub Desktop Remote lesson
 
 **Exercise #1: Pushing changes to GitHub.com**
 

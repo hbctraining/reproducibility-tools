@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Working with Commits"
-author: "Bob Freeman, Radhika Khetani, Amir Karger, Meeta Mistry"
+author: "Bob Freeman, Radhika Khetani, Amir Karger, Meeta Mistry, Heather Wick"
 ---
 
 ## Learning Objectives:
@@ -17,64 +17,75 @@ Sometimes a simple commit isn't that simple: you've forgotten something, you nee
 
 Oops! Pushed 'Commit' button too fast? 
 
-Perhaps you noticed errors in your commit message, or decided it wa not worded correctly. Or maybe you wanted to make a few changes to the file before you had gone ahead and pressed commit. Good news! As long as you have not updated any remotes, you can amend the last commit message, add additional changes, or both. To do this you need to first make some changes in your repo. Open up your `example_R_code.R`, and remove the "Hello world!" chunk of code and save. 
+Perhaps you noticed errors in your commit message, or decided it wa not worded correctly. Or maybe you wanted to make a few changes to the file before you had gone ahead and pressed commit. Good news! As long as you have not updated any remotes, you can amend the last commit message, add additional changes, or both. To do this you need to first make some changes in your repo. Open up your `example_Rcode.R`, and remove the "Hello world!" chunk of code and save. 
 
 Now stage the change, and commit with a message.
 
-<img src="../img/gitkraken_amend1.png" width="700">
+<img src="../img/8.GHD_commit_typo.png" width="800">
 
-Oh no! There is a typo in our commit message. Also we realized that we should have also removed the `square_it` code. Open up your `example_R_code.R` again, and this time remove the chunk of code for `square_it`. 
+Oh no! There is a typo in our commit message. Also we realized that we should have also removed the `square_it` code. Open up your `example_Rcode.R` again, and this time remove the chunk of code for `square_it` and safe the file again. 
 
-Now go back to your GitKraken window and click on the //WIP node on the graph. Stage the file you would wish to include in the updated commit, and select the "Amend" checkbox in the Commit Message pane:
+Now go back to your GitHub Desktop window and click history tab and right click the most recent commit, and select the "Amend commit" from the drop down menu:
 
-<img src="../img/gitkraken_amend2.png" width="700" align="center">
+<img src="../img/8.GHD_ammend_commit_1.png" width="800" align="center">
 
-You'll note that the previous commit message is copied into the Message and Description fields. This is your chance to edit the commit message you previously made a typo on. And you can amend the commit with additional changes, which we also did by removing additional code.
+You'll note that the previous commit message is copied into the Message and Description fields. This is your chance to edit the commit message you previously made a typo on. And you can amend the commit with additional changes, which we did by removing additional code: 
 
-The commit button is titled Amend Previous Commit instead. 
+<img src="../img/8.GHD_ammend_commit_2.1.png" width="800" align="center">
 
-<img src="../img/gitkraken_amend3.png" width="700" align="center">
+If you wish to amend the message only, simply uncheck the box under `1 changed file`:
 
+<img src="../img/8.GHD_ammend_commit_3.png" width="800" align="center">
 
-If you wish to amend the message only, hover over and click on the commit message. If you right click you get the option to "Edit commit message".
+Go ahead and decide if you would like to include the new change and fix the description summary, click **`Commit to main`**, and don't forget to **`Push origin`** so that your changes appear on your repository on GitHub.com
 
-<img src="../img/gitkraken_amend4.png" width="700" align="center">
+## Undoing, Resetting, and Reverting Commits
 
+Sometimes you just want to **undo** the last thing you did. Maybe that last change you made (e.g. commit, branch, etc) was something you didn't mean to make. GitHub Desktop has a convenient `Undo` button in the lower left next to the name of the latest commit you made. You might have also noticed an `Undo Commit` option in the drop down menu when we right clicked our most recent commit from the history tab.
 
-## Reverting Commits
+<p float="left">
+  <img src="../img/8.GHD_undo_1.png" width="400" >
+&nbsp; &nbsp; &nbsp; &nbsp;
+  <img src="../img/8.GHD_undo_2.png" width="400" >
+</p>
 
-Sometimes you just want to undo the last thing you did. Maybe that last change you made (e.g. commit, branch, etc) was something you didn't mean to make. GitKraken's Undo button in the top toolbar will let you undo most actions (which can also Redo if needed!). 
+You'll notice some other options in the drop down menu. For example, you can also **`Reset to Commit`**. This will undo every recent commit up to that commit. It is greyed out from the menu above because undoing that commit is equivalent, but you'll notice it's an option for older commits. Be careful with this option, because it will undo everything you've changed since then.
 
-Hover over the Undo button to see what action it will take:
+Another option available is to **`Revert Changes in Commit`**. This will create a new commit to undo the changes unique to that commit, while keeping any changes made in more recent commits. This is useful if you want to undo the change in that commit but keep all the changes you've made since that commit.
 
-<img src="../img/gitkraken_revert1.png" width="700" align="center">
-
-Looks like, if we wanted, we could undo the Amend Commit that we just did. This would revert us back to the original commit with only the "Hello World" code removed (and the typo in the commit message).
-
-If the Undo option is not available or not appropriate, one can also use the Revert Commit option. This allows you to not only undo the latest commit but it can also revert back to an older previous commit (that may have happened many commits before the last one). This will not only bring back the changes to your working directory, but will include an explicit commit to document this change to the repo. 
-
-To perform this, click on the "Removing Hello World" commit node, and right-mouse click to see the popup menu. From there, select the Revert Commit option:
-
-<img src="../img/gitkraken_revert2.png" width="700" align="center">
-  
-When prompted, you can immediate commit this explicit change, or keep the changes as a WIP (work in progress) for you to do additional work. Clicking Yes enters the new commit to your repo. Take a look at the `example_Rcode.R` file. You should see that it is how it was, when we first started this lesson.
-
-## Resetting (Checking Out Previous) Commits
+## Reverting Changes in Commits: an example
 
 At times, there may be the need to go back in history to a previous commit: perhaps you wish to retrieve files that you've deleted or changed, or perhaps you wish to inspect the state of your project and code to inform current work. No matter what it is, like a time machine, Git allows you to move the pointer on your repo to any commit, and it will likewise change the repo files and structure to reflect that.
 
-We realized that deleting all of those Python scripts (in the [self-learning lesson](06_Github_remote2.md)) was a big mistake. We actually need that code for a subset of our analyses!
+We realized that deleting all of the Python script (in the [the previous lesson](06_Github_remote2.md)) was a big mistake. We actually need that code for a subset of our analyses!
 
-Now, we want those back. Working with a previous commit will help us here. If we right-click on the commit where right before we deleted the first file, "including attribution for utility functions", we have an option to "Reset master to this commit", with three options: soft, mixed, and hard:
+Now, we want it back. If we go to the `History` tab in GitHub Desktop and right-click on the commit where we deleted `code/example_python.py`, "Delete code/example_python.py", we see the option to `Revert Changes in Commit`:
 
-<img src="../img/gitkraken_reset_options.png" width="700" align="center">
+<img src="../img/8.GHD_revert_commit.png" width="800" align="center">
 
-The 'soft' option allows us to keep any changes. Although this may seem the safest option, one could run into problems if there are files that overlap or change over time. We don't want any conflicts so we will go with the 'hard' option. Once you select this, note that the "main" node has moved down to the older commit. Ifyou open up your finder window and look inside the code folder you will now see the Python files
+If you select that, GitHub Desktop will immediately make a new commit, called `Revert Delete code/example_python.py` with a changed file all in green -- that's because we're adding that file back in after deleting it in that older commit:
 
+<img src="../img/8.GHD_revert_commit_2.png" width="800" align="center">
 
-> **NOTE:** The 'hard' option seems extreme, discarding all of our changes. If we had been working on the repo and had some changes staged, this would be problematic. We wouldn't want to risk totally losing everything, if we potentially wanted to come back. In this scenario you would want to consider the [stash](https://support.gitkraken.com/working-with-commits/stashing/) option before choosing the 'hard' reset.
+Go ahead and `Push to origin` and then go back to your GitHub.com repo. Voila! `code/example_python.py` has been restored!
 
-<img src="../img/gitkraken_reset_hard.png" width="700" align="center">
+<img src="../img/8.GHD_revert_commit_visible_web.png" width="800" align="center">
+
+### Cheatsheet: Other Options in the dropdown menu
+
+You may have noticed there are several other options in the drop down menu when right clicking commits. Here's a quick overview of what those options do:
+
+**Reorder Commit** -- this lets you move a commit to earlier or later in the history. Once selected, you can use your keyboard's up and down arrows to place the commit in its new location in the timeline, using `enter`/`return` to confirm, or `esc` to exit without changing the order.
+
+**Checkout Commit** -- this lets you look at the repo at the time this commit was made, in a new, detached `HEAD` (similar to a branch, which we'll cover later). This can be useful for debugging.
+
+**View on Github** -- this will open the changes you made in this commit on GitHub.com
+
+The last two options relate to branches:
+
+**Create Branch from Commit** -- this will create a new branch, separate from `main`, in your repository starting from this commit.
+
+**Cherry Pick Commit** -- this will let you take a commit from one branch and transfer it to another branch. This is a great option if you want to merge specific changes from particular branches to main without merging the whole branch.
 
 
 ---

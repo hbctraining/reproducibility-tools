@@ -118,7 +118,7 @@ After committing, you will be brought back to the main page of your repository, 
 <img src="../img/2.GHD_latest_commits_after_upload.png" width="800" align="center">
 </p>
 
-## Syncing remote changes to your local repository via Push
+## Syncing remote changes to your local repository via Pull
 
 Let's return to our local machine and apply the changes we made online to our local repo. GitHub Desktop has already noticed that our remote repo has changed, and is now prompting that you can `Pull 2 commits form the origin remote` which is highlighted in a blue box with a `Pull origin` button in blue (you can also see that the repository bar has a `Pull origin` option and tells you when the repo was most recently **fetched**.
 

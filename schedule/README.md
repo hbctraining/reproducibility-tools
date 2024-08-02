@@ -32,7 +32,7 @@
 
 ### Assignment #2
 
-* [More about working on Github and practice with GitHub](../lessons/06_GitHub_Dekstop_remote2.md)
+* [More about working on Github and practice with GitHub](../lessons/Exercises_GHD_remote.md)
 * Upload the files requested in the above exercise to [Dropbox](https://www.dropbox.com/request/LybdXxCcT4z8ZKHsKww5) **day before the next class**.
 * [Email us](mailto:hbctraining@hsph.harvard.edu) about questions that you need answered to work through the exercise.
 

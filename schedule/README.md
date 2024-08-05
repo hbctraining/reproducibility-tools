@@ -9,7 +9,7 @@
 | 10:30 - 10:35 | Break |  |
 | 10:35 - 11:10 | [RMarkdown Basics](../lessons/01-Rmarkdown_basics.md) | Heather |
 | 11:10 - 11:55 | [RMarkdown Intermediate](../lessons/02-Rmarkdown_intermediate.md) | Will |
-| 11:55 - 12:00 | Assignment review | Meeta |
+| 11:55 - 12:00 | Assignment review | Will |
 
 ### Assignment #1
 

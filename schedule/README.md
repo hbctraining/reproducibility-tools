@@ -4,8 +4,8 @@
 
 | Time            |  Topic  | Instructor |
 |:------------------------:|:------------------------------------------------:|:--------:|
-| 09:30 - 9:45 | [Workshop Introduction]() | Will |
-| 09:45 - 10:30 | [Making your data analysis reproducible]() | Julie Goldman |
+| 09:30 - 9:45 | [Workshop Introduction](../lectures/Intro_to_workshop.pdf) | Will |
+| 09:45 - 10:30 | [Making your data analysis reproducible](../lectures/20240806-HBC-Research-Reproducibility.pdf) | Julie Goldman |
 | 10:30 - 10:35 | Break |  |
 | 10:35 - 11:10 | [RMarkdown Basics](../lessons/01-Rmarkdown_basics.md) | Heather |
 | 11:10 - 11:55 | [RMarkdown Intermediate](../lessons/02-Rmarkdown_intermediate.md) | Will |

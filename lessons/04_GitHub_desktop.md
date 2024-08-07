@@ -137,9 +137,11 @@ Your GitHube Desktop screen should now look like this:
 
 Before we continue, we want to highlight a few research data management best practices: organize your files, structure your folder and name files consistently. We recommend having separate folders for `code` (or `scripts`), `data`, `docs`, `figures`, and `other` to keep your data organized.
 
-You can make folders in your local GitHub repository just as you normally would in `Finder`, such as by right clicking and selecting `New Folder` from the drop down menu. For this workshop, we will add folders (and some files) to our repository by [downloading and unzipping the GitHub Desktop workshop materials](https://github.com/hbctraining/reproducibility-tools/raw/master/data/githubdesktop_workshop_materials.zip) and simply moving the individual folders into your GitHub Desktop repository in Finder.
+You can make folders in your local GitHub repository just as you normally would in `Finder`, such as by right clicking and selecting `New Folder` from the drop down menu. 
 
->**Note: only move the folders inside of `githubdesktop_workshop_materials`, but do not move the parent `githubdesktop_workshop_materials` folder itself or the `util_functions.R` or `Pi Formulas -- from Wolfram MathWorld.pdf` files in that folder -- we will get to those file later**
+For this workshop, we will add folders (and some files) to our repository. In order to do download the examples that we will be working from, left-click [this link](https://github.com/hbctraining/reproducibility-tools/raw/master/data/githubdesktop_workshop_materials.zip) and select "**Save File As...**" or "**Download Linked File As..**" from the dropdown menu. This should download a zip-compressed (`.zip` file) of the directory that we will be using. You can double-click on the `githubdesktop_workshop_materials.zip` file to uncompress it. Once this has directory has been uncompressed, move the individual folders within this folder into your GitHub Desktop repository within your file browser.
+
+>**Note: only move the folders _inside_ of `githubdesktop_workshop_materials`, but do not move the parent `githubdesktop_workshop_materials` folder itself or the `util_functions.R` or `Pi Formulas -- from Wolfram MathWorld.pdf` files in that folder -- we will get to those file later**
 
 In Finder, your repository should look like this:
 
@@ -157,7 +159,7 @@ You'll notice that GitHub Desktop will actually show you any changes you made to
 
 >Note: Wait a minute, where is the `other` folder? Git will ignore folders that are empty. If you would like to make sure Git recognizes an empty folder, you can put a file in it. If you don't want to clutter your empty folders, you can put a hidden file  with a name starting with a `.`, such as `.gitkeep`, in the folder. 
 
->Note: to the right of each file, you'll see a `+` in a box. This indicates that these are newly added files. If you were to delete a file, you would see a `-`, and if you modify an existing file, you'll see a `dot`
+>Note: To the right of each file, you'll see a `+` in a box. This indicates that these are newly added files. If you were to delete a file, you would see a `-`, and if you modify an existing file, you'll see a `dot`
 
 These changes have been noted, but this new *version* of the repository is not yet recorded (saved) by Git. A **commit** tells Git that you made some changes which you want to record. Though a **commit** seems similar to saving a file, there are different aims behind ‘committing’ changes compared to saving changes. **Commits** take a snapshot of the file(s) at that point. You can actually record or commit modifications to multiple files/folders at once. i.e. single commit can have multiple updates.  
 
@@ -167,9 +169,9 @@ Committing changes usually happens in 2 stages:
 
 GitHub Desktop automatically **adds**, or **stages**, any changes we make to the repository and displays them on the left hand side of the application. You have the option of excluding any of these changes from the **commit** by deselecting the check box to the left of each file.
 
-To **commit** these changes one **must give a summary of the changes** in the `summary` box at the bottom of the left panel, followed by clicking on the `Commit to **main**` button. You can also add a longer description, but this is optional.
+To **commit** these changes one **must give a summary of the changes** in the `summary` box at the bottom of the left panel, followed by clicking on the <code>Commit to <b>main</b></code> button. You can also add a longer description, but this is optional.
 
-After the commit, your screen will return to how it looked before, but it will tell you the name and how recently you made your last commit, and you'll have an option to `undo` the commit in the bottom left. The changes to your files will no longer be displayed, because they have been committed. Here is how your GitHub Desktop application will look after your first commit (in this case, the summary was `My first commit!`:
+After the commit, your screen will return to how it looked before, but it will tell you the name and how recently you made your last commit. The changes to your files will no longer be displayed, because they have been committed. You'll have an option to `undo` the commit in the bottom left if you'd like to go back.  Here is how your GitHub Desktop application will look after your first commit (in this case, the summary was `My first commit!`:
 
 <p>
     <img src="../img/2.GHD_first_commit.png" width="800" align="center">
@@ -189,7 +191,7 @@ A useful way to think about commits is as the ‘history’ of your project. Eac
 
 > **Note about Branches**:
 >
-> When you commit you will see ‘commit to main’. This refers to the **main** branch. 
+> When you commit you will see <code>commit to <b>main</b></code>. This refers to the **main** branch. 
 > 
 > Within a Git repository it is possible to have multiple ‘branches’. These different branches are essentially different (virtual) places in which to work. Often they are used to test new ideas or work on a particular feature without modifying or "contaminating" the master copy (e.g. production version of a webpage). This feature is very useful when collaborating with others. We do not have time to go into this aspect of Version Control in this workshop, but we encourage you to explore it further.
 

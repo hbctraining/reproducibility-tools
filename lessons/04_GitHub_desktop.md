@@ -86,7 +86,7 @@ For this tutorial, we will be using **Method 1**
 
 When you create a new local repository, you will be greeted with this prompt:
 
-<p>
+<p align="center">
     <img src="../img/2.GHD_create_new_repo.png" width="350" align="center">
     <em>Create a New Repository</em>
 </p>
@@ -108,9 +108,9 @@ Fill in the fields as appropriate:
 
 Voila! You now have your first Git repo!
 
-Your GitHube Desktop screen should now look like this:
+Your GitHub Desktop screen should now look like this:
 
-<p>
+<p align="center">
     <img src="../img/2.GHD_layout.png" width="800" align="center">
 </p>
 
@@ -137,7 +137,7 @@ Your GitHube Desktop screen should now look like this:
 
 Before we continue, we want to highlight a few research data management best practices: organize your files, structure your folder and name files consistently. We recommend having separate folders for `code` (or `scripts`), `data`, `docs`, `figures`, and `other` to keep your data organized.
 
-You can make folders in your local GitHub repository just as you normally would in your file browser, such as by right clicking and selecting `New Folder` from the drop down menu. 
+You can make folders in your local git repository just as you normally would in your file browser, such as by right clicking and selecting `New Folder` from the drop down menu. 
 
 For this workshop, we will add folders (and some files) to our repository. In order to do download the examples that we will be working from, left-click [this link](https://github.com/hbctraining/reproducibility-tools/raw/master/data/githubdesktop_workshop_materials.zip) and select "**Save File As...**" or "**Download Linked File As..**" from the dropdown menu. This should download a zip-compressed (`.zip` file) of the directory that we will be using. You can double-click on the `githubdesktop_workshop_materials.zip` file to uncompress it. Once this has directory has been uncompressed, move the individual folders within this folder into your GitHub Desktop repository within your file browser.
 
@@ -145,13 +145,13 @@ For this workshop, we will add folders (and some files) to our repository. In or
 
 In Finder, your repository should look like this:
 
-<p>
+<p align="center">
     <img src="../img/2.GHD_folders_in_finder.png" width="800" align="center">
 </p>
 
 Now, look in your GitHub Desktop application. You can see that these folders and files actually show up on the left hand panel, ready to be committed to your repository:
 
-<p>
+<p align="center">
     <img src="../img/2.GHD_folders_in_GHD.png" width="800" align="center">
 </p>
 
@@ -169,18 +169,18 @@ Committing changes usually happens in 2 stages:
 
 GitHub Desktop automatically **adds**, or **stages**, any changes we make to the repository and displays them on the left hand side of the application. You have the option of excluding any of these changes from the **commit** by deselecting the check box to the left of each file.
 
-To **commit** these changes one **must give a summary of the changes** in the `summary` box at the bottom of the left panel, followed by clicking on the <code>Commit to <b>main</b></code> button. You can also add a longer description, but this is optional.
+To **commit** these changes one **must give a summary of the changes** in the `summary` box at the bottom of the left panel, followed by clicking on the <kbd>Commit to <b>main</b></kbd> button. You can also add a longer description, but this is optional.
 
 After the commit, your screen will return to how it looked before, but it will tell you the name and how recently you made your last commit. The changes to your files will no longer be displayed, because they have been committed. You'll have an option to `undo` the commit in the bottom left if you'd like to go back.  Here is how your GitHub Desktop application will look after your first commit (in this case, the summary was `My first commit!`:
 
-<p>
+<p align="center">
     <img src="../img/2.GHD_first_commit.png" width="800" align="center">
 </p>
 
 
 A useful way to think about commits is as the ‘history’ of your project. Each commit records a development or change made to the documents in your repository; the history of the project can be traced back by looking at all of the commits. You can directly view this `History` by clicking on the `History` tab on the left hand side of the application:
 
-<p>
+<p align="center">
     <img src="../img/2.GHD_first_commit_history.png" width="800" align="center">
 </p>
 
@@ -193,7 +193,7 @@ A useful way to think about commits is as the ‘history’ of your project. Eac
 >
 > When you commit you will see <code>commit to <b>main</b></code>. This refers to the **main** branch. 
 > 
-> Within a Git repository it is possible to have multiple ‘branches’. These different branches are essentially different (virtual) places in which to work. Often they are used to test new ideas or work on a particular feature without modifying or "contaminating" the master copy (e.g. production version of a webpage). This feature is very useful when collaborating with others. We do not have time to go into this aspect of Version Control in this workshop, but we encourage you to explore it further.
+> Within a Git repository it is possible to have multiple ‘branches’. These different branches are essentially different (virtual) places in which to work. Often they are used to test new ideas or work on a particular feature without modifying or "contaminating" the master copy (e.g. production version of a webpage). This feature is very useful when collaborating with others. We will go into this aspect of Version Control later in this workshop.
 
 ### Changing File Contents and Committing Changes
 
@@ -201,9 +201,9 @@ We're going to make several sets of changes that reflect the flexibility and cap
 
 Let's open the `README.md` document using our favorite text editor (see note below about text editors) and make this more useful. The information in this document is displayed at the bottom of the main page of your repo when you view it on GitHub (online). The `.md` extension means that this is a text file in ["markdown" format](https://guides.github.com/features/mastering-markdown/), which GitHub automatically renders into readable HTML pages.
 
-> README files are an essential part of any analysis workflow, so that your future self or your collaborators are able to understand what they need to know. Git and Github encourage this practice for every repository. [Click here to learn more about README files associated with biomedical datasets/analyses](https://datamanagement.hms.harvard.edu/readme-files).
+> README files are an essential part of any analysis workflow, so that your future self or your collaborators are able to understand what they need to know. Git and GitHub encourage this practice for every repository. [Click here to learn more about README files associated with biomedical datasets/analyses](https://datamanagement.hms.harvard.edu/readme-files).
 
-To open your README.md file, you can either click on it directly in Finder, or you can click the `Open in Sublime Text` (or other text editor if that's your preference) button in the `Open the repository in your external editor` box in the middle of your screen. This will open the whole repository within Sublime Text, and you can select your README file within the editor from the menu on the left.
+To open your `README.md` file, you can either click on it directly in File Browser, or you can click the `Open in Sublime Text` (or other text editor if that's your preference) button in the `Open the repository in your external editor` box in the middle of your GitHub Desktop when you are on the "Changes" tab. This will open the whole repository within your text editor, and you can select your README file within the editor from the menu on the left.
 
 Let's turn our `README.md` file for this Git repository into something more meaningful by adding some boilerplate text and helpful information to the small amount of text already there:
 
@@ -233,7 +233,7 @@ This is all available as CC BY 4.0 license. Enjoy!
 
 Save the changes to your file.
 
-Let's also open the `scriptlets.R file`. You'll notice we have some template text there as well -- great for reminding you what you need to do when starting to code. Let's flesh out this file by adding these example functions and replacing everything in the file before `# main code` in the original file. Copy & paste this code:
+Let's also open the `scriptlets.R file` from wihtin the `code` folder. You'll notice we have some template text there as well -- great for reminding you what you need to do when starting to code. Let's flesh out this file by adding these example functions and replacing everything in the file before `# main code` in the original file. Copy & paste this code:
 
 ```
 #!/usr/bin/env Rscript
@@ -280,19 +280,19 @@ for (trials in 1:3000) {
 # main code
 ```
 
-Save this file as well, and go back to GitHub Desktop. You'll see that your README.md and scriptlets.R files are in the left hand panel with the modified indicator to the right of the file: 
+Save this file as well, and go back to GitHub Desktop. You'll see that your README.md and scriptlets.R files are in the left-hand panel with the modified indicator to the right of the file: 
 
-<p>
+<p align="center">
     <img src="../img/2.GHD_modified_files.png" width="800" align="center">
 </p>
 
 If you click on these files, you can review the changes you've made. For text-based files, anything highlighted in green is being added to the file, while anything highlighted in red is being removed from the pre-existing file. Anything unchanged will not be highlighted.
 
-As before, this is GitHub Desktop's way of **adding**/**staging** these changes, but they haven't yet been recorded in an official `snapshot` of your repository. To **commit** these changes to your repository and make an official record of them, you'll need to add a summary and click `Commit to main`, just as we did before.
+As before, this is GitHub Desktop's way of **adding**/**staging** these changes, but they haven't yet been recorded in an official `snapshot` of your repository. To **commit** these changes to your repository and make an official record of them, you'll need to add a summary and click <kbd>Commit to <b>main</b></kbd>, just as we did before.
 
 > **Text Editors:**
 >
-> When creating a plain text document, you will want to use a text editor like Atom, TextMate, TextWrangler, or Sublime Text (Mac) or NotePad++ (Windows) instead of Microscoft Word or the default text editors. You will also want to make sure that you save it as plain text. There are a [large number of free and paid text editors available](https://en.wikipedia.org/wiki/List_of_text_editors) to choose from. In a pinch, you can always use TextEdit (Mac) or Notepad (Windows).
+> When creating a plain text document, you will want to use a text editor like Atom, TextMate, TextWrangler, BBEdit, Sublime Text (Mac) or NotePad++ (Windows) instead of Microscoft Word or the default text editors. You will also want to make sure that you save it as plain text. There are a [large number of free and paid text editors available](https://en.wikipedia.org/wiki/List_of_text_editors) to choose from. In a pinch, you can always use TextEdit (Mac) or Notepad (Windows).
 
 In the context of GitHub Desktop when the application **stages** your changes in the local repository, it is similar to the **add** command on the command line interface. You can add several changes in the staging area, and only **commit** when you are ready. 
 
@@ -300,15 +300,15 @@ Since we wish to keep all the different types of changes as separate commits, we
 
 First, deselect the `scriptlets.R` file so only the `README.md` file has a checkbox, and, as we did with our previous initial commit, include a summary message (you'll notice that GitHub Desktop has conveniently suggested `Update README.md` for us), and click on the Commit button:
 
-<p>
+<p align="center">
     <img src="../img/2.GHD_commit_readme.png" width="800" align="center">
 </p>
 
-Again, you'll see this latest commit in the lower left hand corner. Now, select the changed R file and include a meaningful change message (feel free to use the one suggested by GitHub Desktop), and click `Commit to main`. You'll see the latest commit in the lower left again. 
+Again, you'll see this latest commit in the lower left hand corner. Now, select the changed R file and include a meaningful change message (feel free to use the one suggested by GitHub Desktop), and click <kbd>Commit to <b>main</b></kbd>. You'll see the latest commit in the lower left again. 
 
 But what if we want to see our previous commits? We can access all of our previous commits by clicking the `History` tab in the left hand panel:
 
-<p>
+<p align="center">
 <img src="../img/2.GHD_history.png" width="800" align="center">
 </p>
 
@@ -349,24 +349,24 @@ montecarloPi(3000)
 
 When we return to the GitHub Desktop application, it has noticed the two changes. Since the change in the main code file depends on the presence of this other file, we need to ensure this commit (snapshot) captures these inter-dependent changes. So, let's keep both files selected for staging, give a meaningful commit message reflecting this process, and then commit! 
 
-<p>
+<p align="center">
     <img src="../img/2.GHD_atomic_commit.png" width="800" align="center">
 </p>
 
-### Publishing your local GitHub repository remotely to github.com
+### Publishing your local Git repository remotely to github.com
 
-One last thing: It's all well and done to have a GitHub repo on your computer, but to take full advantage of GitHub's tracking and sharing capabilities, we should publish our repository to github.com. To do so, simply click the `Publish repository` tab on the righthand side of the repository bar. A window will pop up which will allow you to make changes to the repository name and description, as well as choose the organization (the default is `None` which will publish the repository to your personal GitHub account). You can also select whether to keep the code private or make it public. Once you've made any changes, click the `Publish Repository` button:
+One last thing: It's all well and done to have a git repo on your computer, but to take full advantage of GitHub's tracking and sharing capabilities, we should publish our repository to <a href="https://github.com">GitHub</a>. To do so, simply click the `Publish repository` tab on the right-hand side of the repository bar. A window will pop up which will allow you to make changes to the repository name and description, as well as choose the organization (the default is `None` which will publish the repository to your personal GitHub account). You can also select whether to keep the code private or make it public. Once you've made any changes, click the `Publish Repository` button:
 
-<p>
+<p align="center">
     <img src="../img/2.GHD_publish_repo.png" width="800" align="center">
 </p>
 
 This will only take a moment. And you'll notice that the `Publish repository` tab in the repository bar now says `Fetch origin.` We'll cover the concept of Fetching at a later time.
 
-If you go to your github.com profile page and click `Repositories` from the bar up top, you'll see your newly published github repository:
+Go to <a href="https://github.com">GitHub</a> and left-click your profile picture in the top right corner, then select "Your profile". Once you are on your GitHub profile page and click `Repositories` from the bar up top, you'll see your newly published GitHub repository:
 
 
-<p>
+<p align="center">
     <img src="../img/2.GHD_githubweb.png" width="800" align="center">
 </p>
 
@@ -377,7 +377,7 @@ If you go to your github.com profile page and click `Repositories` from the bar 
 1. Create a repository `learning_github` in GitHub Desktop. Make sure to create it both locally, and then publish it remotely on github.com.
 2. Find the folder on your local computer, and add a couple of small text files to it from your computer. 
 3. Create a new plain text file called `data-file.txt`, add a line or 2 of content to it and save it to the `learning_github` folder.
-4. Go to GitHub Desktop, and commit the change with an approriate message.
+4. Go to GitHub Desktop, commit the change with an approriate message and then push this commit to GitHub.
 5. Switch repos back to the `githubdesktop_workshop` repo.
 
 ***

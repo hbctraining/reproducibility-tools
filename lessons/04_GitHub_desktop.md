@@ -137,7 +137,7 @@ Your GitHube Desktop screen should now look like this:
 
 Before we continue, we want to highlight a few research data management best practices: organize your files, structure your folder and name files consistently. We recommend having separate folders for `code` (or `scripts`), `data`, `docs`, `figures`, and `other` to keep your data organized.
 
-You can make folders in your local GitHub repository just as you normally would in `Finder`, such as by right clicking and selecting `New Folder` from the drop down menu. 
+You can make folders in your local GitHub repository just as you normally would in your file browser, such as by right clicking and selecting `New Folder` from the drop down menu. 
 
 For this workshop, we will add folders (and some files) to our repository. In order to do download the examples that we will be working from, left-click [this link](https://github.com/hbctraining/reproducibility-tools/raw/master/data/githubdesktop_workshop_materials.zip) and select "**Save File As...**" or "**Download Linked File As..**" from the dropdown menu. This should download a zip-compressed (`.zip` file) of the directory that we will be using. You can double-click on the `githubdesktop_workshop_materials.zip` file to uncompress it. Once this has directory has been uncompressed, move the individual folders within this folder into your GitHub Desktop repository within your file browser.
 

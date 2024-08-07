@@ -146,21 +146,21 @@ Now that we've **pull**ed our changes from GitHub, you'll also be able to see an
 
 One very useful feature of GitHub and GitHub Desktop is the ability to see how a file has changed over time.
 
-We've already seen how you can view changes made to files (highlighted in red and green) in GitHub Desktop in a given commit. It's also possible to view a file's entire history through GitHub.com
+We've already seen how you can view changes made to files (highlighted in red and green) in GitHub Desktop in a given commit. It's also possible to view a file's entire history through GitHub.
 
-On the repository page on GitHub.com, navigate to the file whose history you would like to view. In this case, let's go to `scriptlets.R`. You'll notice in the upper right there is a `History` button with a symbol of a clock surrounded by an arrow:
+On the repository page of GitHub, navigate to the file whose history you would like to view. In this case, let's go to `scriptlets.R` inside of our `code` directory.
 
 <p align="center">
   <img src="../img/2.GHD_view_file_history_web.png" width="700" align="center">
 </p>
 
-You can click this to see all commits which relate to this file:
+You'll notice in the upper right there is a `History` button with a symbol of a clock surrounded by an arrow. You can click this to see all commits which relate to this file:
 
 <p align="center">
   <img src="../img/2.GHD_view_file_history_web_2.png" width="700" align="center">
 </p>
 
-You'lll notice that for each commit, there are a series of icons on the right hand side. One looks like a **document with `< >`** and the other is simply **`< >`**. Clicking these icons let you see the version of the file in that commit, or the whole repo as it looked in that commit, respectively. Let's click on the icon to see the version of `scriptlets.R` from the `Update scriptlets.R` commit. Notice that in the upper left, the button that usually says `main` now has an alphanumeric code. This code represents a snapshot of your repo at the time of this commit:
+You'lll notice that for each commit, there are a series of icons on the right hand side. One looks like a **document with `< >`** and the other is simply **`< >`**. Clicking these icons let you see the version of the file in that commit, or the whole repo as it looked in that commit, respectively. Let's click on the **document with `< >`** icon to see the version of `scriptlets.R` from the `Update scriptlets.R` commit. Notice that in the upper left, the button that usually says `main` now has an alphanumeric code. This code represents a snapshot of your repo at the time of this commit:
 
 <p align="center">
   <img src="../img/2.GHD_view_file_history_scriptlets.png" width="800" align="center">
@@ -174,7 +174,7 @@ You can also see changes from specific commits leading up to/including the "curr
 
 > Note: you do not have to be in `History` to view `Blame` for a given file.
 
-And if you'd like to view changes side by side, color coded as in GitHub Desktop, click the back button in your browser to see the list of commits for the file and then click on the name of the commit, and you'll see the changes between this particular commit and the previous one:
+And if you'd like to view changes side-by-side, color coded as in GitHub Desktop, click the "Back" button in your web browser to go back to the History and then click on the name of the commit. You'll see the changes between this particular commit and the previous one:
 
 <p align="center">
   <img src="../img/2.GHD_view_file_history_colors.png" width="700" align="center">

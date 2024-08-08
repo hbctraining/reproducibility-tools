@@ -36,7 +36,7 @@ Commit this change on Github!
 Now let's move back to GitHub Desktop. You'll noticed that the right-hand button of the repository bar will say something like `Pull Origin` with the number `1` and a downward pointing arrow, and might say something like `last fetched a moment ago`. You'll also see a highlighted blue box saying **"Pull 1 commit from the origin remote** The current branch (`main`) has a commit on GitHub that does not exist on your machine" and a blue button that says `Pull Origin`. This is GitHub Desktop's way of alerting you that there is a remote change that you can incorporate locally, but **ignore the prompt to pull for now**. Instead, we will make a different change to the same document locally. Click the button to open the repo in `Sublime Text` (or your text editor of choice), click on the `README.md`, and add the following line to the header:
 
 ```
-A hands-on workshop to demonstrate using GitHub Desktop as a GUI client ot the Git version control system
+A hands-on workshop to demonstrate using GitHub Desktop as a GUI client to the Git version control system
 ```
 
 <p align="center">

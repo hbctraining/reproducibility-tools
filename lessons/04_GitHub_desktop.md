@@ -96,7 +96,7 @@ Fill in the fields as appropriate:
 1. The `Name` of the repository. Keep this to letters, numbers, and underscores; for this class, let's call it "githubdesktop_workshop".
 2. Add a `Description` of what this folder/repository will contain.
 3. Choose a `Local Path` where the repository will be stored on your computer. For this workshop, let's place the repo on your Desktop
-4. If you want, you can Initialize the repository with a README by clicking the box. For now, we will leave this blank
+4. If you want, you can Initialize the repository with a README by clicking the box. For now, we will leave this checked.
 5. If you would like to choose options for `Git Ignore` and `License`, there are options from the dropdown menu. For this workshop, we will select `None` for both.
 6. Finally, click the `Create Repository` button.
 

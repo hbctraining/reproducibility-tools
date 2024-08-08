@@ -210,7 +210,7 @@ We've already been through how to create a pull request and merge branches on Gi
 From your repository on GitHub.com, click on the `main` button in the upper left and you'll see an text box with the prompt to "Find or create a branch." Give your branch an appropriate name (we chose `remote_test_branch`), then click **`Create`** directly below:
 
 <p align="center">
-  <img src="../img/9.GHD_create_branch_github_2.png" width="800">
+  <img src="../img/9.GHD_create_branch_github_2.png" width="400">
 </p>
 
 Once you've created your branch, you can even see the new branch on GitHub Desktop:

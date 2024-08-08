@@ -88,7 +88,6 @@ When you create a new local repository, you will be greeted with this prompt:
 
 <p align="center">
     <img src="../img/2.GHD_create_new_repo.png" width="350" align="center">
-    <em>Create a New Repository</em>
 </p>
 
 Fill in the fields as appropriate:

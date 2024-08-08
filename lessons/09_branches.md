@@ -15,7 +15,7 @@ author: "Heather Wick"
 
 So far we've demonstrated how Git captures a history of your repository in a series of snapshots, made every time you commit a new change to your repository. But what if we want to make some more experimental changes to our repository? Perhaps there is a bug that needs to be fixed, or a new feature we want to add to a pipeline, but we're not quite sure if these changes will work or mesh properly with our main code. Or, maybe we have a collaborator that wants to make contribuitons, but we want to make sure that we preserve our original repository as-is as a backup before reviewing and incorporating their contributions. For these types of experimental fixes or changes, we can create a new **branch** independent from `main` to make changes to while keeping our `main` safe from any unstable code. This new **branch** will have its own history of commits separate from `main`.
 
-The illustration below shows a repository where each commit is represented by a circle and the edges show their linear relationship. Someone has made a new branch, `Some Feature`, independent from `main`. `Some Feature` has some of its own commits, but its history , with its own history of commits:
+The illustration below shows a repository where each commit is represented by a circle and the edges show their linear relationship. Someone has made a new branch, `Some Feature`, independent from `main`. `Some Feature` has some of its own commits, but that history of commits is separate from `main`:
 
 <p align="center">
   <img src="../img/9.GHD_new_branch.png" width="800">
@@ -29,7 +29,7 @@ Once you are done perfecting the changes made to the new branch, if you decide y
   <em>image source: https://www.atlassian.com/git/tutorials/using-branches/git-merge</em>
 </p>
 
-Or, if your experimenting didn't work, you can keep it separate and continue working on it or ignore it altogether, without jeopardizing `main`.
+Or, if you only want to incorporate some of the changes, you can **cherry-pick** those commits to `main`. Or, if your experimenting didn't work, you can keep the whole branch separate and continue working on it or ignore it altogether, without jeopardizing `main`.
 
 ## How to create a branch in GitHub Desktop
 
@@ -80,7 +80,7 @@ Just as before, you'll immediately see the change in the `Changes` tab. Go ahead
 
 And that's all there is to it! If you were to set your `Current Branch` to `main` and open your readme file in your external text editor, that line of text we added would not be there, because the change we made is unique to `test_branch`. Go ahead and see for yourself!
 
-### Publishing your branch to GitHub
+### Publishing/pushing your branch to GitHub
 
 One last step: let's publish our new branch to GitHub.com. From the main `Changes` tab, click the **`Publish branch`** button to publish it to Remote:
 
@@ -94,11 +94,13 @@ If you go to your repo on GitHub.com, you'll see that the branch has been publis
   <img src="../img/9.GHD_branch_on_GitHub.png" width="800">
 </p>
 
+**Note: If you already published your branch to GitHub.com and then make additional changes, you'll still have to Push your new changes to GitHub to sync your remote repository and create a pull request**
+
 ## Merging branches
 
 Once you're done making changes to your new branch, and you've decided you want to keep these changes and incorporate them into your `main` repo, you will want to **merge** branches back together. This will keep your repository organized so you don't end up with lots of different branches with lots of different versions. To do this, we'll be making a **pull** request from `main`. But before we do that, there's something important to consider:
 
-### What if I don't to keep all the changes I made?
+### What if I don't want to merge all the changes I made?
 
 Sometimes, you might find that there are some changes you want to incorporate from your new branch, but other changes you want to leave behind. This is called **Cherry-Picking**. When we were exploring options for commits in the previous lesson, this was one of the options we saw in the drop down menu for commits in the `History` tab. **We're going to keep all of our changes, but for demonstration purposes let's show you how to cherry-pick in case you want to in the future:**
 
@@ -108,7 +110,7 @@ While still in `test_branch`, if you go to your `History` tab and right click th
   <img src="../img/9.GHD_cherry_pick_1.png" width="800">
 </p>
 
-If you select this, it will give you the option to **cherry-pick** the commit to a branch:
+If you select this, it will give you the option to select a branch and then **cherry-pick** the commit to that branch:
 
 <p align="center">
   <img src="../img/9.GHD_cherry_pick_2.png" width="800">
@@ -118,7 +120,7 @@ If you select this, it will give you the option to **cherry-pick** the commit to
 
 ### Making a pull request to merge branches
 
-Instead, we're going to keep all (one) of our changes and merge `test_branch` with `main` via a **pull request**. You'll notice a new highlighted box with a blue button that gives the option to **`Preview Pull Request`** (you may notice that this button has a drop down menu to skip straight to `Create Pull Request`, but we recommend reviewing your pull request first):
+Instead, we're going to keep all of our changes and merge `test_branch` with `main` via a **pull request**. You'll notice a new highlighted box with a blue button that gives the option to **`Preview Pull Request`** (you may notice that this button has a drop down menu to skip straight to `Create Pull Request`, but we recommend reviewing your pull request first):
 
 <p align="center">
   <img src="../img/9.GHD_pull_request_1.png" width="800">
@@ -224,5 +226,8 @@ If you click on the **`Pull request`** button in the upper left, you'll be broug
 
 Clicking this button will bring you to a similar screen we saw before when initiating a pull from GitHub Dekstop. Go ahead and create the pull request, then confirm the pull request, just as before. Once you have confirmation that it's been synced. You'll see that GitHub Desktop will already have the merge incorporated to main.
 
+***
+
+* Information in these materials derived from docs.github.com and https://www.atlassian.com/git/tutorials/using-branches
 
 

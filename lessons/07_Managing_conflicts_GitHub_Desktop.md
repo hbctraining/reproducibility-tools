@@ -89,7 +89,7 @@ There are a number of approaches to dealing with a conflict:
 
 * You could change the section entirely and not choose either of the options, OR
 
-* You could keep both of the versions
+* You could keep both of the versions by incorporating them together into new version
 
 Whichever option you choose, you must **remove** the conflict markers in order to proceed. We're going to keep both edits, as it is more informative. Once you have *resolved* the conflict, save the file, and then go back to GitHub Desktop. You'll see that it's noticed the conflict has been resolved, and now you will be able to click <kbd><b>Continue Merge</b></kbd>:
 

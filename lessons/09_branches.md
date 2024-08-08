@@ -224,7 +224,7 @@ If you click on the **`Pull request`** button in the upper left, you'll be broug
   <img src="../img/9.GHD_create_branch_github_pull.png" width="800">
 </p>
 
-Clicking this button will bring you to a similar screen we saw before when initiating a pull from GitHub Dekstop. Go ahead and create the pull request, then confirm the pull request, just as before. Once you have confirmation that it's been synced. You'll see that GitHub Desktop will already have the merge incorporated to main.
+Clicking this button will bring you to a similar screen we saw before when initiating a pull from GitHub Dekstop. Go ahead and create the pull request, then confirm the pull request, just as before. Once you have confirmation that it's been synced. You'll see that GitHub Desktop will already have the merge incorporated to `main`.
 
 ***
 

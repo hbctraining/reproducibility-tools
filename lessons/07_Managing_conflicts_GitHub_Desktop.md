@@ -15,53 +15,71 @@ The most likely way a conflict will emerge is if you, or if you are sharing your
 
 If you make changes in different parts of a file or within the repo, these changes can be merged (synced) together without any conflict. But if these changes conflict with one another – if you try and change the same line of the document in two different ways – that's when there is an issue, as Git will not know which change is the one you wish to keep.
 
-<img src="../img/conflict.png" width="700" align="center">
+<p align="center">
+ <img src="../img/conflict.png" width="700" align="center">
+</p>
 
 An example will help illustrate the most likely way conflicts can emerge, and how to deal with them. 
 
-Let's add a change to our remote repository to main documentation `README.md` file. Let's add an attribution under the main header:
+Let's add a change to our remote GitHub repository to main documentation `README.md` file. Let's add an attribution under the main header:
 
 ```
 Made with materials devleoped in part by the HBC training team
 ```
 
-<img src="../img/7.GHD_header_desc.png" width="800" align="center">
+<p align="center">
+ <img src="../img/7.GHD_header_desc.png" width="800" align="center">
+</p>
 
 Commit this change on Github! 
 
-Now let's move back to GitHub Desktop. You'll noticed that the righthand button of the repository bar will say something like `Pull Origin` with the number `1` and a downward pointing arrow, and might say something like `last fetched a moment ago`. You'll aslo see a highlighted blue box saying **"Pull 1 commit from the origin remote** The current branch (`main`) has a commit on GitHub that does not exist on your machine" and a blue button that says `Pull Origin`. This is GitHub Desktop's way of allerting you that there is a remote change that you can incorporate locally, but **ignore the prompt to pull for now**. Instead, we will make a different change to the same document locally. Click the button to open the repot in `Sublime Text` (or your text editor of choice), click on the readme, and add the following line to the header:
+Now let's move back to GitHub Desktop. You'll noticed that the right-hand button of the repository bar will say something like `Pull Origin` with the number `1` and a downward pointing arrow, and might say something like `last fetched a moment ago`. You'll also see a highlighted blue box saying **"Pull 1 commit from the origin remote** The current branch (`main`) has a commit on GitHub that does not exist on your machine" and a blue button that says `Pull Origin`. This is GitHub Desktop's way of alerting you that there is a remote change that you can incorporate locally, but **ignore the prompt to pull for now**. Instead, we will make a different change to the same document locally. Click the button to open the repo in `Sublime Text` (or your text editor of choice), click on the `README.md`, and add the following line to the header:
 
 ```
- A hands-on workshop to demonstrate using GitHub Desktop as a GUI client ot the Git version control system
+A hands-on workshop to demonstrate using GitHub Desktop as a GUI client ot the Git version control system
 ```
 
-<img src="../img/7.GHD_local_change_same_file.png" width="800" align="center">
+<p align="center">
+ <img src="../img/7.GHD_local_change_same_file.png" width="800" align="center">
+</p>
 
 Save the changed file. Return to GitHub Desktop which should already show the change, add a description, and Commit:
 
-<img src="../img/7.GHD_local_change_same_file.png" width="800" align="center">
+<p align="center">
+ <img src="../img/7.GHD_local_change_same_file_commit.png" width="800" align="center">
+</p>
 
-You'll now notice that the righthand button in the repository has changed, and now shows both down- and up-pointing arrows, indicating you have changes to either push or pull. If you click on the triangle for this button, you'll see you have 3 options: `pull`, `fetch`, or `force push origin`. Note that **if you `force push origin`, you will overwrite and lose any independent changes to your remote repository (`origin`)**. That's one way to manage a conflict. But **what if we want to keep both changes?** In that case, we want to `pull` first:
- 
-<img src="../img/7.GHD_fetch_pull_or_push_origin.png" width="800" align="center">
- 
+You'll now notice that the right-hand button in the repository has changed, and now shows both down- and up-pointing arrows, indicating you have changes to either push or pull. If you click on the triangle for this button, you'll see you have 3 options: `pull`, `fetch`, or `force push origin`. Note that **if you `force push origin`, you will overwrite and lose any independent changes to your remote repository (`origin`)**. That's one way to manage a conflict. But **what if we want to keep both changes?** In that case, we want to `pull` first:
+
+<p align="center">
+ <img src="../img/7.GHD_fetch_pull_or_push_origin.png" width="800" align="center">
+</p>
+
 If you click `pull`, you will get a popup indicating there is a conflicted file. you'll have the option to open it in a text editor or command line (which will show you the conflicts and let you resolve manually), or you can `Abort Merge` to undo the pull entirely. Note that `Continue Merge` is greyed out -- you'll have to resolve the conflict manually first!
 
-<img src="../img/7.GHD_pull_to_merge.png" width="800" align="center">
+<p align="center">
+ <img src="../img/7.GHD_pull_to_merge.png" width="800" align="center">
+</p>
 
 This is not a big problem: What Git is aking you to do is manage these conflicts. GitHub Desktop offers you the option of opening the file with the sync conflicts.
 
-<img src="../img/merge.png" width="400" align="center">
+<p align="center">
+ <img src="../img/merge.png" width="400" align="center">
+</p>
 
-If you select the drop down menu attached to the option to open in the text editor, you'll see several options, including simply opening in the text editor, showing the file in `Finder`, or choosing a specific version of the file: `Use the modified file from main` (local) or `Use the modified file from origin/main` (remote).
+If you select the drop down menu attached to the option to open in the text editor, you'll see several options, including simply opening in the text editor, showing the file in your File Browser, or choosing a specific version of the file: `Use the modified file from main` (local) or `Use the modified file from origin/main` (remote).
 
-<img src="../img/7.GHD_merge_conflicted_file.png" width="800" align="center">
+<p align="center">
+ <img src="../img/7.GHD_merge_conflicted_file.png" width="800" align="center">
+</p>
 
 Let's open the file with an external text editor (the document will open with whichever text editor/application we have chosen as the default for opening Markdown files). 
 
 Looking at the file, we will see Git has denoted the conflicting section (selected here):
 
-<img src="../img/7.GHD_manage_conflict_manually.png" width="800" align="center">
+<p align="center">
+ <img src="../img/7.GHD_manage_conflict_manually.png" width="800" align="center">
+</p>
 
 This conflicting section is marked with `<<<<<<<` and ends with `>>>>>>>`. These are known as the **conflict markers**. The two conflicting blocks are divided by a `=======` line. 
 
@@ -73,21 +91,29 @@ There are a number of approaches to dealing with a conflict:
 
 * You could keep both of the versions
 
-Whichever option you choose, you must **remove** the conflict markers in order to proceed. We're going to keep both edits, as it is more informative. Once you have *resolved* the conflict, save the file, and then go back to GitHub Desktop. You'll see that it's noticed the conflict has been resolved, and now you will be able to click **`Continue Merge`**:
+Whichever option you choose, you must **remove** the conflict markers in order to proceed. We're going to keep both edits, as it is more informative. Once you have *resolved* the conflict, save the file, and then go back to GitHub Desktop. You'll see that it's noticed the conflict has been resolved, and now you will be able to click <kbd><b>Continue Merge</b></kbd>:
 
-<img src="../img/7.GHD_conflict_resolved_merge.png" width="800" align="center">
+<p align="center">
+ <img src="../img/7.GHD_conflict_resolved_merge.png" width="800" align="center">
+</p>
 
 Now you'll see that there are no more local changes; you'll also see the commit message in the lower left hand corner. And you'll also see a highlighted blue box prompting you to push your 2 local commits to origin:
 
-<img src="../img/7.GHD_merged_option_to_push_1.png" width="800" align="center">
+<p align="center">
+ <img src="../img/7.GHD_merged_option_to_push_1.png" width="800" align="center">
+</p>
 
-If you click the `History` tab and select this newest commit on the left hand side, you can see the changes you made to the file in the commit. There is an up arrow next to the commit summary on the left hand side, informing you that these changes have yet to be pushed to the remote repository:
+If you click the `History` tab and select this newest commit on the left-hand side, you can see the changes you made to the file in the commit. There is an up arrow next to the commit summary on the left-hand side, informing you that these changes have yet to be pushed to the remote repository:
 
-<img src="../img/7.GHD_merged_option_to_push_2.png" width="800" align="center">
+<p align="center">
+ <img src="../img/7.GHD_merged_option_to_push_2.png" width="800" align="center">
+</p>
 
-Now, you can synchronize your local changes with the remote repository by the standard workflow of **Pull and Push**. This can be done either by selecting **Push origin** from the repository bar up top, or by pressing the blue **Push oirign** button from the `Changes` tab. Once you do this, you'll notice both of those `Push` prompts will disappear and you'll no longer have a prompt in the `History` tab saying that the changes have not been pushed. If you go to your Github repository online, you'll now be able to see the changes to the readme file there as well.
+Now, you can synchronize your local changes with the remote repository by the standard workflow of **Pull and Push**. This can be done either by selecting **Push origin** from the repository bar up top, or by pressing the blue **Push origin** button from the `Changes` tab. Once you do this, you'll notice both of those `Push` prompts will disappear and you'll no longer have the up arrow in the `History` tab saying that the changes have not been pushed. If you go to your Github repository online, you'll now be able to see the changes to the `README.md` file there as well.
 
-<img src="../img/7.GHD_conflict_resolved_merge.png" width="800" align="center">
+<p align="center">
+ <img src="../img/7.GHD_conflict_resolved_merge.png" width="800" align="center">
+</p>
 
 This may seem like a convoluted approach to dealing with conflicts, but it is very useful as you have total control and the last word in dealing with conflicts. In contrast, if conflicts emerge on a system like Dropbox, the result is two files being created: Although this is better than potentially losing important changes, it also means you still have to look at these two documents and decide how you are going to merge them. 
 

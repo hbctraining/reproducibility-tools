@@ -374,10 +374,10 @@ Go to <a href="https://github.com">GitHub</a> and left-click your profile pictur
 
 **Exercise #1**
 
-1. Create a repository `learning_github` in GitHub Desktop. Make sure to create it both locally, and then publish it remotely on github.com.
+1. Create a repository `learning_github` in GitHub Desktop. Make sure to create it both locally and then publish it remotely onto GitHub.
 2. Find the folder on your local computer, and add a couple of small text files to it from your computer. 
 3. Create a new plain text file called `data-file.txt`, add a line or 2 of content to it and save it to the `learning_github` folder.
-4. Go to GitHub Desktop, commit the change with an approriate message and then push this commit to GitHub.
+4. Go to GitHub Desktop, commit the change with an approriate message.
 5. Switch repos back to the `githubdesktop_workshop` repo.
 
 ***

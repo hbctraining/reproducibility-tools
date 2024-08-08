@@ -138,7 +138,7 @@ Clicking this will immediately open your repo on GitHub.com. Similar to when mak
 
 > Note: you'll see a message up top here that says "Able to merge. These branches can be automatically merged." There may be cases where your branches conflict, just as commits can conflict, and they'll need to be manually reviewed.
 
-After a moment of processing, the page will show you a number of useful options, including the ability to **require review from specific users** (useful if you have multiple people working on a project that belongs primarily to one person who is the main editor) or to turn on debugging options through **continuous integration**. Notice we have a nice green checkmark indicating that **This branch has no conflicts wiht the base branch** meaning we can merge these branches automatically without having to review manually. 
+After a moment of processing, the page will show you a number of useful options, including the ability to **require review from specific users** (useful if you have multiple people working on a project that belongs primarily to one person who is the main editor) or to turn on debugging options through **continuous integration**. Notice we have a nice green checkmark indicating that **This branch has no conflicts with the base branch** meaning we can merge these branches automatically without having to review any conflicting changes between `main` and `test_branch` manually.
 
 <p align="center">
   <img src="../img/9.GHD_merge_pull_request_github.png" width="800">

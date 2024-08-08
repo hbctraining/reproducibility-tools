@@ -46,7 +46,7 @@
 | 09:30 - 10:00 | GitHub assignment review | Will |
 | 10:00 - 10:40 | [Managing conflicts with GitHub Desktop](../lessons/07_Managing_conflicts_GitHub_Desktop.md) |Heather |
 | 10:40 - 10:45 | Break | |
-| 10:45 - 11:25 |[Working with Commits]() | Heather |
+| 10:45 - 11:25 |[Working with Commits](../lessons/Working_with_commits.md) | Heather |
 | 11:25 - 11:50 | Discussion Q & A | All|
 | 11:50 - 12:00 | [Wrap-up]()| Will |
 

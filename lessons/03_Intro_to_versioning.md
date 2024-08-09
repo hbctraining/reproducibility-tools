@@ -10,10 +10,6 @@ author: "Daniel van Strien, Radhika Khetani, Bob Freeman, Meeta Mistry, Kathleen
 
 * Explain the need for version control
 
-## Setup
-
-Download the [workshop sample files zipped folder](https://github.com/hbctraining/versioning_data_scripts/raw/master/data/example_files.zip) and unzip it.
-
 ## What is Version Control?
 
 Version control can be used to keep track of versions of a piece of work that either a single person is working on, or a shared document. It is designed to avoid a situation like the one noted below.

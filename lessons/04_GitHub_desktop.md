@@ -232,7 +232,7 @@ This is all available as CC BY 4.0 license. Enjoy!
 
 Save the changes to your file.
 
-Let's also open the `scriptlets.R file` from wihtin the `code` folder. You'll notice we have some template text there as well -- great for reminding you what you need to do when starting to code. Let's flesh out this file by adding these example functions and replacing everything in the file before `# main code` in the original file. Copy & paste this code:
+Let's also open the `scriptlets.R file` from within the `code` folder. You'll notice we have some template text there as well -- great for reminding you what you need to do when starting to code. Let's flesh out this file by adding these example functions and replacing everything in the file before `# main code` in the original file. Copy & paste this code:
 
 ```
 #!/usr/bin/env Rscript

@@ -89,7 +89,7 @@ You may have noticed there are several other options in the dropdown menu when r
 
 **Reorder Commit** - This lets you move a commit to earlier or later in the history. Once selected, you can use your keyboard's up and down arrows to place the commit in its new location in the timeline, using `enter`/`return` to confirm, or `esc` to exit without changing the order.
 
-**Checkout Commit** - This lets you look at the repo at the time this commit was made, in a new, detached `HEAD` (similar to a branch, which we'll cover later). This can be useful for debugging.
+**Checkout Commit** - This lets you look at the repo at the time this commit was made, in a new, `detached HEAD` (similar to a branch, which we'll cover later). This can be useful for looking at old code, but it is also a bit risky to create a `detached HEAD` because commits made here won't be able to be merged back to `main`.
 
 **View on GitHub** - This will open the changes you made in this commit on GitHub
 

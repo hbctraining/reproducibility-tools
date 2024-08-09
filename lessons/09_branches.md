@@ -100,23 +100,23 @@ If you go to your repo on GitHub.com, you'll see that the branch has been publis
 
 Once you're done making changes to your new branch, and you've decided you want to keep these changes and incorporate them into your `main` repo, you will want to **merge** branches back together. This will keep your repository organized so you don't end up with lots of different branches with lots of different versions. To do this, we'll be making a **pull** request from `main`. But before we do that, there's something important to consider:
 
-### What if I don't want to merge all the changes I made?
-
-Sometimes, you might find that there are some changes you want to incorporate from your new branch, but other changes you want to leave behind. This is called **Cherry-Picking**. When we were exploring options for commits in the previous lesson, this was one of the options we saw in the drop down menu for commits in the `History` tab. **We're going to keep all of our changes, but for demonstration purposes let's show you how to cherry-pick in case you want to in the future:**
-
-While still in `test_branch`, if you go to your `History` tab and right click the most recent commit we made, you'll see **`Cherry-pick Commit...`** in the drop down menu:
-
-<p align="center">
-  <img src="../img/9.GHD_cherry_pick_1.png" width="800">
-</p>
-
-If you select this, it will give you the option to select a branch and then **cherry-pick** the commit to that branch:
-
-<p align="center">
-  <img src="../img/9.GHD_cherry_pick_2.png" width="800">
-</p>
-
-**For now though, we're going to skip this -- just close the pop-up without cherry-picking.**
+>### What if I don't want to merge all the changes I made?
+>
+>Sometimes, you might find that there are some changes you want to incorporate from your new branch, but other changes you want to leave behind. This is called **Cherry-Picking**. When we were exploring options for commits in the previous lesson, this was one of the options we saw in the drop down menu for commits in the `History` tab. **We're going to keep all of our changes, but for demonstration purposes let's show you how to cherry-pick in case you want to in the future:**
+>
+>While still in `test_branch`, if you go to your `History` tab and right click the most recent commit we made, you'll see **`Cherry-pick Commit...`** in the drop down menu:
+>
+><p align="center">
+>  <img src="../img/9.GHD_cherry_pick_1.png" width="800">
+></p>
+>
+>If you select this, it will give you the option to select a branch and then **cherry-pick** the commit to that branch:
+>
+><p align="center">
+>  <img src="../img/9.GHD_cherry_pick_2.png" width="800">
+></p>
+>
+> **For now though, we're going to skip this -- just close the pop-up without cherry-picking.**
 
 ### Making a pull request to merge branches
 
@@ -146,17 +146,15 @@ After a moment of processing, the page will show you a number of useful options,
   <img src="../img/9.GHD_merge_pull_request_github.png" width="800">
 </p>
 
-Under that is a big green button that says **`Merge pull request`**. If you click the arrow on the button, there are several options:
+Under that is a big green button that says **`Merge pull request`**.
 
-**1) Create a merge commit** -- This will add all commits we made to the `test_branch` into `main`. This is useful for seeing individual changes that were made and even changing them down the road. If changes were also made in `main`, the commits will be interleaved.
-
-**2) Squash and merge** -- This will condense, or "squash", all the commits from `test_branch` into a single commit. This is useful if you know you won't want to make any changes to individual commits after merging, or don't need the complete history from the `test_branch`
-
-**2) Rebase and merge** -- This will add all commits from `test_branch` to the end of `main` but not create an extra commit -- this makes a somewhat cleaner history but does not indicate a merge commit
-
-<p align="center">
-  <img src="../img/9.GHD_merge_options_github.png" width="400">
-</p>
+>**Side note:** If you click the arrow on the `Merge pull request` button, you'll notice several options. The vast majority of the time you'll just want to use the default option, but here is a description of all available options:
+>
+>**1) Create a merge commit** -- This will add all commits we made to the `test_branch` into `main`. This is useful for seeing individual changes that were made and even changing them down the road. If changes were also made in `main`, the commits will be interleaved.
+>
+>**2) Squash and merge** -- This will condense, or "squash", all the commits from `test_branch` into a single commit. This is useful if you know you won't want to make any changes to individual commits after merging, or don't need the complete history from the `test_branch`
+>
+>**2) Rebase and merge** -- This will add all commits from `test_branch` to the end of `main` but not create an extra commit -- this makes a somewhat cleaner history but does not indicate a merge commit
 
 Go ahead and merge your branches using the default setting, clicking the green `Merge Pull Request` button.
 Then, you'll be prompted to **`Confirm merge`**:

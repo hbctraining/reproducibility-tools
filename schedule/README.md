@@ -49,7 +49,7 @@
 | 10:45 - 11:05 |[Working with commits](../lessons/08_Working_with_commits.md) | Heather |
 | 11:05 - 11:25 |[Using branches for collaboration and version control](../lessons/09_branches.md) | Heather |
 | 11:25 - 11:50 | Discussion Q & A | All|
-| 11:50 - 12:00 | [Wrap-up]()| Will |
+| 11:50 - 12:00 | [Wrap-up](../lectures/workshop_wrapup_slides.pdf)| Will |
 
 
 ---

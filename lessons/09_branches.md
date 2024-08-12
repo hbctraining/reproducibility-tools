@@ -42,7 +42,7 @@ To create a new branch in GitHub Desktop, click the arrow next to `Current Branc
 Click `New Branch`, and you'll get a popup asking you to name the branch. There is also a reminder that your new branch will be based off of `main`, meaning that it will contain the same history of commits as `main` up until the point that the two branches diverged. If you had multiple branches, GitHub Desktop would let you choose which branch you would like to base the new branch from. Give your new branch an appropriate name (we chose `test_branch`), then click `Create Branch`:
 
 <p align="center">
-  <img src="../img/9.GHD_make_branch_1.png" width="800">
+  <img src="../img/9.GHD_make_branch_2.png" width="800">
 </p>
 
 You'll notice that the middle tab of your repository bar now indicates that your Current Branch is now `test_branch`.

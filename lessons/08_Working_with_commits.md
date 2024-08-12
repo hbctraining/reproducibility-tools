@@ -52,9 +52,9 @@ Go ahead and decide if you would like to include the new change and fix the desc
 Sometimes you just want to **undo** the last thing you did. Maybe that last change you made (e.g. commit, branch, etc) was something you didn't mean to make. GitHub Desktop has a convenient `Undo` button in the lower left next to the name of the latest commit you made. You might have also noticed an `Undo Commit` option in the drop down menu when we right clicked our most recent commit from the history tab.
 
 <p float="left" align="center">
-  <img src="../img/8.GHD_undo_1.png" width="400" >
+  <img src="../img/8.GHD_undo_1.png" width="300" >
 &nbsp; &nbsp; &nbsp; &nbsp;
-  <img src="../img/8.GHD_undo_2.png" width="400" >
+  <img src="../img/8.GHD_undo_2.png" width="300" >
 </p>
 
 You'll notice some other options in the dropdown menu. For example, you can also **`Reset to Commit`**. This will undo every recent commit up to that commit. It is greyed out from the menu above because undoing that commit is equivalent, but you'll notice it's an option for older commits. Be careful with this option, because it will undo everything you've changed since then.

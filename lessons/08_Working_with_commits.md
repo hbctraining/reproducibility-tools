@@ -53,7 +53,7 @@ Sometimes you just want to **undo** the last thing you did. Maybe that last chan
 
 <p float="left" align="center">
   <img src="../img/8.GHD_undo_1.png" width="300" >
-&nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; 
   <img src="../img/8.GHD_undo_2.png" width="300" >
 </p>
 
